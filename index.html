@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Bicimporters!</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/libs/jquery-1.10.2.js"></script>
+  <script src="js/libs/handlebars-v2.0.0.js"></script>
+  <script src="js/libs/ember-1.9.1.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/routes.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/storage.js"></script>
+
+  <!--script for application  (will eventually separate)-->
+
+  <script  type="text/x-handlebars" data-template-name='application'>
+    <div class='navbar navbar-default'>
+      <div class='container'>{{#link-to 'index' class='navbar-brand'}}
+          
+        <img src='img/chain.jpg' alt='logo' height='30' width='45' />{{/link-to}}
+          
+        <ul class='nav navbar-nav navbar-right'>
+            {{#link-to 'index' tagName='li'}} &nbsp; Home &nbsp; {{/link-to}}
+            {{#link-to 'about' tagName='li'}} &nbsp; About &nbsp; {{/link-to}}
+            {{#link-to 'catalog' tagName='li'}} &nbsp; Catalog &nbsp; {{/link-to}}
+            {{#link-to 'available' tagName='li'}} &nbsp; Available Now! &nbsp;{{/link-to}}
+        </ul>
+      </div>
+    </div>
+    
+    <div class='container'>
+      {{outlet}}
+    </div>
+    
+    <footer class='container'> <hr />
+      <p class='pull-left'>Bicimporters &copy; 2015</p>
+      <p class='pull-right'>{{#link-to 'credits'}}Credits{{/link-to}}</p>
+    </footer>
+  </script>
+
+  <!--script for index  (will eventually separate)-->
+
+  <script type="text/x-handlebars" data-template-name='index'>
+      <h1>Bicimporters</h1>
+      <img src="img/church1.jpg" alt='fields' class='img-thumbnail img-responsive'/>
+      <p>Today&#39;s date is {{time}}</p>
+  </script>
+
+  <!--script for about  (will eventually separate)-->
+
+  <script type="text/x-handlebars" data-template-name='about'>
+    <h1>We have bought bikes throughout California.</h1>
+
+      <div class='col-sm-3'>
+        <div class='list-group'>
+          {{#each}}
+            {{#link-to 'person'this classNames='list-group-item'}}
+              <p>{{person}}</p>
+              <p class-"small">{{blurb}}</p>
+            {{/link-to}} 
+          </li>
+        {{/each}}
+        </div>
+      </div>
+      <div class='col-sm-9'>
+        {{outlet}}
+      </div>
+    </div>
+  </script>
+
+   <script type="text/x-handlebars" data-template-name='person'>
+   //<img {{bind-attr src='image'}} class='img-thumbnail img-responsive'/>
+    <h1>{{person}}</h1>
+    <p>{{story}}</p>
+  </script>
+
+  <!--script for catalog  (will eventually separate)-->
+
+  <script type="text/x-handlebars" data-template-name='catalog'>
+    <h1>Catalog</h1>
+    <h2>Examples of the type of bikes we like</h2>
+    <p><a href="#" {{action 'sortByMake'}}>Sort by make</p>
+    <ul class='list-unstyled'>
+      {{#each}}
+        <li class='row'>
+          {{#link-to 'bike'this}}
+            <img {{bind-attr src='image'}} class='img-thumbnail col-sm-5'/>
+            <div class='col-sm-7'>
+              <h3>{{make}} {{model}}</h3>
+              <p class='product-description'>{{desc}}</p>
+            </div>
+          {{/link-to}} 
+        </li>
+      {{/each}}
+    </ul>
+  </script>
+
+  <script type="text/x-handlebars" data-template-name='bike'>
+   <img {{bind-attr src='image'}} class='img-thumbnail img-responsive'/>
+   <h1>{{make}} {{model.model}}</h1>
+   <p>{{desc}}</p>
+  </script>
+
+  <!--script for  available  (will eventually separate)-->
+
+  <script type="text/x-handlebars" data-template-name='available'>
+      <h1>This is what we have at the moment</h1>
+      <img src="img/church2.jpg" alt='fields' class='img-thumbnail img-responsive'/>
+  </script>
+
+  <!--script for  credits  (will eventually separate)-->
+
+  <script type='text/x-handlebars' data-template-name='credits'>
+    <h1>Thanks!</h1>
+    <p>I would like to thank craigslist, the ember team, my bike selling associates, the late-great Sheldon Brown and all the web dev. tutorials I have used recently. I would also like to thank my patient partner Amy for her time and web design input.</p>
+  </script>
+
+</head>
+
+<body>
+</body>
+</html>
