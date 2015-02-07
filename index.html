@@ -8,14 +8,13 @@
   <script src="js/libs/jquery-1.10.2.js"></script>
   <script src="js/libs/handlebars-v2.0.0.js"></script>
   <script src="js/libs/ember-1.9.1.js"></script>
-  <script src="js/libs/localstorageAdapter.js"></script>
   <script src="js/app.js"></script>
   <script src="js/router.js"></script>
   <script src="js/routes.js"></script>
   <script src="js/controllers.js"></script>
-  <script src="js/storage.js"></script>
-  <script src="js/emberDataFile.js"></script>
-  <script src="http://builds.emberjs.com/tags/v1.0.0-beta.14.1/ember-data.js"></script>
+  <script src="js/data/about.js"></script>
+  <script src="js/data/catalog.js"></script>
+  <script src="js/data/references.js"></script>
 
   <script  type="text/x-handlebars" data-template-name='application'>
     <div class='navbar navbar-default'>
@@ -27,7 +26,7 @@
             {{#link-to 'index' tagName='li'}} &nbsp; Home &nbsp; {{/link-to}}
             {{#link-to 'about' tagName='li'}} &nbsp; About &nbsp; {{/link-to}}
             {{#link-to 'catalog' tagName='li'}} &nbsp; Catalog &nbsp; {{/link-to}}
-            {{#link-to 'available' tagName='li'}} &nbsp; Available Now! &nbsp;{{/link-to}}
+            {{#link-to 'references' tagName='li'}} &nbsp; References &nbsp;{{/link-to}}
         </ul>
       </div>
     </div>
@@ -42,7 +41,7 @@
     </footer>
   </script>
 
-  <!--script for index  (will eventually separate)-->
+  <!--script for index-->
 
   <script type="text/x-handlebars" data-template-name='index'>
       <h1>Bicimporters</h1>
@@ -50,11 +49,10 @@
       <p>Today&#39;s date is {{time}}</p>
   </script>
 
-  <!--script for about  (will eventually separate)-->
+  <!--script for about-->
 
   <script type="text/x-handlebars" data-template-name='about'>
     <h1>We have bought bikes throughout California.</h1>
-
       <div class='col-sm-3'>
         <div class='list-group'>
           {{#each}}
@@ -92,6 +90,7 @@
             <div class='col-sm-7'>
               <h3>{{make}} {{model}}</h3>
               <p class='product-description'>{{desc}}</p>
+              <p class='product-description'>{{persons}}, </p>
             </div>
           {{/link-to}} 
         </li>
@@ -107,8 +106,8 @@
 
   <!--script for  available  (will eventually separate)-->
 
-  <script type="text/x-handlebars" data-template-name='available'>
-      <h1>This is what we have at the moment</h1>
+  <script type="text/x-handlebars" data-template-name='references'>
+      <h1>References</h1>
       <img src="img/church2.jpg" alt='fields' class='img-thumbnail img-responsive'/>
   </script>
 

@@ -1,7 +1,7 @@
 App.AboutRoute = Ember.Route.extend({
-model: function() {
-return App.ABOUT;
-}
+  model: function() {
+    return App.ABOUT;
+  }
 });
 
 App.PersonRoute = Ember.Route.extend({
@@ -11,9 +11,9 @@ App.PersonRoute = Ember.Route.extend({
 });
 
 App.CatalogRoute = Ember.Route.extend({
-model: function() {
-return App.CATALOG;
-}
+  model: function() {
+    return App.CATALOG;
+  }
 });
 
 App.BikeRoute = Ember.Route.extend({
