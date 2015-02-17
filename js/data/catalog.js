@@ -140,6 +140,16 @@ image3: null,
 persons: []
 },
 {
+make: 'Nishiki',
+model: 'unknown',
+color: ['green'],
+desc: 'Nishiki was another japanese bicycle company that mostly made affordable but unspectacular frames. This mountain bike has been retrofitted with new parts.',
+image: 'img/catalog/nish4.jpg',
+image2: null,
+image3: null,
+persons: []
+},
+{
 make: 'Miyata',
 model: '914',
 color: ['purple'],
@@ -205,6 +215,16 @@ model: 'R600',
 color: ['purple'],
 desc: 'Cannondale made aluminum bicycles in America when they started out. Here is an example',
 image: 'img/catalog/cann1.jpg',
+image2: null,
+image3: null,
+persons: []
+},
+{
+make: 'Trek',
+model: '1000',
+color: ['red','blue'],
+desc: 'good quality bikes, designed in America.',
+image: 'img/catalog/trek6.jpg',
 image2: null,
 image3: null,
 persons: []
@@ -370,11 +390,41 @@ image3: null,
 persons: []
 },
 {
+make: 'Raleigh',
+model: 'Technium',
+color: ['red'],
+desc: 'Raleigh is a storied english bicycle manafacturing company. It is one of the oldest if not the oldest bicycle company, founded in 1888. This raleigh was a road bike version of the technium bicycle series, which bonded aluminum tubing to steel joints for a light and strong frame prior to aluminum joints being common. Riders were somewhat uncomfortable riding with the glued segments, which did not turn out to be dangerous.',
+image: 'img/catalog/rali4.jpg',
+image2: null,
+image3: null,
+persons: []
+},
+{
+make: 'Univega',
+model: 'Arrowpace',
+color: ['green'],
+desc: 'The univega arrowpace was one of the rarer, high quality aluminum bikes made by Univega. Univega worked with Bianchi and other companies and Miyata. The frames were of average to entry racer quality.',
+image: 'img/catalog/univ1.jpg',
+image2: null,
+image3: null,
+persons: []
+},
+{
 make: 'Cannondale',
 model: 'R900',
 color: ['red'],
 desc: 'Cannondale made aluminum bicycles in America. This particular frame was an early adopter of STI shifters, and was given up on because of the STI failure. At the time, I took the shifters to a friend who told me the solution to this kind of problem was "a liberal amount of triflow".',
 image: 'img/catalog/cann2.jpg',
+image2: null,
+image3: null,
+persons: []
+},
+{
+make: 'Cannondale',
+model: 'unknown',
+color: ['light blue'],
+desc: 'Cannondale made aluminum bicycles in America. Because of the fixie craze and the often annoying tedious process of matching cannondale specific derailer hangers, many of these frames were converted to fixed gear bicycles, as this one is here.',
+image: 'img/catalog/cann4.jpg',
 image2: null,
 image3: null,
 persons: []

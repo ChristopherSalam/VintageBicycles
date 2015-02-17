@@ -3,8 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Bicimporters!</title>
-  <link rel="stylesheet" href="css/bootstrap.css">
+  <title>vintagebicycles.info</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <script src="js/libs/jquery-1.10.2.js"></script>
   <script src="js/libs/handlebars-v2.0.0.js"></script>
   <script src="js/libs/ember-1.9.1.js"></script>
@@ -31,12 +32,12 @@
       </div>
     </div>
     
-    <div class='container'>
+    <div class='container bigbackground'>
       {{outlet}}
     </div>
     
     <footer class='container'> <hr />
-      <p class='pull-left'>Bicimporters &copy; 2015</p>
+      <p class='pull-left'>Vintage Bicycles &copy; 2015</p>
       <p class='pull-right'>{{#link-to 'credits'}}Credits{{/link-to}}</p>
     </footer>
   </script>
@@ -44,7 +45,7 @@
   <!--script for index-->
 
   <script type="text/x-handlebars" data-template-name='index'>
-      <h1>Bicimporters</h1>
+      <h1>Vintage Bicycles <img src="img/crank.jpg" height="22px" width="22px"> Info</h1>
       <img src="img/church1.jpg" alt='fields' class='img-thumbnail img-responsive'/>
       <p>Today&#39;s date is {{time}}</p>
   </script>
@@ -76,11 +77,11 @@
     <p>{{story}}</p>
   </script>
 
-  <!--script for catalog  (will eventually separate)-->
+  <!--script for catalog-->
 
   <script type="text/x-handlebars" data-template-name='catalog'>
-    <h1>Catalog</h1>
-    <h2>Examples of the type of bikes we like</h2>
+    <h1>Catalog of Vintage Bicycles</h1>
+    <h2>Currently {{catalogCount}} listings</h2>
     <p><a href="#" {{action 'sortByMake'}}>Sort by make</p>
     <ul class='list-unstyled'>
       {{#each}}
@@ -104,14 +105,14 @@
    <p>{{desc}}</p>
   </script>
 
-  <!--script for  available  (will eventually separate)-->
+  <!--script for  available-->
 
   <script type="text/x-handlebars" data-template-name='references'>
       <h1>References</h1>
       <img src="img/church2.jpg" alt='fields' class='img-thumbnail img-responsive'/>
   </script>
 
-  <!--script for  credits  (will eventually separate)-->
+  <!--script for  credits-->
 
   <script type='text/x-handlebars' data-template-name='credits'>
     <h1>Thanks!</h1>

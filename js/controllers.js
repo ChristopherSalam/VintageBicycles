@@ -6,8 +6,9 @@ App.IndexController = Ember.Controller.extend({
 
 App.CatalogController = Ember.ArrayController.extend({
 	actions: {
-		sortByMake: function() {
+		sortByMake: (function() {
 			this.set('sortProperties', ['make']);
-		}
-	}
+		})
+	},
+	catalogCount: Ember.computed.alias('length')
 });
