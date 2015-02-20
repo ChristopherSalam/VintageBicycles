@@ -1,0 +1,17 @@
+choppingblock.html
+
+
+  <script type="text/x-handlebars" data-template-name="catalog/Bianchi">
+    <h1>Bianchi</h1>
+    <ul class='list-unstyled'>
+      {{#each}}
+        <li class="row">
+          <img {{bind-attr src='image'}} class='img-thumbnail col-sm-5' />
+          <div class="col-sm-7">
+            <h2>{{make}}{{model}}</h2>
+            <p class="product-description">{{desc}}</p>
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+  </script>

@@ -1,23 +1,29 @@
-App.AboutRoute = Ember.Route.extend({
+App.AboutRoute = Em.Route.extend({
   model: function() {
     return App.ABOUT;
   }
 });
 
-App.PersonRoute = Ember.Route.extend({
+App.PersonRoute = Em.Route.extend({
   model: function(params) {
     return App.ABOUT.findBy('person', params.person);
   }
 });
 
-App.CatalogRoute = Ember.Route.extend({
+App.CatalogRoute = Em.Route.extend({
   model: function() {
     return App.CATALOG;
   }
 });
 
-App.BikeRoute = Ember.Route.extend({
+App.BikeRoute = Em.Route.extend({
   model: function(params) {
     return App.CATALOG.findBy('make', params.make);
+  }
+});
+
+App.BianchiRoute = Em.Route.extend({
+  model: function() {
+    return App.CATALOG;
   }
 });

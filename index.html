@@ -23,7 +23,7 @@
           
         <img src='img/chain.jpg' alt='logo' height='30' width='45' />{{/link-to}}
           
-        <ul class='nav navbar-nav navbar-right'>
+        <ul class='nav navbar-nav navbar-right  bigbackground'>
             {{#link-to 'index' tagName='li'}} &nbsp; Home &nbsp; {{/link-to}}
             {{#link-to 'about' tagName='li'}} &nbsp; About &nbsp; {{/link-to}}
             {{#link-to 'catalog' tagName='li'}} &nbsp; Catalog &nbsp; {{/link-to}}
@@ -32,11 +32,11 @@
       </div>
     </div>
     
-    <div class='container bigbackground'>
+    <div class='container'>
       {{outlet}}
     </div>
     
-    <footer class='container'> <hr />
+    <footer class='container bigbackground'> <hr />
       <p class='pull-left'>Vintage Bicycles &copy; 2015</p>
       <p class='pull-right'>{{#link-to 'credits'}}Credits{{/link-to}}</p>
     </footer>
@@ -82,14 +82,37 @@
   <script type="text/x-handlebars" data-template-name='catalog'>
     <h1>Catalog of Vintage Bicycles</h1>
     <h2>Currently {{catalogCount}} listings</h2>
-    <p><a href="#" {{action 'sortByMake'}}>Sort by make</p>
+    <ul class="list-unstyled" id="dashboard">
+    <li><a href="#" {{action 'sortByMake'}}>Sort all listed bicycles!</li>
+    <li>{{#link-to 'bianchi' this}}See Bianchi Specific Bikes{{/link-to}}</li>
+    </ul>
     <ul class='list-unstyled'>
       {{#each}}
         <li class='row'>
-          {{#link-to 'bike'this}}
+          {{#link-to 'bike' this}}
             <img {{bind-attr src='image'}} class='img-thumbnail col-sm-5'/>
             <div class='col-sm-7'>
-              <h3>{{make}} {{model}}</h3>
+              <h3>{{#link-to 'bike'}}{{make}} {{model}}{{/link-to}} </h3>
+              <p class='product-description'>{{desc}}</p>
+              <p class='product-description'>{{persons}}, </p>
+            </div>
+          {{/link-to}} 
+        </li>
+      {{/each}}
+    </ul>
+  </script>
+
+<script type="text/x-handlebars" data-template-name='bianchi'>
+    <h1>Catalog of Bianchi Bicycles</h1>
+    <h2>Currently {{bianchiCount}} listings</h2>
+    <p>{{#link-to 'catalog'}} Back to Catalog{{/link-to}}</p>
+    <ul class='list-unstyled dashboard'>
+      {{#each sortBianchi}}
+        <li class='row'>
+          {{#link-to 'bike' this}}
+            <img {{bind-attr src='image'}} class='img-thumbnail col-sm-5'/>
+            <div class='col-sm-7'>
+              <h3>{{#link-to 'bike'}}{{make}} {{model}}{{/link-to}} </h3>
               <p class='product-description'>{{desc}}</p>
               <p class='product-description'>{{persons}}, </p>
             </div>

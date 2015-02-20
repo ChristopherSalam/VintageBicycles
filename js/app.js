@@ -1,4 +1,4 @@
-var App = Ember.Application.create({
+var App = Em.Application.create({
 	LOG_TRANSITIONS: true
 });
 
