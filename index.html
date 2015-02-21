@@ -89,16 +89,6 @@
     <ul class='list-unstyled'>
       {{#each}}
       {{product-spec product=this}}
-        <li class='row'>
-          {{#link-to 'bike' this}}
-            <img {{bind-attr src='image'}} class='img-thumbnail col-sm-5'/>
-            <div class='col-sm-7'>
-              <h3>{{#link-to 'bike'}}{{make}} {{model}}{{/link-to}} </h3>
-              <p class='product-description'>{{desc}}</p>
-              <p class='product-description'>{{persons}}, </p>
-            </div>
-          {{/link-to}} 
-        </li>
       {{/each}}
     </ul>
   </script>
@@ -110,16 +100,6 @@
     <ul class='list-unstyled dashboard'>
       {{#each sortBianchi}}
       {{product-spec product=this}}
-        <li class='row'>
-          {{#link-to 'bike' this}}
-            <img {{bind-attr src='image'}} class='img-thumbnail col-sm-5'/>
-            <div class='col-sm-7'>
-              <h3>{{#link-to 'bike'}}{{make}} {{model}}{{/link-to}} </h3>
-              <p class='product-description'>{{desc}}</p>
-              <p class='product-description'>{{persons}}, </p>
-            </div>
-          {{/link-to}} 
-        </li>
       {{/each}}
     </ul>
   </script>
@@ -127,9 +107,9 @@
   <script type="text/x-handlebars" data-template-name='components/product-spec'>
         <li class='row'>
           {{#link-to 'bike' this}}
-            <img {{bind-attr src='image'}} class='img-thumbnail col-sm-5'/>
+            <img {{bind-attr src='product.image'}} class='img-thumbnail col-sm-5'/>
             <div class='col-sm-7'>
-              <h3>{{#link-to 'bike'}}{{product.make}} {{product.model}}{{/link-to}} </h3>
+              <h3>{{#link-to 'bike' this}}{{product.make}} {{product.model}}{{/link-to}} </h3>
               <p class='product-description'>{{product.desc}}</p>
               <p class='product-description'>{{product.persons}}, </p>
             </div>
