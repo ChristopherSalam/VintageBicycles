@@ -88,6 +88,7 @@
     </ul>
     <ul class='list-unstyled'>
       {{#each}}
+      {{product-spec product=this}}
         <li class='row'>
           {{#link-to 'bike' this}}
             <img {{bind-attr src='image'}} class='img-thumbnail col-sm-5'/>
@@ -108,6 +109,7 @@
     <p>{{#link-to 'catalog'}} Back to Catalog{{/link-to}}</p>
     <ul class='list-unstyled dashboard'>
       {{#each sortBianchi}}
+      {{product-spec product=this}}
         <li class='row'>
           {{#link-to 'bike' this}}
             <img {{bind-attr src='image'}} class='img-thumbnail col-sm-5'/>
@@ -120,6 +122,19 @@
         </li>
       {{/each}}
     </ul>
+  </script>
+
+  <script type="text/x-handlebars" data-template-name='components/product-spec'>
+        <li class='row'>
+          {{#link-to 'bike' this}}
+            <img {{bind-attr src='image'}} class='img-thumbnail col-sm-5'/>
+            <div class='col-sm-7'>
+              <h3>{{#link-to 'bike'}}{{product.make}} {{product.model}}{{/link-to}} </h3>
+              <p class='product-description'>{{product.desc}}</p>
+              <p class='product-description'>{{product.persons}}, </p>
+            </div>
+          {{/link-to}} 
+        </li>
   </script>
 
   <script type="text/x-handlebars" data-template-name='bike'>
