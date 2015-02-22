@@ -1,5 +1,19 @@
 choppingblock.html
 
+  // <script type='text/x-handlebars' data-template-name='miyata'>
+  //   <h1>Catalog of Miyata Bicycles</h1>
+  //   <h2>Currently {{miyataCount}} listings</h2>
+  //   <p>{{#link-to 'catalog'}} Back to Catalog{{/link-to}}</p>
+  //   <h1>Miyata!</h1>
+  //   <ul class='list-unstyled'>
+  //     {{#each}}
+  //       {{bike-spec bike=this classNames="row" tagName="li"}}
+  //     {{/each}}
+  //   </ul>
+  // </script>  
+
+      <li>{{#link-to 'miyata' this}}See Miyata Specific Bikes{{/link-to}}</li>
+
 
   <script type="text/x-handlebars" data-template-name="catalog/Bianchi">
     <h1>Bianchi</h1>
@@ -15,3 +29,8 @@ choppingblock.html
       {{/each}}
     </ul>
   </script>
+
+  App.CatalogMiyataController = Em.ArrayController.extend({
+  sortMiyata: Em.computed.filterBy('model', 'make', 'Miyata'), 
+  miyataCount: Em.computed.alias('sortMiyata.length')
+});

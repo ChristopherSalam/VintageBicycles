@@ -28,10 +28,10 @@ App.BianchiRoute = Em.Route.extend({
   }
 });
 
-App.CatalogMiyataRoute = Ember.Route.extend({
-  model: function(){
-    return this.modelFor('catalog').filter(function(bike){
-      return bike.get('make') == "Miyata";
-    });
-  }
-});
+// App.CatalogMiyataRoute = Ember.Route.extend({
+//   model: function(){
+//     return this.modelFor('catalog').filter(function(bike){
+//       return bike.get('make') == "Miyata";
+//     });
+//   }
+// });
