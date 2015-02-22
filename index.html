@@ -82,13 +82,14 @@
   <script type="text/x-handlebars" data-template-name='catalog'>
     <h1>Catalog of Vintage Bicycles</h1>
     <h2>Currently {{catalogCount}} listings</h2>
-    <ul class="list-unstyled" id="dashboard">
+    <ul class="list-unstyled" id="dashboard"  style="display:inline-block">
     <li><a href="#" {{action 'sortByMake'}}>Sort all listed bicycles!</li>
     <li>{{#link-to 'bianchi' this}}See Bianchi Specific Bikes{{/link-to}}</li>
+    <li>{{#link-to 'catalog/Miyata' this}}See Miyata Specific Bikes{{/link-to}}</li>
     </ul>
     <ul class='list-unstyled'>
       {{#each}}
-      {{product-spec product=this}}
+      {{bike-spec bike=this}}
       {{/each}}
     </ul>
   </script>
@@ -99,19 +100,19 @@
     <p>{{#link-to 'catalog'}} Back to Catalog{{/link-to}}</p>
     <ul class='list-unstyled dashboard'>
       {{#each sortBianchi}}
-      {{product-spec product=this}}
+      {{bike-spec bike=this}}
       {{/each}}
     </ul>
   </script>
 
-  <script type="text/x-handlebars" data-template-name='components/product-spec'>
+  <script type="text/x-handlebars" data-template-name='components/bike-spec'>
         <li class='row'>
-          {{#link-to 'bike' this}}
-            <img {{bind-attr src='product.image'}} class='img-thumbnail col-sm-5'/>
+          {{#link-to 'bike' bike}}
+            <img {{bind-attr src='bike.image'}} class='img-thumbnail col-sm-5'/>
             <div class='col-sm-7'>
-              <h3>{{#link-to 'bike' this}}{{product.make}} {{product.model}}{{/link-to}} </h3>
-              <p class='product-description'>{{product.desc}}</p>
-              <p class='product-description'>{{product.persons}}, </p>
+              <h3>{{#link-to 'bike' bike}}{{bike.make}} {{bike.model}}{{/link-to}} </h3>
+              <p class='product-description'>{{bike.desc}}</p>
+              <p class='product-description'>{{bike.persons}}, </p>
             </div>
           {{/link-to}} 
         </li>
@@ -129,6 +130,18 @@
       <h1>References</h1>
       <img src="img/church2.jpg" alt='fields' class='img-thumbnail img-responsive'/>
   </script>
+
+  <script type='text/x-handlebars' data-template-name='catalog/Miyata'>
+    <h1>Catalog of Miyata Bicycles</h1>
+    <h2>Currently {{miyataCount}} listings</h2>
+    <p>{{#link-to 'catalog'}} Back to Catalog{{/link-to}}</p>
+    <h1>Miyata!</h1>
+    <ul class='list-unstyled'>
+      {{#each}}
+        {{bike-spec bike=this classNames="row" tagName="li"}}
+      {{/each}}
+    </ul>
+  </script>  
 
   <!--script for  credits-->
 
