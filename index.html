@@ -38,7 +38,7 @@
     
     <footer class='container bigbackground'> <hr />
       <p class='pull-left'>Vintage Bicycles &copy; 2015</p>
-      <p class='pull-right'>{{#link-to 'credits'}}Credits{{/link-to}}</p>
+      <p class='pull-right'>{{#link-to 'credits'}}My Maudlin Career{{/link-to}}</p>
     </footer>
   </script>
 
@@ -85,7 +85,6 @@
     <ul class="list-unstyled" id="dashboard"  style="display:inline-block">
     <li><a href="#" {{action 'sortByMake'}}>Sort all listed bicycles!</li>
     <li>{{#link-to 'bianchi' this}}See Bianchi Specific Bikes{{/link-to}}</li>
-
     </ul>
     <ul class='list-unstyled'>
       {{#each}}
@@ -107,7 +106,7 @@
 
   <script type="text/x-handlebars" data-template-name='components/bike-spec'>
         <li class='row'>
-          {{#link-to 'bike' bike}}
+          {{#link-to 'bike' this}}
             <img {{bind-attr src='bike.image'}} class='img-thumbnail col-sm-5'/>
             <div class='col-sm-7'>
               <h3>{{#link-to 'bike' bike}}{{bike.make}} {{bike.model}}{{/link-to}} </h3>
