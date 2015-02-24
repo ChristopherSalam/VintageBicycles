@@ -6,17 +6,9 @@
   <title>vintagebicycles.info</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/libs/jquery-1.10.2.js"></script>
-  <script src="js/libs/handlebars-v2.0.0.js"></script>
-  <script src="js/libs/ember-1.9.1.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/router.js"></script>
-  <script src="js/routes.js"></script>
-  <script src="js/controllers.js"></script>
-  <script src="js/data/about.js"></script>
-  <script src="js/data/catalog.js"></script>
-  <script src="js/data/references.js"></script>
+</head>
 
+<body>
   <script  type="text/x-handlebars" data-template-name='application'>
     <div class='navbar navbar-default'>
       <div class='container'>{{#link-to 'index' class='navbar-brand'}}
@@ -85,6 +77,7 @@
     <ul class="list-unstyled" id="dashboard"  style="display:inline-block">
     <li><a href="#" {{action 'sortByMake'}}>Sort all listed bicycles!</li>
     <li>{{#link-to 'bianchi' this}}See Bianchi Specific Bikes{{/link-to}}</li>
+    <li>{{#link-to 'miyata' this}}See Bianchi Specific Bikes{{/link-to}}</li>
     </ul>
     <ul class='list-unstyled'>
       {{#each}}
@@ -106,14 +99,14 @@
 
   <script type="text/x-handlebars" data-template-name='components/bike-spec'>
         <li class='row'>
-          {{#link-to 'bike' this}}
-            <img {{bind-attr src='bike.image'}} class='img-thumbnail col-sm-5'/>
+        {{#link-to 'bike' bike}}
+          <img {{bind-attr src='bike.image'}} class='img-thumbnail col-sm-5'/>
             <div class='col-sm-7'>
-              <h3>{{#link-to 'bike' bike}}{{bike.make}} {{bike.model}}{{/link-to}} </h3>
+              <h3>{{bike.make}} {{bike.model}}</h3>
               <p class='product-description'>{{bike.desc}}</p>
-              <p class='product-description'>{{bike.persons}}, </p>
+              <p class='product-description'>{{bike.persons}}</p>
             </div>
-          {{/link-to}} 
+            {{/link-to}}
         </li>
   </script>
 
@@ -134,11 +127,18 @@
 
   <script type='text/x-handlebars' data-template-name='credits'>
     <h1>Thanks!</h1>
-    <p>I would like to thank craigslist, the ember team, my bike selling associates, the late-great Sheldon Brown and all the web dev. tutorials I have used recently. I would also like to thank my patient partner Amy for her time and web design input.</p>
+    <p>I would like to thank craigslist, the ember team, my bike selling associates, the late-great Sheldon Brown and all the web dev. tutorials I have used recently. I would also like to thank my patient partner Amy for her time and web design input.
+    </p>
   </script>
-
-</head>
-
-<body>
+  <script src="js/libs/jquery-1.10.2.js"></script>
+  <script src="js/libs/handlebars-v2.0.0.js"></script>
+  <script src="js/libs/ember-1.9.1.js"></script>
+  <script src="ember/app.js"></script>
+  <script src="ember/router.js"></script>
+  <script src="ember/routes.js"></script>
+  <script src="ember/controllers.js"></script>
+  <script src="js/data/about.js"></script>
+  <script src="js/data/catalog.js"></script>
+  <script src="js/data/references.js"></script>
 </body>
 </html>

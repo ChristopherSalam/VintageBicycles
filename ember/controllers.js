@@ -15,8 +15,9 @@ App.CatalogController = Em.ArrayController.extend({
 });
 
 App.BianchiController = Em.ArrayController.extend({
-	
 	sortBianchi: Em.computed.filterBy('model', 'make', 'Bianchi'), 
 	sortProperties: ['model'],
 	bianchiCount: Em.computed.alias('sortBianchi.length')
 });
+
+
