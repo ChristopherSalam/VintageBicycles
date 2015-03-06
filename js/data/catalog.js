@@ -30,11 +30,31 @@ image3: null,
 persons: []
 },
 {
+make: 'Cilo',
+model: 'Sport 105',
+color: ['blue', 'white'],
+desc: 'Swiss bicycle company, long ago out of business.',
+image: 'img/catalog/cilo1.jpg',
+image2: null,
+image3: null,
+persons: []
+},
+{
 make: 'Vista',
 model: 'unknown',
 color: ['silver'],
 desc: 'Don\'t know much about this, need to research',
 image: 'img/catalog/vist1.jpg',
+image2: null,
+image3: null,
+persons: []
+},
+{
+make: 'Centurion',
+model: 'Accordio R.S.',
+color: ['white','teal'],
+desc: 'Accordio was a common but decent quality offering from Centurion.',
+image: 'img/catalog/cent5.jpg',
 image2: null,
 image3: null,
 persons: []
@@ -145,6 +165,16 @@ model: 'unknown',
 color: ['green'],
 desc: 'Nishiki was another japanese bicycle company that mostly made affordable but unspectacular frames. This mountain bike has been retrofitted with new parts.',
 image: 'img/catalog/nish4.jpg',
+image2: null,
+image3: null,
+persons: []
+},
+{
+make: 'Klein',
+model: 'Quantum',
+color: ['grey'],
+desc: 'Klein was a quality bicycle made and later designed in America. They are most famous for amazing paint and high quality aluminum frames.',
+image: 'img/catalog/klei4.jpg',
 image2: null,
 image3: null,
 persons: []
