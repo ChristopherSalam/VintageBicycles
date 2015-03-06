@@ -174,7 +174,7 @@ make: 'Klein',
 model: 'Quantum',
 color: ['grey'],
 desc: 'Klein was a quality bicycle made and later designed in America. They are most famous for amazing paint and high quality aluminum frames.',
-image: 'img/catalog/klei4.jpg',
+image: 'img/catalog/klei1.jpg',
 image2: null,
 image3: null,
 persons: []
