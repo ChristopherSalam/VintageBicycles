@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>vintagebicycles.info</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
 <body>
@@ -30,22 +30,24 @@
     
     <footer class='container bigbackground'> <hr />
       <p class='pull-left'>Vintage Bicycles &copy; 2015</p>
-      <p class='pull-right'>{{#link-to 'credits'}}My Maudlin Career{{/link-to}}</p>
+      <p class='pull-right'>{{#link-to 'credits'}}Take me to your leader!{{/link-to}}</p>
     </footer>
   </script>
 
   <!--script for index-->
 
   <script type="text/x-handlebars" data-template-name='index'>
-      <h1>Vintage Bicycles <img src="img/crank.jpg" height="22px" width="22px"> Info</h1>
-      <img src="img/church1.jpg" alt='fields' class='img-thumbnail img-responsive'/>
+      <h1>Vintage Bicycles <img src="img/crank.jpg" height="20px" width="20px"> Info</h1>
+      <p style="max-width:730px">Vintage Bicycles, their restoration and their ornamentation has been a focal point for many cyclists and websites. Cycling has a short life in archeological terms, albeit with a rich material culture and record. This page hopes to link you to as many resources as possible, showcasing examples of and twists on vintage bicycles. Thanks for visiting, and please consider donating to the site! Thanks.</p>
+      <img src="img/church2.jpg" alt='fields' class='img-thumbnail img-responsive'/>
       <p>Today&#39;s date is {{time}}</p>
   </script>
 
   <!--script for about-->
 
   <script type="text/x-handlebars" data-template-name='about'>
-    <h1>We have bought bikes throughout California.</h1>
+    <h1>Archeologists</h1>
+    <h4>If you contribute massively to this site, you will be listed here!</h4>
       <div class='col-sm-3'>
         <div class='list-group'>
           {{#each}}
@@ -64,9 +66,10 @@
   </script>
 
    <script type="text/x-handlebars" data-template-name='person'>
-   //<img {{bind-attr src='image'}} class='img-thumbnail img-responsive'/>
     <h1>{{person}}</h1>
     <p>{{story}}</p>
+    <img {{bind-attr src='image'}} class='hover-color img-thumbnail img-responsive'/>
+
   </script>
 
   <!--script for catalog-->
@@ -99,7 +102,7 @@
   <script type="text/x-handlebars" data-template-name='components/bike-spec'>
         <li class='row'>
         {{#link-to 'bike' bike}}
-          <img {{bind-attr src='bike.image'}} class='img-thumbnail col-sm-5'/>
+          <img {{bind-attr src='bike.image'}} class='hover-color img-thumbnail col-sm-5'/>
             <div class='col-sm-7'>
               <h3>{{bike.make}} {{bike.model}}</h3>
               <p class='product-description'>{{bike.desc}}</p>
@@ -110,16 +113,16 @@
   </script>
 
   <script type="text/x-handlebars" data-template-name='bike'>
-   <img {{bind-attr src='image'}} class='img-thumbnail img-responsive'/>
+   <img {{bind-attr src='image'}} class='hover-color img-thumbnail img-responsive'/>
    <h1>{{make}} {{model.model}}</h1>
    <p>{{desc}}</p>
   </script>
 
-  <!--script for  available-->
+  <!--script for references-->
 
   <script type="text/x-handlebars" data-template-name='references'>
       <h1>References</h1>
-      <img src="img/church2.jpg" alt='fields' class='img-thumbnail img-responsive'/>
+      <img src="img/church1.jpg" alt='fields' class='img-thumbnail img-responsive'/>
   </script>
 
   <!--script for  credits-->
@@ -128,14 +131,16 @@
     <h1>Thanks!</h1>
     <p>I would like to thank craigslist, the ember team, my bike selling associates, the late-great Sheldon Brown and all the web dev. tutorials I have used recently. I would also like to thank my patient partner Amy for her time and web design input.
     </p>
+    <img src="img/dune.jpg" alt='fields' class='hover-color img-thumbnail img-responsive'/>
   </script>
+
   <script src="js/libs/jquery-1.10.2.js"></script>
   <script src="js/libs/handlebars-v2.0.0.js"></script>
-  <script src="js/libs/ember-1.9.1.js"></script>
-  <script src="ember/app.js"></script>
-  <script src="ember/router.js"></script>
-  <script src="ember/routes.js"></script>
-  <script src="ember/controllers.js"></script>
+  <script src="js/ember/ember-1.9.1.js"></script>
+  <script src="js/ember/app.js"></script>
+  <script src="js/ember/router.js"></script>
+  <script src="js/ember/routes.js"></script>
+  <script src="js/ember/controllers.js"></script>
   <script src="js/data/about.js"></script>
   <script src="js/data/catalog.js"></script>
   <script src="js/data/references.js"></script>

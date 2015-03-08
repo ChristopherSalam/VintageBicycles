@@ -29,3 +29,21 @@ background-color: #036;
 color: #fff;
 background-color: #369;
 }
+
+.hover-color {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: url(grayscale.svg); /* Firefox 4+ */
+  filter: gray; /* IE 6-9 */
+}
+
+.hover-color:hover {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
+}
