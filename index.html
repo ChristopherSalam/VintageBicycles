@@ -12,10 +12,8 @@
   <script  type="text/x-handlebars" data-template-name='application'>
     <div class='navbar navbar-default'>
       <div class='container'>{{#link-to 'index' class='navbar-brand'}}
-          
         <img src='img/chain.jpg' alt='logo' height='30' width='45' />{{/link-to}}
-          
-        <ul class='nav navbar-nav navbar-right  bigbackground'>
+        <ul class='nav navbar-nav navbar-right bigbackground'>
             {{#link-to 'index' tagName='li'}} &nbsp; Home &nbsp; {{/link-to}}
             {{#link-to 'about' tagName='li'}} &nbsp; About &nbsp; {{/link-to}}
             {{#link-to 'catalog' tagName='li'}} &nbsp; Catalog &nbsp; {{/link-to}}
@@ -23,11 +21,9 @@
         </ul>
       </div>
     </div>
-    
     <div class='container'>
       {{outlet}}
     </div>
-    
     <footer class='container bigbackground'> <hr />
       <p class='pull-left'>Vintage Bicycles &copy; 2015</p>
       <p class='pull-right'>{{#link-to 'credits'}}Take me to your leader!{{/link-to}}</p>
@@ -51,7 +47,7 @@
       <div class='col-sm-3'>
         <div class='list-group'>
           {{#each}}
-            {{#link-to 'person'this classNames='list-group-item'}}
+            {{#link-to 'person' this classNames='list-group-item'}}
               <p>{{person}}</p>
               <p class-"small">{{blurb}}</p>
             {{/link-to}} 
@@ -69,7 +65,6 @@
     <h1>{{person}}</h1>
     <p>{{story}}</p>
     <img {{bind-attr src='image'}} class='hover-color img-thumbnail img-responsive'/>
-
   </script>
 
   <!--script for catalog-->
@@ -77,10 +72,15 @@
   <script type="text/x-handlebars" data-template-name='catalog'>
     <h1>Catalog of Vintage Bicycles</h1>
     <h2>Currently {{catalogCount}} listings</h2>
-    <ul class="list-unstyled" id="dashboard"  style="display:inline-block">
-    <li><a href="#" {{action 'sortByMake'}}>Sort all listed bicycles!</li>
-    <li>{{#link-to 'bianchi' this}}See Bianchi Specific Bikes{{/link-to}}</li>
-    </ul>
+    <ul class='nav navbar-nav navbar-left'>
+    <li>{{#link-to 'bianchi' this}}Bianchi{{/link-to}}</li>
+    <li>{{#link-to 'cannondale' this}}Cannondale{{/link-to}}</li>
+    <li>{{#link-to 'peugeot' this}}Peugeot{{/link-to}}</li>
+    <li>{{#link-to 'trek' this}}Trek{{/link-to}}</li>
+    </ul>   
+    <br>
+    <br>
+    <br>
     <ul class='list-unstyled'>
       {{#each}}
       {{bike-spec bike=this}}
@@ -89,9 +89,9 @@
   </script>
 
 <script type="text/x-handlebars" data-template-name='bianchi'>
-    <h1>Catalog of Bianchi Bicycles</h1>
-    <h2>Currently {{bianchiCount}} listings</h2>
     <p>{{#link-to 'catalog'}} Back to Catalog{{/link-to}}</p>
+    <h1>Catalog of Bicycles</h1>
+    <h2>Currently {{bianchiCount}} listings</h2>
     <ul class='list-unstyled dashboard'>
       {{#each sortBianchi}}
       {{bike-spec bike=this}}
@@ -99,18 +99,51 @@
     </ul>
   </script>
 
-  <script type="text/x-handlebars" data-template-name='components/bike-spec'>
-        <li class='row'>
-        {{#link-to 'bike' bike}}
-          <img {{bind-attr src='bike.image'}} class='hover-color img-thumbnail col-sm-5'/>
-            <div class='col-sm-7'>
-              <h3>{{bike.make}} {{bike.model}}</h3>
-              <p class='product-description'>{{bike.desc}}</p>
-              <p class='product-description'>{{bike.persons}}</p>
-            </div>
-            {{/link-to}}
-        </li>
+<script type="text/x-handlebars" data-template-name='cannondale'>
+    <p>{{#link-to 'catalog'}} Back to Catalog{{/link-to}}</p>
+    <h1>Catalog of Bicycles</h1>
+    <h2>Currently {{cannondaleCount}} listings</h2>
+    <ul class='list-unstyled dashboard'>
+      {{#each sortCannondale}}
+      {{bike-spec bike=this}}
+      {{/each}}
+    </ul>
   </script>
+
+<script type="text/x-handlebars" data-template-name='peugeot'>
+    <p>{{#link-to 'catalog'}} Back to Catalog{{/link-to}}</p>
+    <h1>Catalog of Bicycles</h1>
+    <h2>Currently {{peugeotCount}} listings</h2>
+    <ul class='list-unstyled dashboard'>
+      {{#each sortPeugeot}}
+      {{bike-spec bike=this}}
+      {{/each}}
+    </ul>
+  </script>
+
+<script type="text/x-handlebars" data-template-name='trek'>
+    <p>{{#link-to 'catalog'}} Back to Catalog{{/link-to}}</p>
+    <h1>Catalog of Bicycles</h1>
+    <h2>Currently {{trekCount}} listings</h2>
+    <ul class='list-unstyled dashboard'>
+      {{#each sortTrek}}
+      {{bike-spec bike=this}}
+      {{/each}}
+    </ul>
+  </script>
+
+<script type="text/x-handlebars" data-template-name='components/bike-spec'>
+  <li class='row'>
+  {{#link-to 'bike' bike}}
+    <img {{bind-attr src='bike.image'}} class='hover-color img-thumbnail col-sm-5'/>
+       <div class='col-sm-7'>
+        <h3>{{bike.make}} {{bike.model}}</h3>
+        <p class='product-description'>{{bike.desc}}</p>
+         <p class='product-description'>{{bike.persons}}</p>
+       </div>
+       {{/link-to}}
+   </li>
+</script>
 
   <script type="text/x-handlebars" data-template-name='bike'>
    <img {{bind-attr src='image'}} class='hover-color img-thumbnail img-responsive'/>
@@ -128,9 +161,9 @@
   <!--script for  credits-->
 
   <script type='text/x-handlebars' data-template-name='credits'>
-    <h1>Thanks!</h1>
-    <p>I would like to thank craigslist, the ember team, my bike selling associates, the late-great Sheldon Brown and all the web dev. tutorials I have used recently. I would also like to thank my patient partner Amy for her time and web design input.
-    </p>
+    <h1>Thank you for supporting us!</h1>
+    <p>My name is Christopher Salam, and I&#39;m new to web development. This is one of my portfolio sites. I would like to thank craigslist, the ember team, my bike selling associates, the late-great Sheldon Brown and all the web dev. tutorials I have used recently. I would also like to thank my patient partner Amy for her time and web design input.</p>
+    <p> Unrelated, this is an image from Dune redone in gummy worms. Credits to Candy Warehouse </p>
     <img src="img/dune.jpg" alt='fields' class='hover-color img-thumbnail img-responsive'/>
   </script>
 

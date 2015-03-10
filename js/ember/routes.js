@@ -24,14 +24,24 @@ App.BikeRoute = Em.Route.extend({
 
 App.BianchiRoute = Em.Route.extend({
   model: function() {
-    return App.CATALOG;
+    return App.CATALOG
   }
 });
 
-// App.CatalogMiyataRoute = Ember.Route.extend({
-//   model: function(){
-//     return this.modelFor('catalog').filter(function(bike){
-//       return bike.get('make') == "Miyata";
-//     });
-//   }
-// });
+AppCannondaleRoute = Em.Route.extend({
+  model: function() {
+    return App.CATALOG
+  }
+});
+
+App.PeugeotRoute = Em.Route.extend({
+  model: function() {
+    return App.CATALOG
+  }
+});
+
+App.TrekRoute = Em.Route.extend({
+  model: function() {
+    return App.CATALOG
+  }
+});
