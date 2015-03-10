@@ -5,7 +5,7 @@ App.IndexController = Em.Controller.extend({
 })
 
 App.CatalogController = Em.ArrayController.extend({
-	//sortProperties: ['make','model'],
+	//sortProperties: ['make','model'], (determine fix for Trek 100s sorting)
 	catalogCount: Em.computed.alias('length'),
 	actions: { 
 		sortByMake: (function() {
@@ -13,6 +13,11 @@ App.CatalogController = Em.ArrayController.extend({
  		}),
 	}
 });
+
+//automatically generated...
+// App.AboutIndexController = Ember.ArrayController.extend({
+
+// });
 
 App.BianchiController = Em.ArrayController.extend({
 	sortProperties: ['model','make'],

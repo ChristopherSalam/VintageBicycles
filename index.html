@@ -1,137 +1,167 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <title>vintagebicycles.info</title>
   <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
   <link rel="stylesheet" href="stylesheets/style.css">
 </head>
-
 <body>
-  <script  type="text/x-handlebars" data-template-name='application'>
-    <div class='navbar navbar-default'>
-      <div class='container'>{{#link-to 'index' class='navbar-brand'}}
-        <img src='img/chain.jpg' alt='logo' height='30' width='45' />{{/link-to}}
-        <ul class='nav navbar-nav navbar-right bigbackground'>
-            {{#link-to 'index' tagName='li'}} &nbsp; Home &nbsp; {{/link-to}}
-            {{#link-to 'about' tagName='li'}} &nbsp; About &nbsp; {{/link-to}}
-            {{#link-to 'catalog' tagName='li'}} &nbsp; Catalog &nbsp; {{/link-to}}
-            {{#link-to 'references' tagName='li'}} &nbsp; References &nbsp;{{/link-to}}
-        </ul>
+<script  type="text/x-handlebars" data-template-name='application'>
+  <div class='navbar navbar-default'>
+    <div class='container'>{{#link-to 'index' class='navbar-brand'}}
+      <img src='img/chain.jpg' alt='logo' height='30' width='45' />{{/link-to}}
+      <ul class='nav navbar-nav navbar-right bigbackground'>
+        {{#link-to 'index' tagName='li'}} &nbsp; Home &nbsp; {{/link-to}}
+        {{#link-to 'about' tagName='li'}} &nbsp; Be an Archeologist &nbsp; {{/link-to}}
+        {{#link-to 'catalog' tagName='li'}} &nbsp; View our Catalog &nbsp; {{/link-to}}
+        {{#link-to 'references' tagName='li'}} &nbsp; References &nbsp;{{/link-to}}
+      </ul>
+    </div>
+  </div>
+  <div class='container'>
+    {{outlet}}
+  </div>
+  <footer class='container bigbackground'> <hr />
+    <p class='pull-left'>Vintage Bicycles &copy; 2015</p>
+    <p class='pull-right'>{{#link-to 'credits'}}Take me to your leader!{{/link-to}}</p>
+  </footer>
+</script>
+  <!--script for index-->
+<script type="text/x-handlebars" data-template-name='index'>
+  <h1>Vintage Bicycles<img src="img/crank.jpg" height="20px" width="20px">Info</h1>
+  <p style="max-width:730px">Vintage Bicycles, their restoration and their ornamentation has been a focal point for many cyclists and websites. Cycling has a short life in archeological terms, albeit with a rich material culture and record. This page hopes to link you to as many resources as possible, showcasing examples of and twists on vintage bicycles. Thanks for visiting, and please consider donating to the site! Thanks.</p>
+  <img src="img/church2.jpg" alt='fields' class='img-thumbnail img-responsive'/>
+  <p>Today&#39;s date is {{time}}</p>
+</script>
+  <!--script for about-->
+<script type="text/x-handlebars" data-template-name='about/index'>
+  <br>
+  <br><h4>At vintagebicycles.info, we love recording and sharing the history of Vintage Bicycles.</h4>
+  <br><h4> We would love for you to participate in our site, and become a member!</h4>
+  <br><h4>If you are able to contribute a significant amount to our site, we will list you here and allow other interested cyclists to contact you. Thanks in advance!</h4>
+</script>
+<script type="text/x-handlebars" data-template-name='about'>
+  <h1>Be an archeologist for Vintage Bicycles<img src="img/crank.jpg" height="20px" width="20px">Info!</h1>
+  <h4>Our Major Contributers:</h4>
+    <div class='col-sm-3'>
+      <div class='list-group'>
+        {{#each}}
+          {{#link-to 'person' this classNames='list-group-item'}}
+            <p>{{person}}</p>
+            <p class-"small">{{blurb}}</p>
+          {{/link-to}} 
+        </li>
+      {{/each}}
       </div>
     </div>
-    <div class='container'>
+    <div class='col-sm-9'>
       {{outlet}}
     </div>
-    <footer class='container bigbackground'> <hr />
-      <p class='pull-left'>Vintage Bicycles &copy; 2015</p>
-      <p class='pull-right'>{{#link-to 'credits'}}Take me to your leader!{{/link-to}}</p>
-    </footer>
-  </script>
-
-  <!--script for index-->
-
-  <script type="text/x-handlebars" data-template-name='index'>
-      <h1>Vintage Bicycles <img src="img/crank.jpg" height="20px" width="20px"> Info</h1>
-      <p style="max-width:730px">Vintage Bicycles, their restoration and their ornamentation has been a focal point for many cyclists and websites. Cycling has a short life in archeological terms, albeit with a rich material culture and record. This page hopes to link you to as many resources as possible, showcasing examples of and twists on vintage bicycles. Thanks for visiting, and please consider donating to the site! Thanks.</p>
-      <img src="img/church2.jpg" alt='fields' class='img-thumbnail img-responsive'/>
-      <p>Today&#39;s date is {{time}}</p>
-  </script>
-
-  <!--script for about-->
-
-  <script type="text/x-handlebars" data-template-name='about'>
-    <h1>Archeologists</h1>
-    <h4>If you contribute massively to this site, you will be listed here!</h4>
-      <div class='col-sm-3'>
-        <div class='list-group'>
-          {{#each}}
-            {{#link-to 'person' this classNames='list-group-item'}}
-              <p>{{person}}</p>
-              <p class-"small">{{blurb}}</p>
-            {{/link-to}} 
-          </li>
-        {{/each}}
-        </div>
-      </div>
-      <div class='col-sm-9'>
-        {{outlet}}
-      </div>
-    </div>
-  </script>
-
-   <script type="text/x-handlebars" data-template-name='person'>
-    <h1>{{person}}</h1>
-    <p>{{story}}</p>
-    <img {{bind-attr src='image'}} class='hover-color img-thumbnail img-responsive'/>
-  </script>
-
+  </div>
+</script>
+<script type="text/x-handlebars" data-template-name='person'>
+  <h1>{{person}}</h1>
+  <p>{{story}}</p>
+  <img {{bind-attr src='image'}} class='hover-color img-thumbnail img-responsive'/>
+</script>
   <!--script for catalog-->
-
-  <script type="text/x-handlebars" data-template-name='catalog'>
-    <h1>Catalog of Vintage Bicycles</h1>
-    <h2>Currently {{catalogCount}} listings</h2>
-    <ul class='nav navbar-nav navbar-left'>
-    <li>{{#link-to 'bianchi' this}}Bianchi{{/link-to}}</li>
-    <li>{{#link-to 'cannondale' this}}Cannondale{{/link-to}}</li>
-    <li>{{#link-to 'peugeot' this}}Peugeot{{/link-to}}</li>
-    <li>{{#link-to 'trek' this}}Trek{{/link-to}}</li>
-    </ul>   
-    <br>
-    <br>
-    <br>
-    <ul class='list-unstyled'>
-      {{#each}}
-      {{bike-spec bike=this}}
-      {{/each}}
-    </ul>
+<script type="text/x-handlebars" data-template-name='catalog'>
+  <h1>Catalog of Vintage Bicycles</h1>
+  <h2>Currently {{catalogCount}} bicycles!</h2>
+  <ul class='nav navbar-nav navbar-left'>
+  <li>{{#link-to 'bianchi' this}}Bianchi{{/link-to}}</li>
+  <li>{{#link-to 'cannondale' this}}Cannondale{{/link-to}}</li>
+  <li>{{#link-to 'peugeot' this}}Peugeot{{/link-to}}</li>
+  <li>{{#link-to 'trek' this}}Trek{{/link-to}}</li>
+  <li>{{#link-to 'catalog'currentWhen="catalog"}}Catalog{{/link-to}}</li>
+  </ul>   
+  <br>
+  <br>
+  <br>
+  <ul class='list-unstyled'>
+    {{#each}}
+    {{bike-spec bike=this}}
+    {{/each}}
+  </ul>
   </script>
-
 <script type="text/x-handlebars" data-template-name='bianchi'>
-    <p>{{#link-to 'catalog'}} Back to Catalog{{/link-to}}</p>
-    <h1>Catalog of Bicycles</h1>
-    <h2>Currently {{bianchiCount}} listings</h2>
-    <ul class='list-unstyled dashboard'>
-      {{#each sortBianchi}}
-      {{bike-spec bike=this}}
-      {{/each}}
-    </ul>
-  </script>
-
+  <h1>Bianchi Bicycles</h1>
+  <h2>Currently {{bianchiCount}} Bianchis</h2>
+  <ul class='nav navbar-nav navbar-left'>
+  <li>{{#link-to 'bianchi' currentWhen="bianchi"}}Bianchi{{/link-to}}</li>
+  <li>{{#link-to 'cannondale' this}}Cannondale{{/link-to}}</li>
+  <li>{{#link-to 'peugeot' this}}Peugeot{{/link-to}}</li>
+  <li>{{#link-to 'trek' this}}Trek{{/link-to}}</li>
+  <li>{{#link-to 'catalog'}}Go Back!{{/link-to}}</li>
+  </ul>   
+  <br>
+  <br>
+  <br>
+  <ul class='list-unstyled dashboard'>
+    {{#each sortBianchi}}
+    {{bike-spec bike=this}}
+    {{/each}}
+  </ul>
+</script>
 <script type="text/x-handlebars" data-template-name='cannondale'>
-    <p>{{#link-to 'catalog'}} Back to Catalog{{/link-to}}</p>
-    <h1>Catalog of Bicycles</h1>
-    <h2>Currently {{cannondaleCount}} listings</h2>
-    <ul class='list-unstyled dashboard'>
-      {{#each sortCannondale}}
-      {{bike-spec bike=this}}
-      {{/each}}
-    </ul>
-  </script>
-
+  <h1>Cannondale Bicycles</h1>
+  <h2>Currently {{cannondaleCount}} Cannondales</h2>
+  <ul class='nav navbar-nav navbar-left'>
+  <li>{{#link-to 'bianchi' this}}Bianchi{{/link-to}}</li>
+  <li>{{#link-to 'cannondale' currentWhen="cannondale"}}Cannondale{{/link-to}}</li>
+  <li>{{#link-to 'peugeot' this}}Peugeot{{/link-to}}</li>
+  <li>{{#link-to 'trek' this}}Trek{{/link-to}}</li>
+  <li>{{#link-to 'catalog'}}Go Back!{{/link-to}}</li>
+  </ul>   
+  <br>
+  <br>
+  <br>
+  <ul class='list-unstyled dashboard'>
+    {{#each sortCannondale}}
+    {{bike-spec bike=this}}
+    {{/each}}
+  </ul>
+</script>
 <script type="text/x-handlebars" data-template-name='peugeot'>
-    <p>{{#link-to 'catalog'}} Back to Catalog{{/link-to}}</p>
-    <h1>Catalog of Bicycles</h1>
-    <h2>Currently {{peugeotCount}} listings</h2>
-    <ul class='list-unstyled dashboard'>
-      {{#each sortPeugeot}}
-      {{bike-spec bike=this}}
-      {{/each}}
-    </ul>
-  </script>
-
+  <h1>Peugeot Bicycles</h1>
+  <h2>Currently {{peugeotCount}} Peugeots</h2>
+  <ul class='nav navbar-nav navbar-left'>
+  <li>{{#link-to 'bianchi' this}}Bianchi{{/link-to}}</li>
+  <li>{{#link-to 'cannondale' this}}Cannondale{{/link-to}}</li>
+  <li>{{#link-to 'peugeot' currentWhen="peugeot"}}Peugeot{{/link-to}}</li>
+  <li>{{#link-to 'trek' this}}Trek{{/link-to}}</li>
+  <li>{{#link-to 'catalog'}}Go Back!{{/link-to}}</li>
+  </ul>   
+  <br>
+  <br>
+  <br>
+  <ul class='list-unstyled dashboard'>
+    {{#each sortPeugeot}}
+    {{bike-spec bike=this}}
+    {{/each}}
+  </ul>
+</script>
 <script type="text/x-handlebars" data-template-name='trek'>
-    <p>{{#link-to 'catalog'}} Back to Catalog{{/link-to}}</p>
-    <h1>Catalog of Bicycles</h1>
-    <h2>Currently {{trekCount}} listings</h2>
-    <ul class='list-unstyled dashboard'>
-      {{#each sortTrek}}
-      {{bike-spec bike=this}}
-      {{/each}}
-    </ul>
-  </script>
-
+  <h1>Trek Bicycles</h1>
+  <h2>Currently {{trekCount}} Treks</h2>
+  <ul class='nav navbar-nav navbar-left'>
+  <li>{{#link-to 'bianchi' this}}Bianchi{{/link-to}}</li>
+  <li>{{#link-to 'cannondale' this}}Cannondale{{/link-to}}</li>
+  <li>{{#link-to 'peugeot' this}}Peugeot{{/link-to}}</li>
+  <li>{{#link-to 'trek' currentWhen="trek"}}Trek{{/link-to}}</li>
+  <li>{{#link-to 'catalog'}}Go Back!{{/link-to}}</li>
+  </ul>   
+  <br>
+  <br>
+  <br>
+  <ul class='list-unstyled dashboard'>
+    {{#each sortTrek}}
+    {{bike-spec bike=this}}
+    {{/each}}
+  </ul>
+</script>
+<!--Component for reused template for individual bikes-->
 <script type="text/x-handlebars" data-template-name='components/bike-spec'>
   <li class='row'>
   {{#link-to 'bike' bike}}
@@ -144,38 +174,39 @@
        {{/link-to}}
    </li>
 </script>
-
-  <script type="text/x-handlebars" data-template-name='bike'>
-   <img {{bind-attr src='image'}} class='hover-color img-thumbnail img-responsive'/>
-   <h1>{{make}} {{model.model}}</h1>
-   <p>{{desc}}</p>
-  </script>
-
+<!--Blowup for each bike page-->
+<script type="text/x-handlebars" data-template-name='bike'>
+  <img {{bind-attr src='image'}} class='hover-color img-thumbnail img-responsive'/>
+  <h1>{{make}} {{model.model}}</h1>
+  <p>{{desc}}</p>
+  {{#if image2}}
+  <img {{bind-attr src='image2'}} class='hover-color img-thumbnail img-responsive'/>
+  {{/if}}
+  {{#if image3}}
+  <img {{bind-attr src='image3'}} class='hover-color img-thumbnail img-responsive'/>
+  {{/if}}
+</script>
   <!--script for references-->
-
-  <script type="text/x-handlebars" data-template-name='references'>
-      <h1>References</h1>
-      <img src="img/church1.jpg" alt='fields' class='img-thumbnail img-responsive'/>
-  </script>
-
+<script type="text/x-handlebars" data-template-name='references'>
+  <h1>References</h1>
+  <img src="img/church1.jpg" alt='fields' class='img-thumbnail img-responsive'/>
+</script>
   <!--script for  credits-->
-
-  <script type='text/x-handlebars' data-template-name='credits'>
-    <h1>Thank you for supporting us!</h1>
-    <p>My name is Christopher Salam, and I&#39;m new to web development. This is one of my portfolio sites. I would like to thank craigslist, the ember team, my bike selling associates, the late-great Sheldon Brown and all the web dev. tutorials I have used recently. I would also like to thank my patient partner Amy for her time and web design input.</p>
-    <p> Unrelated, this is an image from Dune redone in gummy worms. Credits to Candy Warehouse </p>
-    <img src="img/dune.jpg" alt='fields' class='hover-color img-thumbnail img-responsive'/>
-  </script>
-
-  <script src="js/libs/jquery-1.10.2.js"></script>
-  <script src="js/libs/handlebars-v2.0.0.js"></script>
-  <script src="js/ember/ember-1.9.1.js"></script>
-  <script src="js/ember/app.js"></script>
-  <script src="js/ember/router.js"></script>
-  <script src="js/ember/routes.js"></script>
-  <script src="js/ember/controllers.js"></script>
-  <script src="js/data/about.js"></script>
-  <script src="js/data/catalog.js"></script>
-  <script src="js/data/references.js"></script>
+<script type='text/x-handlebars' data-template-name='credits'>
+  <h1>Thank you for supporting us!</h1>
+  <p>My name is Christopher Salam, and I&#39;m new to web development. This is one of my portfolio sites. I would like to thank craigslist, the ember team, my bike selling associates, the late-great Sheldon Brown and all the web dev. tutorials I have used recently. I would also like to thank my patient partner Amy for her time and web design input.</p>
+  <p> Unrelated, this is an image from Dune redone in gummy worms. Credits to Candy Warehouse </p>
+  <img src="img/dune.jpg" alt='fields' class='hover-color img-thumbnail img-responsive'/>
+</script>
+<script src="js/libs/jquery-1.10.2.js"></script>
+<script src="js/libs/handlebars-v2.0.0.js"></script>
+<script src="js/ember/ember-1.9.1.js"></script>
+<script src="js/ember/app.js"></script>
+<script src="js/ember/router.js"></script>
+<script src="js/ember/routes.js"></script>
+<script src="js/ember/controllers.js"></script>
+<script src="js/data/about.js"></script>
+<script src="js/data/catalog.js"></script>
+<script src="js/data/references.js"></script>
 </body>
 </html>

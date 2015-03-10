@@ -47,3 +47,7 @@ background-color: #369;
   -o-filter: none;
   filter: none;
 }
+
+.navbar-inverse .navbar-nav>li>a.active {
+  background-color: #080808;
+}
