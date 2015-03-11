@@ -21,29 +21,3 @@ App.BikeRoute = Em.Route.extend({
     return App.CATALOG.findBy('model', params.model);
   }
 });
-
-//Not needed! possibly generated automatically by ember.
-
-// App.BianchiRoute = Em.Route.extend({
-//   model: function() {
-//     return App.CATALOG
-//   }
-// });
-
-// AppCannondaleRoute = Em.Route.extend({
-//   model: function() {
-//     return App.CATALOG
-//   }
-// });
-
-// // App.PeugeotRoute = Em.Route.extend({
-// //   model: function() {
-// //     return App.CATALOG
-// //   }
-// // });
-
-// App.TrekRoute = Em.Route.extend({
-//   model: function() {
-//     return App.CATALOG
-//   }
-// });

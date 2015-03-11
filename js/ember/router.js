@@ -8,6 +8,10 @@ App.Router.map(function() {
   this.resource('cannondale', {path: '/catalog/cannondale/:cannondale'});
   this.resource('peugeot', {path: '/catalog/peugeot/:peugeot'});
   this.resource('trek', {path: '/catalog/trek/:trek'});
+  this.resource('japanese', {path: '/catalog/japanese/:japanese'})
+  this.resource('english', {path: '/catalog/english/:english'})
+  this.resource('italian', {path: '/catalog/italian/:italian'})
+  this.resource('usa', {path: '/catalog/usa/:usa'})
   this.route('bike', {path: '/catalog/:make/:model'});
   this.route('references');
   this.route('credits', {path: 'mymaudlincareer'});

@@ -7,7 +7,10 @@ desc: 'bianchi is a famous name in italian bikes.',
 image: 'img/catalog/bian1.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'european',
+country: 'italy'
 },
 {
 make: 'Bianchi',
@@ -17,7 +20,10 @@ desc: 'bianchi is a famous name in italian bikes. Write more later',
 image: 'img/catalog/bian2.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'european',
+country: 'italy'
 },
 {
 make: 'Bridgestone',
@@ -27,7 +33,10 @@ desc: 'Older bridgestones had a number system similar to the Miyatas',
 image: 'img/catalog/brid4.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'asian',
+country: 'japan'
 },
 {
 make: 'Bridgestone',
@@ -37,7 +46,10 @@ desc: 'Older bridgestones had a number system similar to the Miyatas',
 image: 'img/catalog/brid3.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'asian',
+country: 'japan'
 },
 {
 make: 'Bridgestone',
@@ -47,7 +59,10 @@ desc: 'MB-1 stands for Mountain Bike 1. Unlike most other bike models, the lower
 image: 'img/catalog/brid1.jpg',
 image2: 'img/catalog/brid1cl.jpg',
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'asian',
+country: 'japan'
 },
 {
 make: 'Bridgestone',
@@ -57,7 +72,10 @@ desc: 'XO-2 stands for Cross-Over 2. The bridgestone cross-over was distinct fro
 image: 'img/catalog/brid2.jpg',
 image2: 'img/catalog/brid2cl.jpg',
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'asian',
+country: 'japan'
 },
 {
 make: 'Cannondale',
@@ -67,7 +85,10 @@ desc: 'Cannondale made aluminum bicycles in America when they started out. Here 
 image: 'img/catalog/cann1.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'aluminum',
+design: 'usa',
+country: 'usa'
 },
 {
 make: 'Cannondale',
@@ -77,7 +98,10 @@ desc: 'Cannondale made aluminum bicycles in America. This particular frame was a
 image: 'img/catalog/cann3.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'aluminum',
+design: 'usa',
+country: 'usa'
 },
 {
 make: 'Cannondale',
@@ -87,7 +111,10 @@ desc: 'Cannondale made aluminum bicycles in America. This particular frame was a
 image: 'img/catalog/cann2.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'aluminum',
+design: 'usa',
+country: 'usa'
 },
 {
 make: 'Cannondale',
@@ -97,7 +124,10 @@ desc: 'Cannondale made aluminum bicycles in America. Because of the fixie craze 
 image: 'img/catalog/cann4.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'aluminum',
+design: 'usa',
+country: 'usa'
 },
 {
 make: 'Centurion',
@@ -107,7 +137,10 @@ desc: 'Accordio was a common but decent quality offering from Centurion.',
 image: 'img/catalog/cent5.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'asian',
+country: 'japan'
 },
 {
 make: 'Centurion',
@@ -117,7 +150,10 @@ desc: 'This bicycle was from a series released with support from David Scott, a 
 image: 'img/catalog/cent1.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'asian',
+country: 'japan'
 },
 {
 make: 'Centurion',
@@ -127,7 +163,10 @@ desc: 'Afforable japanese bike',
 image: 'img/catalog/cent2.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'asian',
+country: 'japan'
 },
 {
 make: 'Centurion',
@@ -137,7 +176,10 @@ desc: 'higher quality centurion bike, this one had upgraded parts and a not so n
 image: 'img/catalog/cent4.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'asian',
+country: 'japan'
 },
 {
 make: 'Centurion',
@@ -147,7 +189,10 @@ desc: 'higher quality centurion bike, this one had upgraded parts and a not so n
 image: 'img/catalog/cent3.jpg',
 image2: 'img/catalog/cent3cl.jpg',
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'asian',
+country: 'japan'
 },
 {
 make: 'Cilo',
@@ -157,7 +202,10 @@ desc: 'Swiss bicycle company, long ago out of business.',
 image: 'img/catalog/cilo1.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'european',
+country: 'switzerland'
 },
 {
 make: 'Fuji',
@@ -167,7 +215,10 @@ desc: 'Fuji was a high quality japanese brand.',
 image: 'img/catalog/fuji1.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'asian',
+country: 'japan'
 },
 {
 make: 'Gitane',
@@ -177,7 +228,10 @@ desc: 'An example of the gouging that can happen in bike sales. A fellow bikecoo
 image: 'img/catalog/gita1.jpg',
 image2: 'img/catalog/gita1cl.jpg',
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'european',
+country: 'france'
 },
 {
 make: 'Gitane',
@@ -187,7 +241,10 @@ desc: 'French, heavy and complicated tandem. I\'ll defer to the owner',
 image: 'img/catalog/gita2.jpg',
 image2: 'img/catalog/gita2cl.jpg',
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'european',
+country: 'france'
 },
 {
 make: 'Klein',
@@ -197,7 +254,10 @@ desc: 'Klein was a quality bicycle made and later designed in America. They are 
 image: 'img/catalog/klei1.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'aluminum',
+design: 'usa',
+country: 'usa'
 },
 {
 make: 'Kunko',
@@ -207,7 +267,10 @@ desc: 'I never saw another one of these ever again.',
 image: 'img/catalog/kunk1.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'unknown',
+country: 'unknown'
 },
 {
 make: 'Lambert',
@@ -217,7 +280,10 @@ desc: 'Lambert bicycles were a competitor of Raleigh, they went bust over really
 image: 'img/catalog/lamb1.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'european',
+country: 'uk'
 },
 {
 make: 'Mangusta',
@@ -227,7 +293,10 @@ desc: 'I know precious little about the Mangusta bike company, except that this 
 image: 'img/catalog/mang1.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'aluminum',
+design: 'unknown',
+country: 'unknown'
 },
 {
 make: 'Miyata',
@@ -237,7 +306,10 @@ desc: 'Quality, affordable japanese bikes. Company originally made gun barrels. 
 image: 'img/catalog/miya2.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'asian',
+country: 'japan'
 },
 {
 make: 'Miyata',
@@ -247,7 +319,10 @@ desc: 'Quality, affordable japanese bikes. Company originally made gun barrels.'
 image: 'img/catalog/miya1.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'asian',
+country: 'japan'
 },
 {
 make: 'Montgomery Ward',
@@ -257,7 +332,10 @@ desc: 'Don\'t know much about this, need to research',
 image: 'img/catalog/ward1.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'usa',
+country: 'usa'
 },
 {
 make: 'Nishiki',
@@ -267,7 +345,10 @@ desc: 'Nishiki was another japanese bicycle company that mostly made affordable 
 image: 'img/catalog/nish3.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'asian',
+country: 'japan'
 },
 {
 make: 'Nishiki',
@@ -277,7 +358,10 @@ desc: 'Nishiki was another japanese bicycle company that mostly made affordable 
 image: 'img/catalog/nish2.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'asian',
+country: 'japan'
 },
 {
 make: 'Nishiki',
@@ -287,7 +371,10 @@ desc: 'Nishiki was another japanese bicycle company that mostly made affordable 
 image: 'img/catalog/nish1.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'asian',
+country: 'japan'
 },
 {
 make: 'Nishiki',
@@ -297,7 +384,10 @@ desc: 'Nishiki was another japanese bicycle company that mostly made affordable 
 image: 'img/catalog/nish4.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'asian',
+country: 'japan'
 },
 {
 make: 'Novara',
@@ -307,7 +397,10 @@ desc: 'Novara was/is an REI brand bicycle. Their most sought after vintage model
 image: 'img/catalog/nova1.jpg',
 image2: 'img/catalog/nova1cl.jpg',
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'usa',
+country: 'usa'
 },
 {
 make: 'Olmo',
@@ -317,7 +410,10 @@ desc: 'This Olmo was an exceptional example from an Italian bike company. The br
 image: 'img/catalog/olmo1.jpg',
 image2: 'img/catalog/olmo1cl.jpg',
 image3: 'img/catalog/olmo1cl2.jpg',
-persons: []
+persons: [],
+material: 'steel',
+design: 'european',
+country: 'italy'
 },
 {
 make: 'Panasonic',
@@ -327,7 +423,10 @@ desc: 'Panasonic is a large japanese conglomerate, the japanese brand name is ac
 image: 'img/catalog/pana1.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'asian',
+country: 'japan'
 },
 {
 make: 'Peugeot',
@@ -337,7 +436,10 @@ desc: 'One of the many different peugeot models...',
 image: 'img/catalog/peug3.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'european',
+country: 'france'
 },
 {
 make: 'Peugeot',
@@ -347,7 +449,10 @@ desc: 'This one is french-made (not all are), high quality',
 image: 'img/catalog/peug1.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'european',
+country: 'france'
 },
 {
 make: 'Peugeot',
@@ -357,7 +462,10 @@ desc: 'Record Du Monde was a slogan printed on many different peugeot bikes. Vis
 image: 'img/catalog/peug2.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'european',
+country: 'france'
 },
 {
 make: 'Raleigh',
@@ -367,7 +475,10 @@ desc: 'Raleigh is a storied english bicycle manafacturing company. It is one of 
 image: 'img/catalog/rali2.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'european',
+country: 'uk'
 },
 {
 make: 'Raleigh',
@@ -377,7 +488,10 @@ desc: 'Raleigh is a storied english bicycle manafacturing company. It is one of 
 image: 'img/catalog/rali1.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'european',
+country: 'uk'
 },
 {
 make: 'Raleigh',
@@ -387,7 +501,10 @@ desc: 'Raleigh is a storied english bicycle manafacturing company. It is one of 
 image: 'img/catalog/rali4.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: ['aluminum','steel'],
+design: 'european',
+country: 'uk'
 },
 {
 make: 'Schwinn',
@@ -397,7 +514,10 @@ desc: 'Owned a lot of schwinns. Some can be great, and most are just okay.',
 image: 'img/catalog/schi1.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'usa',
+country: 'usa'
 },
 {
 make: 'Specialized',
@@ -407,7 +527,10 @@ desc: 'This is one of the first carbon bicycles. Designed in America.',
 image: 'img/catalog/spec1.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'carbon',
+design: 'usa',
+country: 'usa'
 },
 {
 make: 'Specialized',
@@ -417,7 +540,10 @@ desc: 'great early 1990s mountain bike.',
 image: 'img/catalog/spec2.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'usa',
+country: 'usa'
 },
 {
 make: 'Terry',
@@ -427,7 +553,10 @@ desc: 'Terry bicycles have 24 inch front wheels, intended for (and extremely pop
 image: 'img/catalog/terry1.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'asian',
+country: 'japan'
 },
 {
 make: 'Trek',
@@ -437,7 +566,10 @@ desc: 'good quality bikes, designed in America.',
 image: 'img/catalog/trek4.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'usa',
+country: 'usa'
 },
 {
 make: 'Trek',
@@ -447,7 +579,10 @@ desc: 'good quality bikes, designed in America.',
 image: 'img/catalog/trek1.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'usa',
+country: 'usa'
 },
 {
 make: 'Trek',
@@ -457,7 +592,10 @@ desc: 'good quality bikes, designed in America.',
 image: 'img/catalog/trek6.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'aluminum',
+design: 'usa',
+country: 'usa'
 },
 {
 make: 'Trek',
@@ -467,7 +605,10 @@ desc: 'good quality bikes, designed in America.',
 image: 'img/catalog/trek2.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'aluminum',
+design: 'usa',
+country: 'usa'
 },
 {
 make: 'Trek',
@@ -477,7 +618,10 @@ desc: 'Remember the 90s? This bike does...',
 image: 'img/catalog/trek3.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'aluminum',
+design: 'usa',
+country: 'usa'
 },
 {
 make: 'Trek',
@@ -487,7 +631,10 @@ desc: 'good quality bikes, designed in America. aluminum',
 image: 'img/catalog/trek5.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'aluminum',
+design: 'usa',
+country: 'usa'
 },
 {
 make: 'Univega',
@@ -497,7 +644,10 @@ desc: 'The univega arrowpace was one of the rarer, high quality aluminum bikes m
 image: 'img/catalog/univ1.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'aluminum',
+design: 'asian',
+country: 'japan'
 },
 {
 make: 'Vista',
@@ -507,6 +657,9 @@ desc: 'Don\'t know much about this, need to research',
 image: 'img/catalog/vist1.jpg',
 image2: null,
 image3: null,
-persons: []
+persons: [],
+material: 'steel',
+design: 'asian',
+country: 'japan'
 }
 ];
