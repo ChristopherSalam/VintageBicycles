@@ -4,7 +4,7 @@ make: "General",
 category: "General",
 origin: null,
 desc: ["Sheldon Brown"],
-href: []
+href: ['http://sheldonbrown.com/']
 },
 {
 make: null,
@@ -73,8 +73,8 @@ href: []
 make:"Bianchi",
 category: "Vintage",
 origin: "Italian",
-desc: [],
-href: []
+desc: ['Offical Site'],
+href: ['http://www.bianchiusa.com/']
 },
 {
 make:"Bridgestone",

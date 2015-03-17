@@ -13,6 +13,8 @@ App.Router.map(function() {
   this.resource('italian', {path: '/catalog/italian/:italian'})
   this.resource('usa', {path: '/catalog/usa/:usa'})
   this.route('bike', {path: '/catalog/:make/:model'});
-  this.route('references');
+  this.route('references', function() {
+    this.resource('reference', {path: '/:category' });
+  });
   this.route('credits', {path: 'mymaudlincareer'});
 });

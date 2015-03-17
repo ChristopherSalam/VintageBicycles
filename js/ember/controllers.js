@@ -4,6 +4,9 @@ App.IndexController = Em.Controller.extend({
 	}.property()
 })
 
+App.ReferencesController = Em.ArrayController.extend({
+});
+
 App.CatalogController = Em.ArrayController.extend({
 	//sortProperties: ['make','model']
 	catalogCount: Em.computed.alias('length'),

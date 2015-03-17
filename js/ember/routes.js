@@ -21,3 +21,15 @@ App.BikeRoute = Em.Route.extend({
     return App.CATALOG.findBy('model', params.model);
   }
 });
+
+App.ReferencesRoute = Em.Route.extend({
+  model: function() {
+    return App.REFERENCES;
+  }
+});
+
+App.ReferenceRoute = Em.Route.extend({
+  model: function(params) {
+    return App.REFERENCES.findBy('category', params.category);
+  }
+});

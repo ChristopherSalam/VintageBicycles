@@ -30,7 +30,7 @@
   <!--script for index-->
 <script type="text/x-handlebars" data-template-name='index'>
   <h1>Vintage Bicycles<img src="img/crank.jpg" height="20px" width="20px">Info</h1>
-  <p style="max-width:730px">Vintage Bicycles, their restoration and their ornamentation has been a focal point for many cyclists and websites. Cycling has a short life in archeological terms, albeit with a rich material culture and record. This page hopes to link you to as many resources as possible, showcasing examples of and twists on vintage bicycles. Thanks for visiting, and please consider donating to the site! Thanks.</p>
+  <p>Vintage Bicycles, their restoration and their ornamentation has been a focal point for many cyclists and websites. Cycling has a short life in archeological terms, albeit with a rich material culture and record. This page hopes to link you to as many resources as possible, showcasing examples of and twists on vintage bicycles. Thanks for visiting, and please consider donating to the site! Thanks.</p>
   <img src="img/church2.jpg" alt='fields' class='img-thumbnail img-responsive'/>
   <p>Today&#39;s date is {{time}}</p>
 </script>
@@ -70,18 +70,15 @@
   <h1>Catalog of Vintage Bicycles</h1>
   <h2>Currently {{catalogCount}} bicycles!</h2>
   <ul class='nav navbar-nav navbar-left'>
-  <li>{{#link-to 'bianchi' this}}Bianchi{{/link-to}}</li>
-  <li>{{#link-to 'cannondale' this}}Cannondale{{/link-to}}</li>
-  <li>{{#link-to 'peugeot' this}}Peugeot{{/link-to}}</li>
-  <li>{{#link-to 'trek' this}}Trek{{/link-to}}</li>
-  <li>{{#link-to 'catalog' current-when="catalog"}}Catalog{{/link-to}}</li>
-  </ul><br><br><br>
-  <ul class='nav navbar-nav navbar-left'>
-  <li>{{#link-to 'catalog' current-when="catalog"}}Catalog{{/link-to}}</li>
-  <li>{{#link-to 'japanese' this}}Japanese{{/link-to}}</li>
-  <li>{{#link-to 'english' this}}English{{/link-to}}</li>
-  <li>{{#link-to 'italian' this}}Italian{{/link-to}}</li>
-  <li>{{#link-to 'usa' this}}U.S.A.{{/link-to}}</li>
+        {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
+        {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
+        {{#link-to 'peugeot' this tagName='li'}} &nbsp; Peugeot &nbsp; {{/link-to}}
+        {{#link-to 'trek' this tagName='li'}} &nbsp; Trek &nbsp;{{/link-to}}
+        {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
+        {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
+        {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
+        {{#link-to 'usa' this tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
+        {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
   </ul><br><br><br>
   <ul class='list-unstyled'>
     {{#each}}
@@ -93,18 +90,15 @@
   <h1>Bianchi Bicycles</h1>
   <h2>Currently {{bianchiCount}} Bianchis</h2>
   <ul class='nav navbar-nav navbar-left'>
-  <li>{{#link-to 'bianchi' current-when="bianchi"}}Bianchi{{/link-to}}</li>
-  <li>{{#link-to 'cannondale' this}}Cannondale{{/link-to}}</li>
-  <li>{{#link-to 'peugeot' this}}Peugeot{{/link-to}}</li>
-  <li>{{#link-to 'trek' this}}Trek{{/link-to}}</li>
-  <li>{{#link-to 'catalog'}}Go Back!{{/link-to}}</li>
-  </ul><br><br><br>
-  <ul class='nav navbar-nav navbar-left'>
-  <li>{{#link-to 'catalog'}}Go Back!{{/link-to}}</li>
-  <li>{{#link-to 'japanese' this}}Japanese{{/link-to}}</li>
-  <li>{{#link-to 'english' this}}English{{/link-to}}</li>
-  <li>{{#link-to 'italian' this current-when="bianchi"}}Italian{{/link-to}}</li>
-  <li>{{#link-to 'usa' this}}U.S.A.{{/link-to}}</li>
+        {{#link-to 'bianchi' tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
+        {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
+        {{#link-to 'peugeot' this tagName='li'}} &nbsp; Peugeot &nbsp; {{/link-to}}
+        {{#link-to 'trek' this tagName='li'}} &nbsp; Trek &nbsp;{{/link-to}}
+        {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
+        {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
+        {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
+        {{#link-to 'usa' tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
+        {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
   </ul><br><br><br>
   <ul class='list-unstyled dashboard'>
     {{#each sortBianchi}}
@@ -116,18 +110,15 @@
   <h1>Cannondale Bicycles</h1>
   <h2>Currently {{cannondaleCount}} Cannondales</h2>
   <ul class='nav navbar-nav navbar-left'>
-  <li>{{#link-to 'bianchi' this}}Bianchi{{/link-to}}</li>
-  <li>{{#link-to 'cannondale' current-when="cannondale"}}Cannondale{{/link-to}}</li>
-  <li>{{#link-to 'peugeot' this}}Peugeot{{/link-to}}</li>
-  <li>{{#link-to 'trek' this}}Trek{{/link-to}}</li>
-  <li>{{#link-to 'catalog'}}Go Back!{{/link-to}}</li>
-  </ul><br><br><br>
-  <ul class='nav navbar-nav navbar-left'>
-  <li>{{#link-to 'catalog'}}Go Back!{{/link-to}}</li>
-  <li>{{#link-to 'japanese' this}}Japanese{{/link-to}}</li>
-  <li>{{#link-to 'english' this}}English{{/link-to}}</li>
-  <li>{{#link-to 'italian' this}}Italian{{/link-to}}</li>
-  <li>{{#link-to 'usa' this  current-when="cannondale"}}U.S.A.{{/link-to}}</li>
+        {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
+        {{#link-to 'cannondale' tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
+        {{#link-to 'peugeot' this tagName='li'}} &nbsp; Peugeot &nbsp; {{/link-to}}
+        {{#link-to 'trek' this tagName='li'}} &nbsp; Trek &nbsp;{{/link-to}}
+        {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
+        {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
+        {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
+        {{#link-to 'usa' tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
+        {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
   </ul><br><br><br>
   <ul class='list-unstyled dashboard'>
     {{#each sortCannondale}}
@@ -139,18 +130,15 @@
   <h1>Peugeot Bicycles</h1>
   <h2>Currently {{peugeotCount}} Peugeots</h2>
   <ul class='nav navbar-nav navbar-left'>
-  <li>{{#link-to 'bianchi' this}}Bianchi{{/link-to}}</li>
-  <li>{{#link-to 'cannondale' this}}Cannondale{{/link-to}}</li>
-  <li>{{#link-to 'peugeot' current-when="peugeot"}}Peugeot{{/link-to}}</li>
-  <li>{{#link-to 'trek' this}}Trek{{/link-to}}</li>
-  <li>{{#link-to 'catalog'}}Go Back!{{/link-to}}</li>
-  </ul><br><br><br>
-  <ul class='nav navbar-nav navbar-left'>
-  <li>{{#link-to 'catalog'}}Go Back!{{/link-to}}</li>
-  <li>{{#link-to 'japanese' this current-when="peugeot"}}Japanese{{/link-to}}</li>
-  <li>{{#link-to 'english' this}}English{{/link-to}}</li>
-  <li>{{#link-to 'italian' this}}Italian{{/link-to}}</li>
-  <li>{{#link-to 'usa' this}}U.S.A.{{/link-to}}</li>
+        {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
+        {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
+        {{#link-to 'peugeot' tagName='li'}} &nbsp; Peugeot &nbsp; {{/link-to}}
+        {{#link-to 'trek' this tagName='li'}} &nbsp; Trek &nbsp;{{/link-to}}
+        {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
+        {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
+        {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
+        {{#link-to 'usa' tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
+        {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
   </ul><br><br><br>
   <ul class='list-unstyled dashboard'>
     {{#each sortPeugeot}}
@@ -162,18 +150,15 @@
   <h1>Trek Bicycles</h1>
   <h2>Currently {{trekCount}} Treks</h2>
   <ul class='nav navbar-nav navbar-left'>
-  <li>{{#link-to 'bianchi' this}}Bianchi{{/link-to}}</li>
-  <li>{{#link-to 'cannondale' this}}Cannondale{{/link-to}}</li>
-  <li>{{#link-to 'peugeot' this}}Peugeot{{/link-to}}</li>
-  <li>{{#link-to 'trek' current-when="trek"}}Trek{{/link-to}}</li>
-  <li>{{#link-to 'catalog'}}Go Back!{{/link-to}}</li>
-  </ul><br><br><br>
-  <ul class='nav navbar-nav navbar-left'>
-  <li>{{#link-to 'catalog'}}Go Back!{{/link-to}}</li>
-  <li>{{#link-to 'japanese' this}}Japanese{{/link-to}}</li>
-  <li>{{#link-to 'english' this}}English{{/link-to}}</li>
-  <li>{{#link-to 'italian' this}}Italian{{/link-to}}</li>
-  <li>{{#link-to 'usa' this current-when="trek"}}U.S.A.{{/link-to}}</li>
+        {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
+        {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
+        {{#link-to 'peugeot' this tagName='li'}} &nbsp; Peugeot &nbsp; {{/link-to}}
+        {{#link-to 'trek' tagName='li'}} &nbsp; Trek &nbsp;{{/link-to}}
+        {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
+        {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
+        {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
+        {{#link-to 'usa' tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
+        {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
   </ul><br><br><br>
   <ul class='list-unstyled dashboard'>
     {{#each sortTrek}}
@@ -185,18 +170,15 @@
   <h1>Japanese Bicycles</h1>
   <h2>Currently {{japaneseCount}} Bicycles of Japanese Origin</h2>
   <ul class='nav navbar-nav navbar-left'>
-  <li>{{#link-to 'bianchi' this}}Bianchi{{/link-to}}</li>
-  <li>{{#link-to 'cannondale' this}}Cannondale{{/link-to}}</li>
-  <li>{{#link-to 'peugeot' this}}Peugeot{{/link-to}}</li>
-  <li>{{#link-to 'trek' this}}Trek{{/link-to}}</li>
-  <li>{{#link-to 'catalog'}}Go Back!{{/link-to}}</li>
-  </ul><br><br><br>
-  <ul class='nav navbar-nav navbar-left'>
-  <li>{{#link-to 'catalog'}}Go Back!{{/link-to}}</li>
-  <li>{{#link-to 'japanese'  current-when="japanese"}}Japanese{{/link-to}}</li>
-  <li>{{#link-to 'english' this}}English{{/link-to}}</li>
-  <li>{{#link-to 'italian' this}}Italian{{/link-to}}</li>
-  <li>{{#link-to 'usa' this}}U.S.A.{{/link-to}}</li>
+        {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
+        {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
+        {{#link-to 'peugeot' this tagName='li'}} &nbsp; Peugeot &nbsp; {{/link-to}}
+        {{#link-to 'trek' this tagName='li'}} &nbsp; Trek &nbsp;{{/link-to}}
+        {{#link-to 'japanese' tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
+        {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
+        {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
+        {{#link-to 'usa' tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
+        {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
   </ul><br><br><br>
   <ul class='list-unstyled dashboard'>
     {{#each sortJapanese}}
@@ -208,18 +190,15 @@
   <h1>Japanese Bicycles</h1>
   <h2>Currently {{ukCount}} Bicycles from the United Kingdom</h2>
   <ul class='nav navbar-nav navbar-left'>
-  <li>{{#link-to 'bianchi' this}}Bianchi{{/link-to}}</li>
-  <li>{{#link-to 'cannondale' this}}Cannondale{{/link-to}}</li>
-  <li>{{#link-to 'peugeot' this}}Peugeot{{/link-to}}</li>
-  <li>{{#link-to 'trek' this}}Trek{{/link-to}}</li>
-  <li>{{#link-to 'catalog'}}Go Back!{{/link-to}}</li>
-  </ul><br><br><br>
-  <ul class='nav navbar-nav navbar-left'>
-  <li>{{#link-to 'catalog'}}Go Back!{{/link-to}}</li>
-  <li>{{#link-to 'japanese' this}}Japanese{{/link-to}}</li>
-  <li>{{#link-to 'english'  current-when="english"}}English{{/link-to}}</li>
-  <li>{{#link-to 'italian' this}}Italian{{/link-to}}</li>
-  <li>{{#link-to 'usa' this}}U.S.A.{{/link-to}}</li>
+        {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
+        {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
+        {{#link-to 'peugeot' this tagName='li'}} &nbsp; Peugeot &nbsp; {{/link-to}}
+        {{#link-to 'trek' this tagName='li'}} &nbsp; Trek &nbsp;{{/link-to}}
+        {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
+        {{#link-to 'english' tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
+        {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
+        {{#link-to 'usa' tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
+        {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
   </ul><br><br><br>
   <ul class='list-unstyled dashboard'>
     {{#each sortUk}}
@@ -231,18 +210,15 @@
   <h1>Italian Bicycles</h1>
   <h2>Currently {{italianCount}} Bicycles of Italian Origin</h2>
   <ul class='nav navbar-nav navbar-left'>
-  <li>{{#link-to 'bianchi' this}}Bianchi{{/link-to}}</li>
-  <li>{{#link-to 'cannondale' this}}Cannondale{{/link-to}}</li>
-  <li>{{#link-to 'peugeot' this}}Peugeot{{/link-to}}</li>
-  <li>{{#link-to 'trek' this}}Trek{{/link-to}}</li>
-  <li>{{#link-to 'catalog'}}Go Back!{{/link-to}}</li>
-  </ul><br><br><br>
-  <ul class='nav navbar-nav navbar-left'>
-  <li>{{#link-to 'catalog'}}Go Back!{{/link-to}}</li>
-  <li>{{#link-to 'japanese' this }}Japanese{{/link-to}}</li>
-  <li>{{#link-to 'english' this}}English{{/link-to}}</li>
-  <li>{{#link-to 'italian'  current-when="italian"}}Italian{{/link-to}}</li>
-  <li>{{#link-to 'usa' this}}U.S.A.{{/link-to}}</li>
+        {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
+        {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
+        {{#link-to 'peugeot' this tagName='li'}} &nbsp; Peugeot &nbsp; {{/link-to}}
+        {{#link-to 'trek' this tagName='li'}} &nbsp; Trek &nbsp;{{/link-to}}
+        {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
+        {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
+        {{#link-to 'italian' tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
+        {{#link-to 'usa' this tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
+        {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
   </ul><br><br><br>
   <ul class='list-unstyled dashboard'>
     {{#each sortItalian}}
@@ -254,18 +230,15 @@
   <h1>Vintage American Bicycles</h1>
   <h2>Currently {{usaCount}} Bicycles of American Origin</h2>
   <ul class='nav navbar-nav navbar-left'>
-  <li>{{#link-to 'bianchi' this}}Bianchi{{/link-to}}</li>
-  <li>{{#link-to 'cannondale' this}}Cannondale{{/link-to}}</li>
-  <li>{{#link-to 'peugeot' this}}Peugeot{{/link-to}}</li>
-  <li>{{#link-to 'trek' this}}Trek{{/link-to}}</li>
-  <li>{{#link-to 'catalog'}}Go Back!{{/link-to}}</li>
-  </ul><br><br><br>
-  <ul class='nav navbar-nav navbar-left'>
-  <li>{{#link-to 'catalog'}}Go Back!{{/link-to}}</li>
-  <li>{{#link-to 'japanese' this}}Japanese{{/link-to}}</li>
-  <li>{{#link-to 'english' this}}English{{/link-to}}</li>
-  <li>{{#link-to 'italian' this}}Italian{{/link-to}}</li>
-  <li>{{#link-to 'usa' current-when="usa"}}U.S.A.{{/link-to}}</li>
+        {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
+        {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
+        {{#link-to 'peugeot' this tagName='li'}} &nbsp; Peugeot &nbsp; {{/link-to}}
+        {{#link-to 'trek' this tagName='li'}} &nbsp; Trek &nbsp;{{/link-to}}
+        {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
+        {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
+        {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
+        {{#link-to 'usa' tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
+        {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
   </ul><br><br><br>
   <ul class='list-unstyled dashboard'>
     {{#each sortUsa}}
@@ -300,7 +273,26 @@
 </script>
   <!--script for references-->
 <script type="text/x-handlebars" data-template-name='references'>
-  <h1>References</h1>
+  <h1>Bibliography</h1>
+  <h4>Take these links to other great sites!</h4>
+    <div class='col-sm-3'>
+      <div class='list-group'>
+        {{#each}}
+          {{#link-to 'reference' this classNames='list-group-item'}}
+            <p>{{#if desc}}{{make}}{{/if}}</p>
+            <p>{{#if desc}}{{desc}}{{/if}}</p>
+            {{#if desc}}<a target="_blank" {{bind-attr href="REFERENCES.href"}}>References</a>{{/if}}
+          {{/link-to}} 
+        </li>
+      {{/each}}
+      </div>
+    </div>
+    <div class='col-sm-9'>
+      {{outlet}}
+    </div>
+  </div>
+
+
   <img src="img/church1.jpg" alt='fields' class='img-thumbnail img-responsive'/>
 </script>
   <!--script for  credits-->
