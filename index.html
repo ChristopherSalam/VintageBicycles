@@ -7,12 +7,21 @@
   <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <body>
-<script  type="text/x-handlebars" data-template-name='application'>
-  <div class='navbar navbar-default'>
-    <div class='container'>{{#link-to 'index' class='navbar-brand'}}
-      <img src='img/chain.jpg' alt='logo' height='30' width='45' />{{/link-to}}
-      <ul class='nav navbar-nav navbar-right bigbackground'>
-        {{#link-to 'index' tagName='li'}} &nbsp; Home &nbsp; {{/link-to}}
+<script type="text/x-handlebars" data-template-name='application'>
+  <div class='navbar navbar-default bigbackground navbar-static-top'>
+    <div class='container'>
+      <div class='navbar-header'>
+      {{#link-to 'index'}}
+      <img src='img/chain.jpg' alt='logo' class='navbar-brand'/>
+      {{/link-to}}
+      <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
+        <span class="sr-only">Mobile navigation</span>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+      </button>
+      </div>
+      <ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
         {{#link-to 'about' tagName='li'}} &nbsp; Be an Archeologist &nbsp; {{/link-to}}
         {{#link-to 'catalog' tagName='li'}} &nbsp; View our Catalog &nbsp; {{/link-to}}
         {{#link-to 'references' tagName='li'}} &nbsp; References &nbsp;{{/link-to}}
@@ -22,7 +31,7 @@
   <div class='container'>
     {{outlet}}
   </div>
-  <footer class='container bigbackground'> <hr />
+  <footer class='container bigbackground'> <hr/>
     <p class='pull-left'>Vintage Bicycles &copy; 2015</p>
     <p class='pull-right'>{{#link-to 'credits'}}Take me to your leader!{{/link-to}}</p>
   </footer>
@@ -302,7 +311,9 @@
   <p> Unrelated, this is an image from Dune redone in gummy worms. Credits to Candy Warehouse </p>
   <img src="img/dune.jpg" alt='fields' class='hover-color img-thumbnail img-responsive'/>
 </script>
+
 <script src="js/libs/jquery-1.10.2.js"></script>
+<script src="js/libs/bootstrap.min.js"></script>
 <script src="js/libs/handlebars-v2.0.0.js"></script>
 <script src="js/ember/ember-1.9.1.js"></script>
 <script src="js/ember/app.js"></script>
