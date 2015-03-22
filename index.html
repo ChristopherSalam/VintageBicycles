@@ -11,26 +11,30 @@
   <div class='navbar navbar-default bigbackground navbar-static-top'>
     <div class='container'>
       <div class='navbar-header'>
-      {{#link-to 'index'}}
-      <img src='img/chain.jpg' alt='logo' class='navbar-brand'/>
-      {{/link-to}}
-      <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
-        <span class="sr-only">Mobile navigation</span>
+<button type='button' class='navbar-toggle pull-left'>
+          {{#link-to 'index'}}
+        <img src='img/chain.jpg' alt='logo'/>
+          {{/link-to}}
+</button>
+        <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
+          <span class="sr-only">site navigation</span>
+          <!--<span class='icon-bar'></span>
         <span class='icon-bar'></span>
-        <span class='icon-bar'></span>
-        <span class='icon-bar'></span>
-      </button>
+        <span class='icon-bar'></span>-->
+        <img src="img/drop.png"/>
+        </button>
       </div>
-      <ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
-        {{#link-to 'about' tagName='li'}} &nbsp; Be an Archeologist &nbsp; {{/link-to}}
-        {{#link-to 'catalog' tagName='li'}} &nbsp; View our Catalog &nbsp; {{/link-to}}
-        {{#link-to 'references' tagName='li'}} &nbsp; References &nbsp;{{/link-to}}
-      </ul>
+        <ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
+          {{#link-to 'index' tagName='li'}} &nbsp; Main Page &nbsp; {{/link-to}}
+          {{#link-to 'about' tagName='li'}} &nbsp; Be an Archeologist &nbsp; {{/link-to}}
+          {{#link-to 'catalog' tagName='li'}} &nbsp; View our Catalog &nbsp; {{/link-to}}
+          {{#link-to 'references' tagName='li'}} &nbsp; References &nbsp;{{/link-to}}
+        </ul>
+      </div>
     </div>
-  </div>
-  <div class='container'>
-    {{outlet}}
-  </div>
+    <div class='container'>
+      {{outlet}}
+    </div>
   <footer class='container bigbackground'> <hr/>
     <p class='pull-left'>Vintage Bicycles &copy; 2015</p>
     <p class='pull-right'>{{#link-to 'credits'}}Take me to your leader!{{/link-to}}</p>
@@ -45,20 +49,18 @@
 </script>
   <!--script for about-->
 <script type="text/x-handlebars" data-template-name='about/index'>
-  <br>
-  <br><h4>At vintagebicycles.info, we love recording and sharing the history of Vintage Bicycles.</h4>
-  <br><h4> We would love for you to participate in our site, and become a member!</h4>
-  <br><h4>If you are able to contribute a significant amount to our site, we will list you here and allow other interested cyclists to contact you. Thanks in advance!</h4>
+<h4>At vintagebicycles.info, we love recording and sharing the history of Vintage Bicycles.</h4>
+<h4> We would love for you to participate in our site, and become a member!</h4>
+<h4>If you are able to contribute a significant amount to our site, we will list you here and allow other interested cyclists to contact you. Thanks in advance!</h4>
 </script>
 <script type="text/x-handlebars" data-template-name='about'>
-  <h1>Be an archeologist for Vintage Bicycles<img src="img/crank.jpg" height="20px" width="20px">Info!</h1>
+  <h2>Be an archeologist for Vintage Bicycles<img src="img/crank.jpg" height="20px" width="20px">Info!</h2>
   <h4>Our Major Contributers:</h4>
     <div class='col-sm-3'>
       <div class='list-group'>
         {{#each}}
           {{#link-to 'person' this classNames='list-group-item'}}
-            <p>{{person}}</p>
-            <p class-"small">{{blurb}}</p>
+            <p class-"small">{{person}}</p>
           {{/link-to}} 
         </li>
       {{/each}}
@@ -67,7 +69,6 @@
     <div class='col-sm-9'>
       {{outlet}}
     </div>
-  </div>
 </script>
 <script type="text/x-handlebars" data-template-name='person'>
   <h1>{{person}}</h1>
@@ -288,9 +289,7 @@
       <div class='list-group'>
         {{#each}}
           {{#link-to 'reference' this classNames='list-group-item'}}
-            <p>{{#if desc}}{{make}}{{/if}}</p>
-            <p>{{#if desc}}{{desc}}{{/if}}</p>
-            {{#if desc}}<a target="_blank" {{bind-attr href="REFERENCES.href"}}>References</a>{{/if}}
+            <p>{{make}}</p>
           {{/link-to}} 
         </li>
       {{/each}}
@@ -299,17 +298,19 @@
     <div class='col-sm-9'>
       {{outlet}}
     </div>
-  </div>
-
-
-  <img src="img/church1.jpg" alt='fields' class='img-thumbnail img-responsive'/>
+</script>
+  <!--script for references-->
+<script type="text/x-handlebars" data-template-name='reference'>
+<h2>{{make}}</h2>
+<p>{{intro}}</p>
+<p>{{desc}}<p>
 </script>
   <!--script for  credits-->
 <script type='text/x-handlebars' data-template-name='credits'>
   <h1>Thank you for supporting us!</h1>
   <p>My name is Christopher Salam, and I&#39;m new to web development. This is one of my portfolio sites. I would like to thank craigslist, the ember team, my bike selling associates, the late-great Sheldon Brown and all the web dev. tutorials I have used recently. I would also like to thank my patient partner Amy for her time and web design input.</p>
-  <p> Unrelated, this is an image from Dune redone in gummy worms. Credits to Candy Warehouse </p>
   <img src="img/dune.jpg" alt='fields' class='hover-color img-thumbnail img-responsive'/>
+  <p> Unrelated, this is an image from Dune redone in gummy worms. Credits to Candy Warehouse </p>
 </script>
 
 <script src="js/libs/jquery-1.10.2.js"></script>

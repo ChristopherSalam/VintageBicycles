@@ -1,210 +1,204 @@
 App.REFERENCES = [
 {
 make: "General",
-category: "General",
-origin: null,
-desc: ["Sheldon Brown"],
-href: ['http://sheldonbrown.com/']
+id:1,
+intro: "Bicycle references cover the net. This site will break each of these sites into categories to make them easier to navigate.",
+origin: "earth",
+desc: "Sheldon Brown is the original bicycle reference writer online, and is a inspiration to many. I first discovered Sheldon Brown in college, and read through his site. I personally loved his personal bikes the most, as they told me more about Sheldon as a person. This site hopes to someday give users the power to build their own page like the late great S.B. and then to look through everyone else\'s works as well. Check out sheldon\'s site!",
+href: 'http://sheldonbrown.com'
 },
 {
-make: null,
-category: "Fixed Gear Conversions",
-origin: null,
-desc: [],
-href: []
-},
-{
-make: null,
-category: "Classic Road",
-origin: null,
-desc: [],
-href: []
-},
-{
-make: null,
-category: "Circus Bikes & Special Projects",
-origin: null,
-desc: [],
-href: []
-},
-{
-make:"British Recherché",
-category: "Vintage",
+make:"British Bicycles",
+id:2,
 origin: "U.K.",
 desc: [],
 href: []
 },
 {
-make:"Japanese Recherché",
-category: "Vintage",
+make:"Japanese Bicycles",
+id:3,
 origin: "Japan",
 desc: [],
 href: []
 },
 {
-make:"American Recherché",
-category: "Vintage",
+make:"American Bicycles",
+id:4,
 origin: "U.S.A.",
 desc: [],
 href: []
 },
 {
-make:"Italian Recherché",
-category: "Vintage",
+make:"Italian Bicycles",
+id:5,
 origin: "Italian",
 desc: [],
 href: []
 },
 {
-make:"French Recherché",
-category: "Vintage",
+make:"French Bicycles",
+id:6,
 origin: "French",
 desc: [],
 href: []
 },
 {
-make:"Greater European Recherché",
-category: "Vintage",
+make:"European Bicycles",
+id:7,
 origin: "European",
 desc: [],
 href: []
 },
 {
 make:"Bianchi",
-category: "Vintage",
+id:8,
 origin: "Italian",
-desc: ['Offical Site'],
-href: ['http://www.bianchiusa.com/']
+desc: 'Offical Site',
+href: 'http://www.bianchiusa.com/'
 },
 {
 make:"Bridgestone",
-category: "Vintage",
+id:9,
 origin: "Japan",
 desc: [],
 href: []
 },
 {
 make:"Cannondale",
-category: "Vintage",
+id:10,
 origin: "U.S.A.",
 desc: [],
 href: []
 },
 {
 make:"Centurion",
-category: "Vintage",
+id:11,
 origin: "Japan",
 desc: [],
 href: []
 },
 {
 make:"Fuji",
-category: "Vintage",
+id:12,
 origin: "Japan",
 desc: [],
 href: []
 },
 {
 make:"Gitane",
-category: "Vintage",
+id:13,
 origin: "French",
 desc: [],
 href: []
 },
 {
 make:"Miyata",
-category: "Vintage",
+id:14,
 origin: "Japan",
 desc: [],
 href: []
 },
 {
 make:"Nishiki",
-category: "Vintage",
+id:15,
 origin: "Japan",
 desc: [],
 href: []
 },
 {
 make:"Novara",
-category: "Economy",
+id:16,
 origin: "U.S.A.",
 desc: [],
 href: []
 },
 {
 make:"Olmo",
-category: "Vintage",
+id:17,
 origin: "Italian",
 desc: [],
 href: []
 },
 {
 make:"Panasonic",
-category: "Vintage",
+id:18,
 origin: "Japan",
 desc: [],
 href: []
 },
 {
 make:"Peugeot",
-category: "Vintage",
+id:19,
 origin: "French",
 desc: [],
 href: []
 },
 {
 make:"Raleigh",
-category: "Vintage",
+id:20,
 origin: "U.K.",
 desc: [],
 href: []
 },
 {
 make:"Schwinn",
-category: "Vintage",
+id:21,
 origin: "U.S.A.",
 desc: [],
 href: []
 },
 {
 make:"Specialized",
-category: "Vintage",
+id:22,
 origin: "U.S.A.",
 desc: [],
 href: []
 },
 {
 make:"Terry",
-category: "Vintage",
+id:23,
 origin: "Japan",
 desc: [],
 href: []
 },
 {
 make:"Trek",
-category: "Vintage",
+id:24,
 origin: "U.S.A.",
 desc: [],
 href: []
 },
 {
 make:"American Department Store",
-category: "Economy",
+id:25,
 origin: "U.S.A.",
 desc: [],
 href: []
 },
 {
 make:"Japanese Department Store",
-category: "Economy",
+id:26,
 origin: "Japan",
 desc: [],
 href: []
 },
 {
 make:"You tell me",
-category: "Economy",
+id:27,
+origin: null,
+desc: [],
+href: []
+},
+{
+make: "Fixed Gear Conversions",
+id:28,
+origin: null,
+desc: [],
+href: []
+},
+{
+make: "Circus Bikes & Special Projects",
+id:29,
 origin: null,
 desc: [],
 href: []

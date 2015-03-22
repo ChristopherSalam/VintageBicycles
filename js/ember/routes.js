@@ -28,8 +28,8 @@ App.ReferencesRoute = Em.Route.extend({
   }
 });
 
-App.ReferenceRoute = Em.Route.extend({
-  model: function(params) {
-    return App.REFERENCES.findBy('category', params.category);
-  }
-});
+// App.ReferenceRoute = Em.Route.extend({
+//   model: function(params) {
+//     return App.REFERENCES
+//   }
+// });
