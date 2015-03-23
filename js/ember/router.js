@@ -16,5 +16,8 @@ App.Router.map(function() {
   this.route('references', function() {
     this.resource('reference', {path: '/:make' });
   });
+  this.route('vendors', function() {
+    this.resource('vendor', {path: '/:origin' });
+  });
   this.route('credits', {path: 'mymaudlincareer'});
 });

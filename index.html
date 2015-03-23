@@ -29,6 +29,7 @@
           {{#link-to 'about' tagName='li'}} &nbsp; Be an Archeologist &nbsp; {{/link-to}}
           {{#link-to 'catalog' tagName='li'}} &nbsp; View our Catalog &nbsp; {{/link-to}}
           {{#link-to 'references' tagName='li'}} &nbsp; References &nbsp;{{/link-to}}
+          {{#link-to 'vendors' tagName='li'}} &nbsp; Vendors &nbsp;{{/link-to}}
         </ul>
       </div>
     </div>
@@ -283,8 +284,8 @@
 </script>
   <!--script for references-->
 <script type="text/x-handlebars" data-template-name='references'>
-  <h1>Bibliography</h1>
-  <h4>Take these links to other great sites!</h4>
+  <h1>References</h1>
+  <h4>Take these links to other great informational sites!</h4>
     <div class='col-sm-3'>
       <div class='list-group'>
         {{#each}}
@@ -299,12 +300,46 @@
       {{outlet}}
     </div>
 </script>
-  <!--script for references-->
+  <!--script for reference-->
 <script type="text/x-handlebars" data-template-name='reference'>
-<h2>{{make}}</h2>
-<p>{{intro}}</p>
-<p>{{text}}</p>
-<a {{bind-attr href='url'}}><p>Check out this site!</p></a>
+{{ref-spec ref=this}}
+</script>
+  <!--script for references-->
+<script type="text/x-handlebars" data-template-name='vendors'>
+  <h1>Vendors</h1>
+  <h4>Take these links to other great stores and parts sellers!</h4>
+    <div class='col-sm-3'>
+      <div class='list-group'>
+        {{#each}}
+          {{#link-to 'vendor' this classNames='list-group-item'}}
+            <p>{{make}}</p>
+          {{/link-to}} 
+        </li>
+      {{/each}}
+      </div>
+    </div>
+    <div class='col-sm-9'>
+      {{outlet}}
+    </div>
+</script>
+  <!--script for reference-->
+<script type="text/x-handlebars" data-template-name='vendor'>
+{{ref-spec ref=this}}
+</script>
+<!--Component for reused template for individual bikes-->
+<script type="text/x-handlebars" data-template-name='components/ref-spec'>
+<h2>{{ref.make}}</h2>
+<p>{{ref.intro}}</p>
+<p><strong>{{ref.title}}</strong> {{ref.text}}
+<a {{bind-attr href='ref.url'}}  target='_blank'>Check out this site!</p></a>
+{{#if text2}}
+<p><strong>{{ref.title2}}</strong> {{ref.text2}}
+<a {{bind-attr href='ref.url2'}}  target='_blank'>Check out this site!</p></a>
+{{/if}}
+{{#if text3}}
+<p><strong>{{ref.title3}}</strong> {{ref.text3}}
+<a {{bind-attr href='ref.url3'}}  target='_blank'>Check out this site!</p></a>
+{{/if}}
 </script>
   <!--script for  credits-->
 <script type='text/x-handlebars' data-template-name='credits'>
@@ -325,5 +360,6 @@
 <script src="js/data/about.js"></script>
 <script src="js/data/catalog.js"></script>
 <script src="js/data/references.js"></script>
+<script src="js/data/vendors.js"></script>
 </body>
 </html>

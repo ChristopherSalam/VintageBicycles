@@ -4,15 +4,23 @@ make: "General",
 id:1,
 intro: "Bicycle references cover the net. This site will break each of these sites into categories to make them easier to navigate.",
 origin: "earth",
-text: "Sheldon Brown is the original bicycle reference writer online, and is a inspiration to many. I first discovered Sheldon Brown in college, and read through his site. I personally loved his personal bikes the most, as they told me more about Sheldon as a person. This site hopes to someday give users the power to build their own page like the late great S.B. and then to look through everyone else\'s works as well.",
-url: 'http://sheldonbrown.com'
+title: "Sheldon Brown",
+text: "is the original bicycle reference writer online, and is a inspiration to many. I first discovered Sheldon Brown in college, and read through his site. I personally loved his personal bikes the most, as they told me more about Sheldon as a person. This site hopes to someday give users the power to build their own page for their bikes...",
+url: 'http://sheldonbrown.com',
+title2: "Classic Rendezvous",
+text2: 'really specializes in race quality vintage bicycles, and has really good information throughout the website. It\'s got really good coverage on rare frames.',
+url2: 'http://www.classicrendezvous.com/',
+title3:"Dave\'s Vintage Bikes",
+text3: 'singles out older cruiser and citybikes from the American department store from the 1960s-1970s, but have some very good photos.',
+url3: 'http://www.nostalgic.net',
 },
 {
 make:"British Bicycles",
 id:2,
 origin: "U.K.",
-text: [],
-url: null
+title:"Classic Lightweights UK",
+text: 'really has some great information and focuses on British and Italian lightweight road bikes.',
+url: 'http://www.classiclightweights.co.uk/'
 },
 {
 make:"Japanese Bicycles",
@@ -25,15 +33,24 @@ url: null
 make:"American Bicycles",
 id:4,
 origin: "U.S.A.",
-text: [],
-url: null
+title3:"Dave\'s Vintage Bikes",
+text3: 'singles out older cruiser and citybikes from the American department store from the 1960s-1970s, but have some very good photos.',
+url3: 'http://www.nostalgic.net',
+title3:"Dave\'s Vintage Bikes",
+text3: 'singles out older cruiser and citybikes from the American department store from the 1960s-1970s, but have some very good photos.',
+url3: 'http://www.nostalgic.net',
+title3:"Dave\'s Vintage Bikes",
+text3: 'singles out older cruiser and citybikes from the American department store from the 1960s-1970s, but have some very good photos.',
+url3: 'http://www.nostalgic.net'
 },
 {
 make:"Italian Bicycles",
 id:5,
 origin: "Italian",
 text: [],
-url: null
+title:"Classic Lightweights UK",
+text: 'really has some great information and focuses on British and Italian lightweight road bikes.',
+url: 'http://www.classiclightweights.co.uk/'
 },
 {
 make:"French Bicycles",
@@ -169,23 +186,16 @@ text: [],
 url: null
 },
 {
-make:"American Department Store",
+make:"American Economy Bicycles",
 id:25,
 origin: "U.S.A.",
 text: [],
 url: null
 },
 {
-make:"Japanese Department Store",
+make:"Japanese Economy Bicycles",
 id:26,
 origin: "Japan",
-text: [],
-url: null
-},
-{
-make:"You tell me",
-id:27,
-origin: null,
 text: [],
 url: null
 },

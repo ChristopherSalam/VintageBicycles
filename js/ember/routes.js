@@ -28,6 +28,12 @@ App.ReferencesRoute = Em.Route.extend({
   }
 });
 
+App.VendorsRoute = Em.Route.extend({
+  model: function() {
+    return App.VENDORS;
+  }
+});
+
 // App.ReferenceRoute = Em.Route.extend({
 //   model: function(params) {
 //     return App.REFERENCES
