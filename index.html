@@ -301,7 +301,7 @@
     </div>
 </script>
   <!--script for references/index-->
-  <script type="text/x-handlebars" data-template-name='references/index'>
+<script type="text/x-handlebars" data-template-name='references/index'>
 <h2>General links:</h2>
 <br>
 {{genref-spec ref=this}}
@@ -314,7 +314,7 @@
 <br>
 {{genref-spec ref=this}}
 </script>
-  <!--script for references-->
+  <!--script for vendors-->
 <script type="text/x-handlebars" data-template-name='vendors'>
   <h1>Vendors</h1>
   <h4>Take these links to other great stores and parts sellers!</h4>
@@ -332,13 +332,22 @@
       {{outlet}}
     </div>
 </script>
-  <!--script for reference-->
+  <!--script for vendor-->
 <script type="text/x-handlebars" data-template-name='vendor'>
 {{ref-spec ref=this}}
+</script>
+  <!--script for vendors/index-->
+<script type="text/x-handlebars" data-template-name='vendors/index'>
+<h2>General links:</h2>
+<br>
+<h4>Retro means new material but meant to resemble vintage.</h4>
+<br>
+<h4>These vendors are organized here to help you find older designed bicycles, in general shift between modern day and vintage components.</h4>
 </script>
 <!--Component for reused template for individual bikes-->
 <script type="text/x-handlebars" data-template-name='components/ref-spec'>
 <h2>{{ref.make}}</h2>
+<br>
 {{#if ref.intro}}
 <br><p>{{ref.intro}}</p>
 {{/if}}
@@ -364,13 +373,12 @@
 </script>
 <!--Component for reused template for the general reference-->
 <script type="text/x-handlebars" data-template-name='components/genref-spec'>
-<a href='http://sheldonbrown.com' target='_blank'><p><strong>Sheldon Brown</strong></a> is the original bicycle reference writer online, and is a inspiration to many. I first discovered Sheldon Brown in college, and read through his site. I personally loved his personal bikes the most, as they told me more about Sheldon as a person. This site hopes to someday give users the power to build their own page for their bikes...</p>
+<a href='http://sheldonbrown.com' target='_blank'><p><strong>Sheldon Brown</strong></a> is the original bicycle reference writer online, and is a inspiration to many. I first discovered Sheldon Brown in college, and read through his site. I personally loved his <a href="http://sheldonbrown.com/org/bicycle.html" target="_blank">personal bikes</a> the most, as they told me more about Sheldon as a person. This site hopes to someday give users the power to build their own page for their bikes...</p>
 <a href='http://www.bikeforums.net/forum.php' target='_blank'><p><strong>Bike Forums</strong></a> is an extremely helpful forum site where you can ask questions about any bike project and find opinions on prices, quality, history, and mechanical issues from a group of helpful folks.</p>
 <a href='http://www.velospace.org/' target='_blank'><p><strong>Velospace</strong></a> is a site that allows bicycle enthusiasts to upload images and content and keep track of their own profiles. This site was a big inspiration for vintagebicycles.info.</p>
+<a href='http://www.cyclofiend.com/' target='_blank'><p><strong>Cyclofiend</strong></a> is a site I learned about recently when buying my XO-1. This site has lots of really nice bicycles on it, user submitted.</p>
 <a href='http://www.classicrendezvous.com'  target='_blank'><p><strong> Classic Rendezvous</strong></a> really specializes in race quality vintage bicycles, and has really good information throughout the website. Its got really good coverage on rare frames.</p>
 <a href='http://bicycles.stackexchange.com/' target='_blank'><p><strong> Stack Exchange</strong></a> is typically a website people turn to for help with computer coding problems, but the site has a bicycles section and it is a great place to find unique questions, problems, and feedback. The best way to use the site is rather click on this link, write a problem directly into google and add the bicycles.stackexchange.com url in the query.</p>
-
-
 </script>
   <!--script for  credits-->
 <script type='text/x-handlebars' data-template-name='credits'>

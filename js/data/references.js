@@ -6,23 +6,21 @@ origin: "U.K.",
 title:"Classic Lightweights UK",
 text: 'really has some great information and focuses on British and Italian lightweight road bikes.',
 url: 'http://www.classiclightweights.co.uk/',
-title2: "Velospace",
-text2: 'is a site that allows bicycle enthusiasts to upload images and content and keep track of their own profiles. This site was a big inspiration for vintagebicycles.info.',
-url2: 'http://www.velospace.org/',
-title3:"Classic Rendezvous",
-text3: 'really specializes in race quality vintage bicycles, and has really good information throughout the website. It\'s got really good coverage on rare frames.',
-url3: 'http://www.classicrendezvous.com/',
-title4:"Dave\'s Vintage Bikes",
-text4: 'singles out older cruiser and citybikes from the American department store from the 1960s-1970s, but have some very good photos.',
-url4: 'http://www.nostalgic.net'
+title5:"Moulton Bicycles",
+text5: 'was a company that designed a special kind of folding bicycle.',
+url5: 'http://en.wikipedia.org/wiki/Moulton_Bicycle',
 },
 {
 make:"Japanese Bicycles",
 id:3,
 origin: "Japan",
-title: "Classic Rendezvous/Japan",
-text: 'really specializes in race quality vintage bicycles, and has really good information throughout the website. It\'s got really good coverage on rare frames. They break down countries by region, this link will take you to the Japanese bicycles specifically.',
-url: 'http://www.classicrendezvous.com/Japan/japan.htm'
+title: "Sheldon Brown/Japan",
+text: 'covers alot a ground. Get some coffee.',
+url: 'http://sheldonbrown.com/japan.html',
+title2: "Classic Rendezvous/Japan",
+text2: 'really specializes in race quality vintage bicycles, and has really good information throughout the website. It\'s got really good coverage on rare frames. They break down countries by region, this link will take you to the Japanese bicycles specifically.',
+url2: 'http://www.classicrendezvous.com/Japan/japan.htm',
+tag: "Bridgestone"
 },
 {
 make:"American Bicycles",
@@ -51,8 +49,9 @@ url: 'http://www.classiclightweights.co.uk/'
 make:"French Bicycles",
 id:6,
 origin: "French",
-text: [],
-url: null
+title: 'Sheldon Brown/French',
+text: ' mostly covers conversion and sizing problems, but has a bit of french bicycle history.',
+url: 'http://sheldonbrown.com/velos.html'
 },
 {
 make:"European Bicycles",
@@ -65,15 +64,29 @@ url: null
 make:"Bianchi",
 id:8,
 origin: "Italian",
-text: 'Offical Site',
-url: 'http://www.bianchiusa.com/'
+title: 'Bianchi\'s',
+text: ' Official Site',
+url: 'http://www.bianchiusa.com/',
+title2: 'Bianchi Bicycles',
+text2: ' @ Wikipedia',
+url2: 'http://en.wikipedia.org/wiki/Bianchi_Bicycles'
 },
 {
 make:"Bridgestone",
 id:9,
 origin: "Japan",
-text: [],
-url: null
+title: 'Bridgestone\'s',
+text: ' Official Site - History Page',
+url: 'http://www.bscycle.co.jp/en/corporate/04.html',
+title2: 'Sheldon Brown/Bridgestone',
+text2: ' is a great stop to learn about the heyday of bridgestone bicycles. Check out the 1980s-1990s catalogs at the bottom.',
+url2: 'http://sheldonbrown.com/bridgestone/',
+title3: 'Bridgestone BMX',
+text3: ' on facebook.',
+url3: 'https://www.facebook.com/BridgestoneBMX',
+title4: 'Rivendell Bicycle Works',
+text4: ' was formed by American Bridgestone CEO Grant Peterson, who often disagreed with Bridgestone Japan and left to made his own bicycles based off 1980s-1990s bridgestone bicycles.',
+url4: 'http://en.wikipedia.org/wiki/Rivendell_Bicycle_Works'
 },
 {
 make:"Cannondale",
