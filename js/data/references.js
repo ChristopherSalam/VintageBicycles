@@ -1,33 +1,28 @@
 App.REFERENCES = [
 {
-make: "General",
-id:1,
-intro: "Bicycle references cover the net. This site will break each of these sites into categories to make them easier to navigate.",
-origin: "earth",
-title: "Sheldon Brown",
-text: "is the original bicycle reference writer online, and is a inspiration to many. I first discovered Sheldon Brown in college, and read through his site. I personally loved his personal bikes the most, as they told me more about Sheldon as a person. This site hopes to someday give users the power to build their own page for their bikes...",
-url: 'http://sheldonbrown.com',
-title2: "Classic Rendezvous",
-text2: 'really specializes in race quality vintage bicycles, and has really good information throughout the website. It\'s got really good coverage on rare frames.',
-url2: 'http://www.classicrendezvous.com/',
-title3:"Dave\'s Vintage Bikes",
-text3: 'singles out older cruiser and citybikes from the American department store from the 1960s-1970s, but have some very good photos.',
-url3: 'http://www.nostalgic.net',
-},
-{
 make:"British Bicycles",
 id:2,
 origin: "U.K.",
 title:"Classic Lightweights UK",
 text: 'really has some great information and focuses on British and Italian lightweight road bikes.',
-url: 'http://www.classiclightweights.co.uk/'
+url: 'http://www.classiclightweights.co.uk/',
+title2: "Velospace",
+text2: 'is a site that allows bicycle enthusiasts to upload images and content and keep track of their own profiles. This site was a big inspiration for vintagebicycles.info.',
+url2: 'http://www.velospace.org/',
+title3:"Classic Rendezvous",
+text3: 'really specializes in race quality vintage bicycles, and has really good information throughout the website. It\'s got really good coverage on rare frames.',
+url3: 'http://www.classicrendezvous.com/',
+title4:"Dave\'s Vintage Bikes",
+text4: 'singles out older cruiser and citybikes from the American department store from the 1960s-1970s, but have some very good photos.',
+url4: 'http://www.nostalgic.net'
 },
 {
 make:"Japanese Bicycles",
 id:3,
 origin: "Japan",
-text: [],
-url: null
+title: "Classic Rendezvous/Japan",
+text: 'really specializes in race quality vintage bicycles, and has really good information throughout the website. It\'s got really good coverage on rare frames. They break down countries by region, this link will take you to the Japanese bicycles specifically.',
+url: 'http://www.classicrendezvous.com/Japan/japan.htm'
 },
 {
 make:"American Bicycles",
@@ -112,8 +107,12 @@ url: null
 make:"Miyata",
 id:14,
 origin: "Japan",
-text: [],
-url: null
+title: 'Miyata Bicycle Company',
+text: '@ Wikipedia',
+url: 'http://en.wikipedia.org/wiki/Miyata',
+title2: 'Koga Miyata Bicycle Company',
+text2: '@ Wikipedia',
+url2: 'http://en.wikipedia.org/wiki/Koga_Miyata'
 },
 {
 make:"Nishiki",

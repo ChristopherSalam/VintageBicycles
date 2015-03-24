@@ -300,9 +300,19 @@
       {{outlet}}
     </div>
 </script>
+  <!--script for references/index-->
+  <script type="text/x-handlebars" data-template-name='references/index'>
+<h2>General links:</h2>
+<br>
+{{genref-spec ref=this}}
+</script>
   <!--script for reference-->
 <script type="text/x-handlebars" data-template-name='reference'>
 {{ref-spec ref=this}}
+<br>
+<h4>General links:</h4>
+<br>
+{{genref-spec ref=this}}
 </script>
   <!--script for references-->
 <script type="text/x-handlebars" data-template-name='vendors'>
@@ -329,17 +339,38 @@
 <!--Component for reused template for individual bikes-->
 <script type="text/x-handlebars" data-template-name='components/ref-spec'>
 <h2>{{ref.make}}</h2>
-<p>{{ref.intro}}</p>
-<p><strong>{{ref.title}}</strong> {{ref.text}}
-<a {{bind-attr href='ref.url'}}  target='_blank'>Check out this site!</p></a>
-{{#if text2}}
-<p><strong>{{ref.title2}}</strong> {{ref.text2}}
-<a {{bind-attr href='ref.url2'}}  target='_blank'>Check out this site!</p></a>
+{{#if ref.intro}}
+<br><p>{{ref.intro}}</p>
 {{/if}}
-{{#if text3}}
-<p><strong>{{ref.title3}}</strong> {{ref.text3}}
-<a {{bind-attr href='ref.url3'}}  target='_blank'>Check out this site!</p></a>
+<br>
+{{#if ref.text}}
+<a {{bind-attr href='ref.url'}}  target='_blank'><p><strong>{{ref.title}}</strong></a> {{ref.text}}
 {{/if}}
+{{#if ref.text2}}
+<a {{bind-attr href='ref.url2'}}  target='_blank'><p><strong>{{ref.title2}}</strong></a> {{ref.text2}}
+{{/if}}
+{{#if ref.text3}}
+<a {{bind-attr href='ref.url3'}}  target='_blank'><p><strong>{{ref.title3}}</strong></a> {{ref.text3}}
+{{/if}}
+{{#if ref.text4}}
+<a {{bind-attr href='ref.url4'}}  target='_blank'><p><strong>{{ref.title4}}</strong></a> {{ref.text4}}
+{{/if}}
+{{#if ref.text5}}
+<a {{bind-attr href='ref.url5'}}  target='_blank'><p><strong>{{ref.title5}}</strong></a> {{ref.text5}}
+{{/if}}
+{{#if ref.text6}}
+<a {{bind-attr href='ref.url6'}}  target='_blank'><p><strong>{{ref.title6}}</strong></a> {{ref.text6}}
+{{/if}}
+</script>
+<!--Component for reused template for the general reference-->
+<script type="text/x-handlebars" data-template-name='components/genref-spec'>
+<a href='http://sheldonbrown.com' target='_blank'><p><strong>Sheldon Brown</strong></a> is the original bicycle reference writer online, and is a inspiration to many. I first discovered Sheldon Brown in college, and read through his site. I personally loved his personal bikes the most, as they told me more about Sheldon as a person. This site hopes to someday give users the power to build their own page for their bikes...</p>
+<a href='http://www.bikeforums.net/forum.php' target='_blank'><p><strong>Bike Forums</strong></a> is an extremely helpful forum site where you can ask questions about any bike project and find opinions on prices, quality, history, and mechanical issues from a group of helpful folks.</p>
+<a href='http://www.velospace.org/' target='_blank'><p><strong>Velospace</strong></a> is a site that allows bicycle enthusiasts to upload images and content and keep track of their own profiles. This site was a big inspiration for vintagebicycles.info.</p>
+<a href='http://www.classicrendezvous.com'  target='_blank'><p><strong> Classic Rendezvous</strong></a> really specializes in race quality vintage bicycles, and has really good information throughout the website. Its got really good coverage on rare frames.</p>
+<a href='http://bicycles.stackexchange.com/' target='_blank'><p><strong> Stack Exchange</strong></a> is typically a website people turn to for help with computer coding problems, but the site has a bicycles section and it is a great place to find unique questions, problems, and feedback. The best way to use the site is rather click on this link, write a problem directly into google and add the bicycles.stackexchange.com url in the query.</p>
+
+
 </script>
   <!--script for  credits-->
 <script type='text/x-handlebars' data-template-name='credits'>
