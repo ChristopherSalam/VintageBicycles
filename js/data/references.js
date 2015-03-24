@@ -54,11 +54,23 @@ text: ' mostly covers conversion and sizing problems, but has a bit of french bi
 url: 'http://sheldonbrown.com/velos.html'
 },
 {
-make:"European Bicycles",
-id:7,
-origin: "European",
-text: [],
-url: null
+make: "Fixed Gear Conversions",
+id:28,
+origin: null,
+title: "Fixed Gear Gallery",
+text: " is the ultimate bicycle website for track bicycles and fixed gear conversions. This website is updated constantly and some of the conversions of classic bicycles are very cool.",
+url: "http://www.fixedgeargallery.com/"
+},
+{
+make: "Modified Bikes & Special Projects",
+id:29,
+origin: "Make your own",
+title: "Stoopid Tall",
+text: "is a 14 foot tall bicycle, ridden here in LA's Ciclavia. Worth checking out!",
+url: "http://laughingsquid.com/stoopid-tall-a-14-foot-tall-bicycle/",
+title2: "Tall Bikes",
+text2: "@ Wikipedia",
+url2: 'http://en.wikipedia.org/wiki/Tall_bike'
 },
 {
 make:"Bianchi",
@@ -92,29 +104,71 @@ url4: 'http://en.wikipedia.org/wiki/Rivendell_Bicycle_Works'
 make:"Cannondale",
 id:10,
 origin: "U.S.A.",
-text: [],
-url: null
+title: "Cannondale",
+text: " Official Site",
+url: "http://www.cannondale.com/nam_en/",
+title2: "Cannondale Bicycle Corporation",
+text2: "@ Wikipedia",
+url2: "http://en.wikipedia.org/wiki/Cannondale_Bicycle_Corporation"
 },
 {
 make:"Centurion",
 id:11,
 origin: "Japan",
-text: [],
-url: null
+title: "Sheldon Brown/Centurion",
+text: "is an great article written by Ashley Wright.",
+url: 'http://sheldonbrown.com/centurion/',
+title2: "Centurion",
+text2: " Official site. It is now a sport bicycle company out of Germany.",
+url2: "http://www.centurion.de/",
+title3: "Centurion",
+text3: '@ Wikipedia',
+url3: 'http://en.wikipedia.org/wiki/Centurion_(bicycle)'
 },
 {
 make:"Fuji",
 id:12,
 origin: "Japan",
-text: [],
-url: null
+title: 'Classic Fuji',
+text: 'is a clear labor of love site, check it out if you have a classic Fuji.',
+url: 'http://www.classicfuji.com/',
+title3: 'Fuji Bikes',
+text3: '@ Wikipedia',
+url3: 'http://en.wikipedia.org/wiki/Fuji_Bikes'
 },
 {
 make:"Gitane",
 id:13,
 origin: "French",
-text: [],
-url: null
+title: 'Classic Rendezvous/Gitane',
+text: ' is a great readup.',
+url: 'http://classicrendezvous.com/France/bicycles/Gitane/gallery.htm',
+title2: 'Gitane',
+text2: ' Official Site.',
+url2: 'http://www.gitane.com/',
+title3: 'Gitane',
+text3: ' @ Wikipedia',
+url3: 'http://en.wikipedia.org/wiki/Gitane'
+},
+{
+make:"Klein",
+id:13.5,
+origin: "U.S.A.",
+title: 'Old Klein',
+text: 'is a great website put together by some serious Klein fans.',
+url: 'http://www.oldklein.com/',
+title2: 'Klein Bikes',
+text2: 'is a bicycle company that pioneered the use of large diameter aluminum alloy tubes and use amazingly bright colored paint. This is a link to a fact page on trek\'s website',
+url: 'http://trekdg.com/brands/klein-bicycles-pg68.htm',
+title3: 'Klein Bicycle Project',
+text3: 'is purchasing old klein\'s for a museum project in Los Angeles. Check it out!',
+url3: 'https://www.facebook.com/KleinBicycleProject',
+title4: "Mombat.org/Klein",
+text4: 'is a mountain bicycle museum & store site that has some really great bicycle photos & catalogs.',
+url4: 'http://mombat.org/MOMBAT/BikeHistoryPages/Klein.html',
+title5: 'Klein Bikes',
+text5: '@ Wikipedia',
+url5: 'http://en.wikipedia.org/wiki/Klein_Bikes'
 },
 {
 make:"Miyata",
@@ -142,18 +196,18 @@ text: [],
 url: null
 },
 {
-make:"Olmo",
-id:17,
-origin: "Italian",
-text: [],
-url: null
-},
-{
 make:"Panasonic",
 id:18,
 origin: "Japan",
-text: [],
-url: null
+title: "Panasonic Bicycle Museum",
+text: 'states the problem best themselves: "It seemed as if every other brand of bicycle had some sort of site or registry dedicated to it except for Panasonic.  Why did Panasonic have only one or two mentions elsewhere?" Looks like they solved their own problem with a great site.',
+url: "http://www.panasonicbikemuseum.info",
+title2: 'Panasonic',
+text2: 'Official Site.',
+url2: 'http://cycle.panasonic.jp/',
+title3: 'Panasonic Bicycles',
+text3: '@ Wikipedia',
+url3: 'http://en.wikipedia.org/wiki/Panasonic_bicycles'
 },
 {
 make:"Peugeot",
@@ -208,20 +262,6 @@ url: null
 make:"Japanese Economy Bicycles",
 id:26,
 origin: "Japan",
-text: [],
-url: null
-},
-{
-make: "Fixed Gear Conversions",
-id:28,
-origin: null,
-text: [],
-url: null
-},
-{
-make: "Circus Bikes & Special Projects",
-id:29,
-origin: null,
 text: [],
 url: null
 }
