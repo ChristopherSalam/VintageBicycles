@@ -1,6 +1,8 @@
 App.REFERENCES = [
 {
 make:"Bridgestone",
+lin: "{{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}",
+japanese: "yes",
 id:9,
 origin: "Japan",
 title: 'Bridgestone\'s',
