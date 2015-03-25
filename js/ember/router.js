@@ -2,7 +2,7 @@ App.Router.map(function() {
   this.route('about', function() {
   	this.resource('person', {path: '/:person' });
   });
-  this.route('catalog', function() {
+  this.resource('catalog', function() {
   });
   this.resource('bianchi', {path: '/catalog/bianchi/:bianchi'});  
   this.resource('cannondale', {path: '/catalog/cannondale/:cannondale'});
