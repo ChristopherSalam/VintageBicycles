@@ -55,9 +55,9 @@
 <h4>If you are able to contribute a significant amount to our site, we will list you here and allow other interested cyclists to contact you. Thanks in advance!</h4>
 </script>
 <script type="text/x-handlebars" data-template-name='about'>
-  <h2>Be an archeologist for Vintage Bicycles<img src="img/crank.jpg" height="20px" width="20px">Info!</h2>
+  <h2>Be an archeologist for Vintage Bicycles<img src="img/crank.jpg" height="15px" width="15px">Info!</h2>
   <h4>Our Major Contributers:</h4>
-    <div class='col-sm-3'>
+    <div class='col-sm-2'>
       <div class='list-group'>
         {{#each}}
           {{#link-to 'person' this classNames='list-group-item'}}
@@ -67,7 +67,7 @@
       {{/each}}
       </div>
     </div>
-    <div class='col-sm-9'>
+    <div class='col-sm-10'>
       {{outlet}}
     </div>
 </script>
@@ -80,7 +80,7 @@
 <script type="text/x-handlebars" data-template-name='catalog'>
   <h1>Catalog of Vintage Bicycles</h1>
   <h2>Currently {{catalogCount}} bicycles!</h2>
-  <ul class='nav navbar-nav navbar-left'>
+  <ul class='nav navbar-nav navbar-left list-group'>
         {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
         {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
         {{#link-to 'peugeot' this tagName='li'}} &nbsp; Peugeot &nbsp; {{/link-to}}
@@ -89,7 +89,7 @@
         {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
         {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
         {{#link-to 'usa' this tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
-        {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
+        {{#link-to 'catalog' tagName='li'}} &nbsp; Catalog &nbsp;{{/link-to}}
   </ul><br><br><br>
   <ul class='list-unstyled'>
     {{#each}}
@@ -108,7 +108,7 @@
         {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
         {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
         {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
-        {{#link-to 'usa' tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
+        {{#link-to 'usa' this tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
         {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
   </ul><br><br><br>
   <ul class='list-unstyled dashboard'>
@@ -128,7 +128,7 @@
         {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
         {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
         {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
-        {{#link-to 'usa' tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
+        {{#link-to 'usa' this tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
         {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
   </ul><br><br><br>
   <ul class='list-unstyled dashboard'>
@@ -148,7 +148,7 @@
         {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
         {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
         {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
-        {{#link-to 'usa' tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
+        {{#link-to 'usa' this tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
         {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
   </ul><br><br><br>
   <ul class='list-unstyled dashboard'>
@@ -168,7 +168,7 @@
         {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
         {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
         {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
-        {{#link-to 'usa' tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
+        {{#link-to 'usa' this tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
         {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
   </ul><br><br><br>
   <ul class='list-unstyled dashboard'>
@@ -188,7 +188,7 @@
         {{#link-to 'japanese' tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
         {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
         {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
-        {{#link-to 'usa' tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
+        {{#link-to 'usa' this tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
         {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
   </ul><br><br><br>
   <ul class='list-unstyled dashboard'>
@@ -208,7 +208,7 @@
         {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
         {{#link-to 'english' tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
         {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
-        {{#link-to 'usa' tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
+        {{#link-to 'usa' this tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
         {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
   </ul><br><br><br>
   <ul class='list-unstyled dashboard'>
@@ -286,7 +286,7 @@
 <script type="text/x-handlebars" data-template-name='references'>
   <h1>References</h1>
   <h4>Take these links to other great informational sites!</h4>
-    <div class='col-sm-3'>
+    <div class='col-sm-3 col-xs-4'>
       <div class='list-group'>
         {{#each}}
           {{#link-to 'reference' this classNames='list-group-item'}}
@@ -296,7 +296,7 @@
       {{/each}}
       </div>
     </div>
-    <div class='col-sm-9'>
+    <div class='col-sm-9 col-xs-8'>
       {{outlet}}
     </div>
 </script>

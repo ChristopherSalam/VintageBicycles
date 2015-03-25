@@ -6,6 +6,12 @@ origin: "U.K.",
 title: "Budget Bicycle Center",
 text: 'sells vintage bicycles and has some very rare offerings with full price information.',
 url: 'http://budgetbicyclectr.com/vintage-bicycles-for-sale.html',
+title2: "Local Bike Trader",
+text2: 'is a region-specifying trade hub. Take a look!',
+url2: 'http://www.localbiketrader.com/',
+title3: "Terry Bicycles",
+text3: 'is connected to georgenaterry.com but here there is more information and clothing and other accessories for female cyclists.',
+url3: 'http://www.terrybicycles.com/On-Sale'
 },
 {
 make: "U.S.A. based Retro Vendors",
