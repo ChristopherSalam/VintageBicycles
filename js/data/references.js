@@ -2,7 +2,7 @@ App.REFERENCES = [
 {
 make:"Bridgestone",
 japanese: "yes",
-id:9,
+id:1,
 origin: "Japan",
 originimg: 'img/countries/Japan.png',
 title: 'Bridgestone\'s',
@@ -26,7 +26,7 @@ url6: 'http://www.classicrendezvous.com/Japan/japan.htm'
 },
 {
 make:"Centurion",
-id:11,
+id:2,
 origin: "Japan",
 originimg: 'img/countries/Japan.png',
 title: "Sheldon Brown/Centurion",
@@ -47,7 +47,7 @@ url5: 'http://www.classicrendezvous.com/Japan/japan.htm'
 },
 {
 make:"Fuji",
-id:12,
+id:3,
 origin: "Japan",
 originimg: 'img/countries/Japan.png',
 title: 'Classic Fuji',
@@ -65,7 +65,7 @@ url5: 'http://www.classicrendezvous.com/Japan/japan.htm'
 },
 {
 make:"Miyata",
-id:15,
+id:4,
 origin: "Japan",
 originimg: 'img/countries/Japan.png',
 title: 'Miyata Bicycle Company',
@@ -83,7 +83,7 @@ url4: 'http://www.classicrendezvous.com/Japan/japan.htm'
 },
 {
 make:"Nishiki",
-id:16,
+id:5,
 origin: "Japan",
 originimg: 'img/countries/Japan.png',
 title3: "Sheldon Brown/Japan",
@@ -95,7 +95,7 @@ url4: 'http://www.classicrendezvous.com/Japan/japan.htm'
 },
 {
 make:"Panasonic",
-id:17,
+id:6,
 origin: "Japan",
 originimg: 'img/countries/Japan.png',
 title: "Panasonic Bicycle Museum",
@@ -116,7 +116,7 @@ url5: 'http://www.classicrendezvous.com/Japan/japan.htm'
 },
 {
 make:"Terry",
-id:22,
+id:7,
 origin: "Japan",
 originimg: 'img/countries/Japan.png',
 title: "Georgena Terry's",
@@ -134,7 +134,7 @@ url5: 'http://www.terrybicycles.com/On-Sale'
 },
 {
 make:"Cannondale",
-id:10,
+id:8,
 origin: "USA",
 originimg: 'img/countries/USA.png',
 title: "Cannondale",
@@ -146,7 +146,7 @@ url2: "http://en.wikipedia.org/wiki/Cannondale_Bicycle_Corporation",
 },
 {
 make:"Klein",
-id:14,
+id:9,
 origin: "USA",
 originimg: 'img/countries/USA.png',
 title: 'Old Klein',
@@ -167,7 +167,7 @@ url5: 'http://en.wikipedia.org/wiki/Klein_Bikes'
 },
 {
 make:"Schwinn",
-id:20,
+id:10,
 origin: "USA",
 originimg: 'img/countries/USA.png',
 text: [],
@@ -175,7 +175,7 @@ url: null
 },
 {
 make:"Specialized",
-id:21,
+id:11,
 origin: "USA",
 originimg: 'img/countries/USA.png',
 text: [],
@@ -183,7 +183,7 @@ url: null
 },
 {
 make:"Trek",
-id:23,
+id:12,
 origin: "USA",
 originimg: 'img/countries/USA.png',
 text: [],
@@ -191,7 +191,7 @@ url: null
 },
 {
 make:"Bianchi",
-id:8,
+id:13,
 origin: "Italian",
 originimg: 'img/countries/Italy.png',
 title: 'Bianchi\'s',
@@ -206,7 +206,7 @@ url3: 'http://www.classiclightweights.co.uk/'
 },
 {
 make:"Gitane",
-id:13,
+id:14,
 origin: "French",
 originimg: 'img/countries/France.png',
 title: 'Classic Rendezvous/Gitane',
@@ -224,7 +224,7 @@ url4: 'http://sheldonbrown.com/velos.html'
 },
 {
 make:"Peugeot",
-id:18,
+id:15,
 origin: "French",
 originimg: 'img/countries/France.png',
 title4: 'Sheldon Brown/French',
@@ -233,7 +233,7 @@ url4: 'http://sheldonbrown.com/velos.html'
 },
 {
 make:"Raleigh",
-id:1,
+id:16,
 origin: "U.K.",
 originimg: 'img/countries/UK.png',
 title:"Classic Lightweights UK",
@@ -245,7 +245,7 @@ url5: 'http://en.wikipedia.org/wiki/Moulton_Bicycle',
 },
 {
 make:"Economy",
-id:3,
+id:17,
 origin: "U.S.A.",
 originimg: 'img/countries/USA.png',
 title3:"Dave\'s Vintage Bikes",
@@ -254,7 +254,7 @@ url3: 'http://www.nostalgic.net',
 },
 {
 make: "Track & Fixed Gear",
-id:6,
+id:18,
 origin: "Fixed",
 originimg: 'img/countries/Antarctica.png',
 title: "Fixed Gear Gallery",
@@ -263,7 +263,7 @@ url: "http://www.fixedgeargallery.com/"
 },
 {
 make: "Mod Bikes & Projects",
-id:7,
+id:19,
 origin: "Mods",
 title: "Stoopid Tall",
 text: "is a 14 foot tall bicycle, ridden here in LA's Ciclavia. Worth checking out!",
@@ -274,7 +274,7 @@ url2: 'http://en.wikipedia.org/wiki/Tall_bike'
 },
 {
 make: 'Related...',
-id:26,
+id:20,
 origin: "Bicycle ",
 title: "Bicycle Songs",
 text: '@ Wikpedia.',

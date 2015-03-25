@@ -5,19 +5,16 @@ App.IndexController = Em.Controller.extend({
 })
 
 App.ReferencesController = Em.ArrayController.extend({
-});
-
-App.VendorsController = Em.ArrayController.extend({
+	actions: { 
+	sortProperties: (function() {
+     					this.set('sortProperties',['make']);
+    	}),
+	}
 });
 
 App.CatalogController = Em.ArrayController.extend({
 	//sortProperties: ['make','model']
-	catalogCount: Em.computed.alias('length'),
-	actions: { 
-		sortByMake: (function() {
-      					this.set('sortProperties', ['make','model']);
- 		}),
-	}
+	catalogCount: Em.computed.alias('length')
 });
 
 App.BianchiController = Em.ArrayController.extend({

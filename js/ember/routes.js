@@ -33,9 +33,3 @@ App.VendorsRoute = Em.Route.extend({
     return App.VENDORS;
   }
 });
-
-// App.ReferenceRoute = Em.Route.extend({
-//   model: function(params) {
-//     return App.REFERENCES
-//   }
-// });
