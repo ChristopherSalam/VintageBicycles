@@ -15,7 +15,7 @@
           {{#link-to 'index'}}<img src='img/chain.jpg' alt='logo'/>{{/link-to}}
         </button>
         <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
-          <span class="sr-only">site navigation</span><!--<span class='icon-bar'></span><span class='icon-bar'></span><span class='icon-bar'></span>-->
+          <span class="sr-only">site navigation</span>
               <img src="img/drop.png"/>
         </button>
       </div>
@@ -73,196 +73,435 @@
 <script type="text/x-handlebars" data-template-name='catalog'>
   <h1>Catalog of Vintage Bicycles</h1>
   <h2>Currently {{catalogCount}} bicycles!</h2>
-  <ul class='nav navbar-nav navbar-left list-group'>
+  <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
+  <img src="img/crank.jpg" height="30px" width="30px"/>
+  </button><br>
+  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
         {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
         {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
+        {{#link-to 'centurion' this tagName='li'}} &nbsp; Centurion &nbsp; {{/link-to}}
+        {{#link-to 'nishiki' this tagName='li'}} &nbsp; Nishiki &nbsp; {{/link-to}}
         {{#link-to 'peugeot' this tagName='li'}} &nbsp; Peugeot &nbsp; {{/link-to}}
+        {{#link-to 'raleigh' this tagName='li'}} &nbsp; Raleigh &nbsp;{{/link-to}}
         {{#link-to 'trek' this tagName='li'}} &nbsp; Trek &nbsp;{{/link-to}}
+        {{#link-to 'specialized' this tagName='li'}} &nbsp; Specialized &nbsp;{{/link-to}}
+        <br>
         {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
         {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
-        {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
-        {{#link-to 'usa' this tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
-        {{#link-to 'catalog' tagName='li'}} &nbsp; Catalog &nbsp;{{/link-to}}
-  </ul><br><br><br>
-  <ul class='list-unstyled'>
-    {{#each}}
-    {{bike-spec bike=this}}
-    {{/each}}
-  </ul>
-  </script>
-<script type="text/x-handlebars" data-template-name='bianchi'>
-  <h1>Bianchi Bicycles</h1>
-  <h2>Currently {{bianchiCount}} Bianchis</h2>
-  <ul class='nav navbar-nav navbar-left'>
-        {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
-        {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
-        {{#link-to 'peugeot' this tagName='li'}} &nbsp; Peugeot &nbsp; {{/link-to}}
-        {{#link-to 'trek' this tagName='li'}} &nbsp; Trek &nbsp;{{/link-to}}
-        {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
-        {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
+        {{#link-to 'french' this tagName='li'}} &nbsp; French &nbsp; {{/link-to}}
         {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
         {{#link-to 'usa' this tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
         {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
   </ul><br><br><br>
+  </button>
+  <ul class='list-unstyled'>
+    {{#each}}
+    {{bike-spec bike=this}}
+    {{/each}}
+   </ul> 
+  </script>
+<!--script for bianchi-->
+<script type="text/x-handlebars" data-template-name='bianchi'>
+  <h1>Bianchi Bicycles</h1>
+  <h2>Currently {{bianchiCount}} Bianchis</h2>
+  <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
+  <img src="img/crank.jpg" height="30px" width="30px"/>
+  </button><br>
+  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
+        {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
+        {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
+        {{#link-to 'centurion' this tagName='li'}} &nbsp; Centurion &nbsp; {{/link-to}}
+        {{#link-to 'nishiki' this tagName='li'}} &nbsp; Nishiki &nbsp; {{/link-to}}
+        {{#link-to 'peugeot' this tagName='li'}} &nbsp; Peugeot &nbsp; {{/link-to}}
+        {{#link-to 'raleigh' this tagName='li'}} &nbsp; Raleigh &nbsp;{{/link-to}}
+        {{#link-to 'trek' this tagName='li'}} &nbsp; Trek &nbsp;{{/link-to}}
+        {{#link-to 'specialized' this tagName='li'}} &nbsp; Specialized &nbsp;{{/link-to}}
+        <br>
+        {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
+        {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
+        {{#link-to 'french' this tagName='li'}} &nbsp; French &nbsp; {{/link-to}}
+        {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
+        {{#link-to 'usa' this tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
+        {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
+  </ul><br><br><br>
+  </button>
   <ul class='list-unstyled dashboard'>
     {{#each sortBianchi}}
     {{bike-spec bike=this}}
     {{/each}}
   </ul>
 </script>
+<!--script for cannondale-->
 <script type="text/x-handlebars" data-template-name='cannondale'>
   <h1>Cannondale Bicycles</h1>
-  <h2>Currently {{cannondaleCount}} Cannondales</h2>
-  <ul class='nav navbar-nav navbar-left'>
+  <h2>Currently {{cannondaleCount}} Cannondale Bicycles</h2>
+  <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
+  <img src="img/crank.jpg" height="30px" width="30px"/>
+  </button><br>
+  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
         {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
         {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
+        {{#link-to 'centurion' this tagName='li'}} &nbsp; Centurion &nbsp; {{/link-to}}
+        {{#link-to 'nishiki' this tagName='li'}} &nbsp; Nishiki &nbsp; {{/link-to}}
         {{#link-to 'peugeot' this tagName='li'}} &nbsp; Peugeot &nbsp; {{/link-to}}
+        {{#link-to 'raleigh' this tagName='li'}} &nbsp; Raleigh &nbsp;{{/link-to}}
         {{#link-to 'trek' this tagName='li'}} &nbsp; Trek &nbsp;{{/link-to}}
+        {{#link-to 'specialized' this tagName='li'}} &nbsp; Specialized &nbsp;{{/link-to}}
+        <br>
         {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
         {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
+        {{#link-to 'french' this tagName='li'}} &nbsp; French &nbsp; {{/link-to}}
         {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
         {{#link-to 'usa' this tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
         {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
   </ul><br><br><br>
+  </button>
   <ul class='list-unstyled dashboard'>
     {{#each sortCannondale}}
     {{bike-spec bike=this}}
     {{/each}}
   </ul>
 </script>
-<script type="text/x-handlebars" data-template-name='peugeot'>
-  <h1>Peugeot Bicycles</h1>
-  <h2>Currently {{peugeotCount}} Peugeots</h2>
-  <ul class='nav navbar-nav navbar-left'>
+<!--script for centurion-->
+<script type="text/x-handlebars" data-template-name='centurion'>
+  <h1>Centurion Bicycles</h1>
+  <h2>Currently {{centurionCount}} Centurion Bicycles</h2>
+  <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
+  <img src="img/crank.jpg" height="30px" width="30px"/>
+  </button><br>
+  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
         {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
         {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
+        {{#link-to 'centurion' this tagName='li'}} &nbsp; Centurion &nbsp; {{/link-to}}
+        {{#link-to 'nishiki' this tagName='li'}} &nbsp; Nishiki &nbsp; {{/link-to}}
         {{#link-to 'peugeot' this tagName='li'}} &nbsp; Peugeot &nbsp; {{/link-to}}
+        {{#link-to 'raleigh' this tagName='li'}} &nbsp; Raleigh &nbsp;{{/link-to}}
         {{#link-to 'trek' this tagName='li'}} &nbsp; Trek &nbsp;{{/link-to}}
+        {{#link-to 'specialized' this tagName='li'}} &nbsp; Specialized &nbsp;{{/link-to}}
+        <br>
         {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
         {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
+        {{#link-to 'french' this tagName='li'}} &nbsp; French &nbsp; {{/link-to}}
         {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
         {{#link-to 'usa' this tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
         {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
   </ul><br><br><br>
+  </button>
+  <ul class='list-unstyled dashboard'>
+    {{#each sortCenturion}}
+    {{bike-spec bike=this}}
+    {{/each}}
+  </ul>
+</script>
+<!--script for nishiki-->
+<script type="text/x-handlebars" data-template-name='nishiki'>
+  <h1>Nishiki Bicycles</h1>
+  <h2>Currently {{nishikiCount}} Nishiki Bicycles</h2>
+  <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
+  <img src="img/crank.jpg" height="30px" width="30px"/>
+  </button><br>
+  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
+        {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
+        {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
+        {{#link-to 'centurion' this tagName='li'}} &nbsp; Centurion &nbsp; {{/link-to}}
+        {{#link-to 'nishiki' this tagName='li'}} &nbsp; Nishiki &nbsp; {{/link-to}}
+        {{#link-to 'peugeot' this tagName='li'}} &nbsp; Peugeot &nbsp; {{/link-to}}
+        {{#link-to 'raleigh' this tagName='li'}} &nbsp; Raleigh &nbsp;{{/link-to}}
+        {{#link-to 'trek' this tagName='li'}} &nbsp; Trek &nbsp;{{/link-to}}
+        {{#link-to 'specialized' this tagName='li'}} &nbsp; Specialized &nbsp;{{/link-to}}
+        <br>
+        {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
+        {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
+        {{#link-to 'french' this tagName='li'}} &nbsp; French &nbsp; {{/link-to}}
+        {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
+        {{#link-to 'usa' this tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
+        {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
+  </ul><br><br><br>
+  </button>
+  <ul class='list-unstyled dashboard'>
+    {{#each sortNishiki}}
+    {{bike-spec bike=this}}
+    {{/each}}
+  </ul>
+</script>
+<!--script for peugeot-->
+<script type="text/x-handlebars" data-template-name='peugeot'>
+  <h1>Peugeot Bicycles</h1>
+  <h2>Currently {{peugeotCount}} Peugeots</h2>
+  <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
+  <img src="img/crank.jpg" height="30px" width="30px"/>
+  </button><br>
+  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
+        {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
+        {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
+        {{#link-to 'centurion' this tagName='li'}} &nbsp; Centurion &nbsp; {{/link-to}}
+        {{#link-to 'nishiki' this tagName='li'}} &nbsp; Nishiki &nbsp; {{/link-to}}
+        {{#link-to 'peugeot' this tagName='li'}} &nbsp; Peugeot &nbsp; {{/link-to}}
+        {{#link-to 'raleigh' this tagName='li'}} &nbsp; Raleigh &nbsp;{{/link-to}}
+        {{#link-to 'trek' this tagName='li'}} &nbsp; Trek &nbsp;{{/link-to}}
+        {{#link-to 'specialized' this tagName='li'}} &nbsp; Specialized &nbsp;{{/link-to}}
+        <br>
+        {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
+        {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
+        {{#link-to 'french' this tagName='li'}} &nbsp; French &nbsp; {{/link-to}}
+        {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
+        {{#link-to 'usa' this tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
+        {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
+  </ul><br><br><br>
+  </button>
   <ul class='list-unstyled dashboard'>
     {{#each sortPeugeot}}
     {{bike-spec bike=this}}
     {{/each}}
   </ul>
 </script>
-<script type="text/x-handlebars" data-template-name='trek'>
-  <h1>Trek Bicycles</h1>
-  <h2>Currently {{trekCount}} Treks</h2>
-  <ul class='nav navbar-nav navbar-left'>
+<!--script for specialized-->
+<script type="text/x-handlebars" data-template-name='specialized'>
+  <h1>Specialized Bicycles</h1>
+  <h2>Currently {{specializedCount}} Specialized</h2>
+  <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
+  <img src="img/crank.jpg" height="30px" width="30px"/>
+  </button><br>
+  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
         {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
         {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
+        {{#link-to 'centurion' this tagName='li'}} &nbsp; Centurion &nbsp; {{/link-to}}
+        {{#link-to 'nishiki' this tagName='li'}} &nbsp; Nishiki &nbsp; {{/link-to}}
         {{#link-to 'peugeot' this tagName='li'}} &nbsp; Peugeot &nbsp; {{/link-to}}
+        {{#link-to 'raleigh' this tagName='li'}} &nbsp; Raleigh &nbsp;{{/link-to}}
         {{#link-to 'trek' this tagName='li'}} &nbsp; Trek &nbsp;{{/link-to}}
+        {{#link-to 'specialized' this tagName='li'}} &nbsp; Specialized &nbsp;{{/link-to}}
+        <br>
         {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
         {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
+        {{#link-to 'french' this tagName='li'}} &nbsp; French &nbsp; {{/link-to}}
         {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
         {{#link-to 'usa' this tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
         {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
   </ul><br><br><br>
+  </button>
+  <ul class='list-unstyled dashboard'>
+    {{#each sortSpecialized}}
+    {{bike-spec bike=this}}
+    {{/each}}
+  </ul>
+</script>
+<!--script for trek-->
+<script type="text/x-handlebars" data-template-name='trek'>
+  <h1>Trek Bicycles</h1>
+  <h2>Currently {{trekCount}} Treks</h2>
+  <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
+  <img src="img/crank.jpg" height="30px" width="30px"/>
+  </button><br>
+  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
+        {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
+        {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
+        {{#link-to 'centurion' this tagName='li'}} &nbsp; Centurion &nbsp; {{/link-to}}
+        {{#link-to 'nishiki' this tagName='li'}} &nbsp; Nishiki &nbsp; {{/link-to}}
+        {{#link-to 'peugeot' this tagName='li'}} &nbsp; Peugeot &nbsp; {{/link-to}}
+        {{#link-to 'raleigh' this tagName='li'}} &nbsp; Raleigh &nbsp;{{/link-to}}
+        {{#link-to 'trek' this tagName='li'}} &nbsp; Trek &nbsp;{{/link-to}}
+        {{#link-to 'specialized' this tagName='li'}} &nbsp; Specialized &nbsp;{{/link-to}}
+        <br>
+        {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
+        {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
+        {{#link-to 'french' this tagName='li'}} &nbsp; French &nbsp; {{/link-to}}
+        {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
+        {{#link-to 'usa' this tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
+        {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
+  </ul><br><br><br>
+  </button>
   <ul class='list-unstyled dashboard'>
     {{#each sortTrek}}
     {{bike-spec bike=this}}
     {{/each}}
   </ul>
 </script>
+<!--script for japanese-->
 <script type="text/x-handlebars" data-template-name='japanese'>
   <h1>Japanese Bicycles</h1>
   <h2>Currently {{japaneseCount}} Bicycles of Japanese Origin</h2>
-  <ul class='nav navbar-nav navbar-left'>
+  <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
+  <img src="img/crank.jpg" height="30px" width="30px"/>
+  </button><br>
+  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
         {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
         {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
+        {{#link-to 'centurion' this tagName='li'}} &nbsp; Centurion &nbsp; {{/link-to}}
+        {{#link-to 'nishiki' this tagName='li'}} &nbsp; Nishiki &nbsp; {{/link-to}}
         {{#link-to 'peugeot' this tagName='li'}} &nbsp; Peugeot &nbsp; {{/link-to}}
+        {{#link-to 'raleigh' this tagName='li'}} &nbsp; Raleigh &nbsp;{{/link-to}}
         {{#link-to 'trek' this tagName='li'}} &nbsp; Trek &nbsp;{{/link-to}}
-        {{#link-to 'japanese'this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
+        {{#link-to 'specialized' this tagName='li'}} &nbsp; Specialized &nbsp;{{/link-to}}
+        <br>
+        {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
         {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
+        {{#link-to 'french' this tagName='li'}} &nbsp; French &nbsp; {{/link-to}}
         {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
         {{#link-to 'usa' this tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
         {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
   </ul><br><br><br>
+  </button>
   <ul class='list-unstyled dashboard'>
     {{#each sortJapanese}}
     {{bike-spec bike=this}}
     {{/each}}
   </ul>
 </script>
+<!--script for english-->
 <script type="text/x-handlebars" data-template-name='english'>
   <h1>Japanese Bicycles</h1>
   <h2>Currently {{ukCount}} Bicycles from the United Kingdom</h2>
-  <ul class='nav navbar-nav navbar-left'>
+  <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
+  <img src="img/crank.jpg" height="30px" width="30px"/>
+  </button><br>
+  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
         {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
         {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
+        {{#link-to 'centurion' this tagName='li'}} &nbsp; Centurion &nbsp; {{/link-to}}
+        {{#link-to 'nishiki' this tagName='li'}} &nbsp; Nishiki &nbsp; {{/link-to}}
         {{#link-to 'peugeot' this tagName='li'}} &nbsp; Peugeot &nbsp; {{/link-to}}
+        {{#link-to 'raleigh' this tagName='li'}} &nbsp; Raleigh &nbsp;{{/link-to}}
         {{#link-to 'trek' this tagName='li'}} &nbsp; Trek &nbsp;{{/link-to}}
+        {{#link-to 'specialized' this tagName='li'}} &nbsp; Specialized &nbsp;{{/link-to}}
+        <br>
         {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
         {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
+        {{#link-to 'french' this tagName='li'}} &nbsp; French &nbsp; {{/link-to}}
         {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
         {{#link-to 'usa' this tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
         {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
   </ul><br><br><br>
+  </button>
   <ul class='list-unstyled dashboard'>
     {{#each sortUk}}
     {{bike-spec bike=this}}
     {{/each}}
   </ul>
 </script>
-<script type="text/x-handlebars" data-template-name='italian'>
-  <h1>Italian Bicycles</h1>
-  <h2>Currently {{italianCount}} Bicycles of Italian Origin</h2>
-  <ul class='nav navbar-nav navbar-left'>
+<!--script for french-->
+<script type="text/x-handlebars" data-template-name='french'>
+  <h1>French Bicycles</h1>
+  <h2>Currently {{frenchCount}} Bicycles from France</h2>
+  <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
+  <img src="img/crank.jpg" height="30px" width="30px"/>
+  </button><br>
+  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
         {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
         {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
+        {{#link-to 'centurion' this tagName='li'}} &nbsp; Centurion &nbsp; {{/link-to}}
+        {{#link-to 'nishiki' this tagName='li'}} &nbsp; Nishiki &nbsp; {{/link-to}}
         {{#link-to 'peugeot' this tagName='li'}} &nbsp; Peugeot &nbsp; {{/link-to}}
+        {{#link-to 'raleigh' this tagName='li'}} &nbsp; Raleigh &nbsp;{{/link-to}}
         {{#link-to 'trek' this tagName='li'}} &nbsp; Trek &nbsp;{{/link-to}}
+        {{#link-to 'specialized' this tagName='li'}} &nbsp; Specialized &nbsp;{{/link-to}}
+        <br>
         {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
         {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
+        {{#link-to 'french' this tagName='li'}} &nbsp; French &nbsp; {{/link-to}}
         {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
         {{#link-to 'usa' this tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
         {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
   </ul><br><br><br>
+  </button>
+  <ul class='list-unstyled dashboard'>
+    {{#each sortFrench}}
+    {{bike-spec bike=this}}
+    {{/each}}
+  </ul>
+</script>
+<!--script for italian-->
+<script type="text/x-handlebars" data-template-name='italian'>
+  <h1>Italian Bicycles</h1>
+  <h2>Currently {{italianCount}} Bicycles of Italian Origin</h2>
+  <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
+  <img src="img/crank.jpg" height="30px" width="30px"/>
+  </button><br>
+  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
+        {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
+        {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
+        {{#link-to 'centurion' this tagName='li'}} &nbsp; Centurion &nbsp; {{/link-to}}
+        {{#link-to 'nishiki' this tagName='li'}} &nbsp; Nishiki &nbsp; {{/link-to}}
+        {{#link-to 'peugeot' this tagName='li'}} &nbsp; Peugeot &nbsp; {{/link-to}}
+        {{#link-to 'raleigh' this tagName='li'}} &nbsp; Raleigh &nbsp;{{/link-to}}
+        {{#link-to 'trek' this tagName='li'}} &nbsp; Trek &nbsp;{{/link-to}}
+        {{#link-to 'specialized' this tagName='li'}} &nbsp; Specialized &nbsp;{{/link-to}}
+        <br>
+        {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
+        {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
+        {{#link-to 'french' this tagName='li'}} &nbsp; French &nbsp; {{/link-to}}
+        {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
+        {{#link-to 'usa' this tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
+        {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
+  </ul><br><br><br>
+  </button>
   <ul class='list-unstyled dashboard'>
     {{#each sortItalian}}
     {{bike-spec bike=this}}
     {{/each}}
   </ul>
 </script>
-<script type="text/x-handlebars" data-template-name='usa'>
-  <h1>Vintage American Bicycles</h1>
-  <h2>Currently {{usaCount}} Bicycles of American Origin</h2>
-  <ul class='nav navbar-nav navbar-left'>
+<!--script for usa-->
+<script type="text/x-handlebars" data-template-name='raleigh'>
+  <h1>Vintage Raleigh Bicycles</h1>
+  <h2>Currently {{raleighCount}} Raleigh Bicycles</h2>
+   <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
+  <img src="img/crank.jpg" height="30px" width="30px"/>
+  </button><br>
+  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
         {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
         {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
+        {{#link-to 'centurion' this tagName='li'}} &nbsp; Centurion &nbsp; {{/link-to}}
+        {{#link-to 'nishiki' this tagName='li'}} &nbsp; Nishiki &nbsp; {{/link-to}}
         {{#link-to 'peugeot' this tagName='li'}} &nbsp; Peugeot &nbsp; {{/link-to}}
+        {{#link-to 'raleigh' this tagName='li'}} &nbsp; Raleigh &nbsp;{{/link-to}}
         {{#link-to 'trek' this tagName='li'}} &nbsp; Trek &nbsp;{{/link-to}}
+        {{#link-to 'specialized' this tagName='li'}} &nbsp; Specialized &nbsp;{{/link-to}}
+        <br>
         {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
         {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
+        {{#link-to 'french' this tagName='li'}} &nbsp; French &nbsp; {{/link-to}}
         {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
         {{#link-to 'usa' this tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
         {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
   </ul><br><br><br>
+  </button>
+  <ul class='list-unstyled dashboard'>
+    {{#each sortRaleigh}}
+    {{bike-spec bike=this}}
+    {{/each}}
+  </ul>
+</script>
+<!--script for japanese-->
+<script type="text/x-handlebars" data-template-name='usa'>
+  <h1>Vintage American Bicycles</h1>
+  <h2>Currently {{usaCount}} Bicycles of American Origin</h2>
+  <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
+  <img src="img/crank.jpg" height="30px" width="30px"/>
+  </button><br>
+  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
+        {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
+        {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
+        {{#link-to 'centurion' this tagName='li'}} &nbsp; Centurion &nbsp; {{/link-to}}
+        {{#link-to 'nishiki' this tagName='li'}} &nbsp; Nishiki &nbsp; {{/link-to}}
+        {{#link-to 'peugeot' this tagName='li'}} &nbsp; Peugeot &nbsp; {{/link-to}}
+        {{#link-to 'raleigh' this tagName='li'}} &nbsp; Raleigh &nbsp;{{/link-to}}
+        {{#link-to 'trek' this tagName='li'}} &nbsp; Trek &nbsp;{{/link-to}}
+        {{#link-to 'specialized' this tagName='li'}} &nbsp; Specialized &nbsp;{{/link-to}}
+        <br>
+        {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
+        {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
+        {{#link-to 'french' this tagName='li'}} &nbsp; French &nbsp; {{/link-to}}
+        {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
+        {{#link-to 'usa' this tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
+        {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
+  </ul><br><br><br>
+  </button>
   <ul class='list-unstyled dashboard'>
     {{#each sortUsa}}
     {{bike-spec bike=this}}
     {{/each}}
   </ul>
-</script>
-<!--Component for reused template for individual bikes-->
-<script type="text/x-handlebars" data-template-name='components/nav-spec'>
-  <ul class='nav navbar-nav navbar-left'>
-        {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
-        {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
-        {{#link-to 'peugeot' this tagName='li'}} &nbsp; Peugeot &nbsp; {{/link-to}}
-        {{#link-to 'trek' this tagName='li'}} &nbsp; Trek &nbsp;{{/link-to}}
-        {{#link-to 'japanese' this tagName='li'}} &nbsp; Japanese &nbsp; {{/link-to}}
-        {{#link-to 'english' this tagName='li'}} &nbsp; English &nbsp; {{/link-to}}
-        {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
-        {{#link-to 'usa' this tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
-        {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
-  </ul><br><br><br>
 </script>
 <!--Component for reused template for individual bikes-->
 <script type="text/x-handlebars" data-template-name='components/bike-spec'>
