@@ -27,7 +27,7 @@ url: 'http://velo-orange.com/'
 make: "U.K. Vintage",
 id: 3,
 origin: "U.K.",
-originimg: 'img/countries/Uk.png',
+originimg: 'img/countries/UK.png',
 title: "Hilary Stone",
 text: 'sells vintage bicycles and parts, and has an incredible log of sold and on sale bicycles.',
 url: 'http://www.hilarystone.com/index.html'
