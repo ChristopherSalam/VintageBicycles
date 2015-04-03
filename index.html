@@ -32,8 +32,8 @@
     {{outlet}}
   </div>
   <footer class='container bigbackground'> <hr/>
-    <p class='pull-left'>Vintage Bicycles &copy; 2015</p>
-    <p class='pull-right'>{{#link-to 'credits'}}Take me to your leader!{{/link-to}}</p>
+    <p> This site is under development. If you are interested in the project and would like to contribute, {{#link-to 'credits'}} click here for more info.{{/link-to}}  
+    <p class="pull-right"><strong class="small">Vintage Bicycles &copy; 2015</strong></p>
   </footer>
 </script>
   <!--script for index-->
@@ -51,7 +51,7 @@
 <script type="text/x-handlebars" data-template-name='about'>
   <h2>Be an archeologist for Vintage Bicycles<img src="img/crank.jpg" height="15px" width="15px">Info!</h2>
   <h4>Our Major Contributers:</h4>
-    <div class='col-sm-2'>
+    <div class='col-md-2 col-sm-12'>
       <div class='list-group'>
         {{#each}}
           {{#link-to 'person' this classNames='list-group-item'}}
@@ -60,21 +60,20 @@
         {{/each}}
       </div>
     </div>
-  <div class='col-sm-10'>
+  <div class='col-md-10 col-sm-12'>
     {{outlet}}
   </div>
 </script>
 <script type="text/x-handlebars" data-template-name='person'>
-  <h1>{{person}}</h1>
-  <p>{{story}}</p>
+  <p> &ldquo; {{story}} &rdquo; - <strong>{{person}}</strong>.</p>
   <img {{bind-attr src='image'}} class='hover-color img-thumbnail img-responsive'/>
 </script>
   <!--script for catalog-->
 <script type="text/x-handlebars" data-template-name='catalog'>
   <h1>Catalog of Vintage Bicycles</h1>
   <h2>Currently {{catalogCount}} bicycles!</h2>
-  <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
-  <img src="img/crank.jpg" height="30px" width="30px"/>
+  <button type='button' class='navmakebar-toggle navbar-header spacer' data-toggle='collapse' data-target='.navmakebar-collapse'>&nbsp; Sort!
+  <img src="img/crank.jpg" height="30px" width="30px" class="pull-left"/>
   </button><br>
   <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
         {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
@@ -91,7 +90,6 @@
         {{#link-to 'french' this tagName='li'}} &nbsp; French &nbsp; {{/link-to}}
         {{#link-to 'italian' this tagName='li'}} &nbsp; Italian &nbsp; {{/link-to}}
         {{#link-to 'usa' this tagName='li'}} &nbsp; U.S.A. &nbsp; {{/link-to}}
-        {{#link-to 'catalog' tagName='li'}} &nbsp; Go Back! &nbsp;{{/link-to}}
   </ul><br><br><br>
   </button>
   <ul class='list-unstyled'>
@@ -104,10 +102,10 @@
 <script type="text/x-handlebars" data-template-name='bianchi'>
   <h1>Bianchi Bicycles</h1>
   <h2>Currently {{bianchiCount}} Bianchis</h2>
-  <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
-  <img src="img/crank.jpg" height="30px" width="30px"/>
+  <button type='button' class='navmakebar-toggle navbar-header spacer' data-toggle='collapse' data-target='.navmakebar-collapse'>&nbsp; Sort!
+  <img src="img/crank.jpg" height="30px" width="30px" class="pull-left"/>
   </button><br>
-  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
+  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse spacer'>
         {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
         {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
         {{#link-to 'centurion' this tagName='li'}} &nbsp; Centurion &nbsp; {{/link-to}}
@@ -135,10 +133,10 @@
 <script type="text/x-handlebars" data-template-name='cannondale'>
   <h1>Cannondale Bicycles</h1>
   <h2>Currently {{cannondaleCount}} Cannondale Bicycles</h2>
-  <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
-  <img src="img/crank.jpg" height="30px" width="30px"/>
+  <button type='button' class='navmakebar-toggle navbar-header spacer' data-toggle='collapse' data-target='.navmakebar-collapse'>&nbsp; Sort!
+  <img src="img/crank.jpg" height="30px" width="30px" class="pull-left"/>
   </button><br>
-  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
+  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse spacer'>
         {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
         {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
         {{#link-to 'centurion' this tagName='li'}} &nbsp; Centurion &nbsp; {{/link-to}}
@@ -166,10 +164,10 @@
 <script type="text/x-handlebars" data-template-name='centurion'>
   <h1>Centurion Bicycles</h1>
   <h2>Currently {{centurionCount}} Centurion Bicycles</h2>
-  <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
-  <img src="img/crank.jpg" height="30px" width="30px"/>
+  <button type='button' class='navmakebar-toggle navbar-header spacer' data-toggle='collapse' data-target='.navmakebar-collapse'>&nbsp; Sort!
+  <img src="img/crank.jpg" height="30px" width="30px" class="pull-left"/>
   </button><br>
-  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
+  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse spacer'>
         {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
         {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
         {{#link-to 'centurion' this tagName='li'}} &nbsp; Centurion &nbsp; {{/link-to}}
@@ -197,10 +195,10 @@
 <script type="text/x-handlebars" data-template-name='nishiki'>
   <h1>Nishiki Bicycles</h1>
   <h2>Currently {{nishikiCount}} Nishiki Bicycles</h2>
-  <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
-  <img src="img/crank.jpg" height="30px" width="30px"/>
+  <button type='button' class='navmakebar-toggle navbar-header spacer' data-toggle='collapse' data-target='.navmakebar-collapse'>&nbsp; Sort!
+  <img src="img/crank.jpg" height="30px" width="30px" class="pull-left"/>
   </button><br>
-  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
+  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse spacer'>
         {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
         {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
         {{#link-to 'centurion' this tagName='li'}} &nbsp; Centurion &nbsp; {{/link-to}}
@@ -228,8 +226,8 @@
 <script type="text/x-handlebars" data-template-name='peugeot'>
   <h1>Peugeot Bicycles</h1>
   <h2>Currently {{peugeotCount}} Peugeots</h2>
-  <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
-  <img src="img/crank.jpg" height="30px" width="30px"/>
+  <button type='button' class='navmakebar-toggle navbar-header spacer' data-toggle='collapse' data-target='.navmakebar-collapse'>&nbsp; Sort!
+  <img src="img/crank.jpg" height="30px" width="30px" class="pull-left"/>
   </button><br>
   <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
         {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
@@ -259,10 +257,10 @@
 <script type="text/x-handlebars" data-template-name='specialized'>
   <h1>Specialized Bicycles</h1>
   <h2>Currently {{specializedCount}} Specialized</h2>
-  <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
-  <img src="img/crank.jpg" height="30px" width="30px"/>
+  <button type='button' class='navmakebar-toggle navbar-header spacer' data-toggle='collapse' data-target='.navmakebar-collapse'>&nbsp; Sort!
+  <img src="img/crank.jpg" height="30px" width="30px" class="pull-left"/>
   </button><br>
-  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
+  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse spacer'>
         {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
         {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
         {{#link-to 'centurion' this tagName='li'}} &nbsp; Centurion &nbsp; {{/link-to}}
@@ -290,10 +288,10 @@
 <script type="text/x-handlebars" data-template-name='trek'>
   <h1>Trek Bicycles</h1>
   <h2>Currently {{trekCount}} Treks</h2>
-  <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
-  <img src="img/crank.jpg" height="30px" width="30px"/>
+  <button type='button' class='navmakebar-toggle navbar-header spacer' data-toggle='collapse' data-target='.navmakebar-collapse'>&nbsp; Sort!
+  <img src="img/crank.jpg" height="30px" width="30px" class="pull-left"/>
   </button><br>
-  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
+  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse spacer'>
         {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
         {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
         {{#link-to 'centurion' this tagName='li'}} &nbsp; Centurion &nbsp; {{/link-to}}
@@ -321,10 +319,10 @@
 <script type="text/x-handlebars" data-template-name='japanese'>
   <h1>Japanese Bicycles</h1>
   <h2>Currently {{japaneseCount}} Bicycles of Japanese Origin</h2>
-  <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
-  <img src="img/crank.jpg" height="30px" width="30px"/>
+  <button type='button' class='navmakebar-toggle navbar-header spacer' data-toggle='collapse' data-target='.navmakebar-collapse'>&nbsp; Sort!
+  <img src="img/crank.jpg" height="30px" width="30px" class="pull-left"/>
   </button><br>
-  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
+  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse spacer'>
         {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
         {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
         {{#link-to 'centurion' this tagName='li'}} &nbsp; Centurion &nbsp; {{/link-to}}
@@ -352,10 +350,10 @@
 <script type="text/x-handlebars" data-template-name='english'>
   <h1>Japanese Bicycles</h1>
   <h2>Currently {{ukCount}} Bicycles from the United Kingdom</h2>
-  <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
-  <img src="img/crank.jpg" height="30px" width="30px"/>
+  <button type='button' class='navmakebar-toggle navbar-header spacer' data-toggle='collapse' data-target='.navmakebar-collapse'>&nbsp; Sort!
+  <img src="img/crank.jpg" height="30px" width="30px" class="pull-left"/>
   </button><br>
-  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
+  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse spacer'>
         {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
         {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
         {{#link-to 'centurion' this tagName='li'}} &nbsp; Centurion &nbsp; {{/link-to}}
@@ -383,10 +381,10 @@
 <script type="text/x-handlebars" data-template-name='french'>
   <h1>French Bicycles</h1>
   <h2>Currently {{frenchCount}} Bicycles from France</h2>
-  <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
-  <img src="img/crank.jpg" height="30px" width="30px"/>
+  <button type='button' class='navmakebar-toggle navbar-header spacer' data-toggle='collapse' data-target='.navmakebar-collapse'>&nbsp; Sort!
+  <img src="img/crank.jpg" height="30px" width="30px" class="pull-left"/>
   </button><br>
-  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
+  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse spacer'>
         {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
         {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
         {{#link-to 'centurion' this tagName='li'}} &nbsp; Centurion &nbsp; {{/link-to}}
@@ -414,10 +412,10 @@
 <script type="text/x-handlebars" data-template-name='italian'>
   <h1>Italian Bicycles</h1>
   <h2>Currently {{italianCount}} Bicycles of Italian Origin</h2>
-  <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
-  <img src="img/crank.jpg" height="30px" width="30px"/>
+  <button type='button' class='navmakebar-toggle navbar-header spacer' data-toggle='collapse' data-target='.navmakebar-collapse'>&nbsp; Sort!
+  <img src="img/crank.jpg" height="30px" width="30px" class="pull-left"/>
   </button><br>
-  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
+  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse spacer'>
         {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
         {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
         {{#link-to 'centurion' this tagName='li'}} &nbsp; Centurion &nbsp; {{/link-to}}
@@ -445,10 +443,10 @@
 <script type="text/x-handlebars" data-template-name='raleigh'>
   <h1>Vintage Raleigh Bicycles</h1>
   <h2>Currently {{raleighCount}} Raleigh Bicycles</h2>
-   <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
-  <img src="img/crank.jpg" height="30px" width="30px"/>
+  <button type='button' class='navmakebar-toggle navbar-header spacer' data-toggle='collapse' data-target='.navmakebar-collapse'>&nbsp; Sort!
+  <img src="img/crank.jpg" height="30px" width="30px" class="pull-left"/>
   </button><br>
-  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
+  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse spacer'>
         {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
         {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
         {{#link-to 'centurion' this tagName='li'}} &nbsp; Centurion &nbsp; {{/link-to}}
@@ -476,10 +474,10 @@
 <script type="text/x-handlebars" data-template-name='usa'>
   <h1>Vintage American Bicycles</h1>
   <h2>Currently {{usaCount}} Bicycles of American Origin</h2>
-  <button type='button' class='navmakebar-toggle navbar-header' data-toggle='collapse' data-target='.navmakebar-collapse'>
-  <img src="img/crank.jpg" height="30px" width="30px"/>
+  <button type='button' class='navmakebar-toggle navbar-header spacer' data-toggle='collapse' data-target='.navmakebar-collapse'>&nbsp; Sort!
+  <img src="img/crank.jpg" height="30px" width="30px" class="pull-left"/>
   </button><br>
-  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse'>
+  <ul class='nav navbar-nav navbar-left list-group navmakebar-collapse spacer'>
         {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
         {{#link-to 'cannondale' this tagName='li'}} &nbsp; Cannondale &nbsp; {{/link-to}}
         {{#link-to 'centurion' this tagName='li'}} &nbsp; Centurion &nbsp; {{/link-to}}
@@ -528,7 +526,7 @@
 <script type="text/x-handlebars" data-template-name='references'>
   <h1>References</h1>
   <h4>Take these links to other great informational sites!</h4>
-  <button {{action "sortProperties"}}>Sort alphabetically.</button>
+  <button type="button" class="button" {{action "sortProperties"}}>Alphabetize!</button>
     <div class='col-xs-4'>
       <div class='list-group'>
         {{#each}}
@@ -591,6 +589,10 @@
   {{#if ref.text6}}<a {{bind-attr href='ref.url6'}}  target='_blank'><p><strong>{{ref.title6}}</strong></a> {{ref.text6}}{{/if}}
   {{#if ref.text7}}<a {{bind-attr href='ref.url6'}}  target='_blank'><p><strong>{{ref.title6}}</strong></a> {{ref.text6}}{{/if}}
   {{#if ref.text8}}<a {{bind-attr href='ref.url6'}}  target='_blank'><p><strong>{{ref.title6}}</strong></a> {{ref.text6}}{{/if}}
+<br>
+<p class="small"><strong>Missing a site you commonly use? </strong>If so, please send it to me @ 
+<a href="mailto:html@christopher.salam@gmail.com">christopher.salam@gmail.com</a>
+   and I will update the site!</p>
 <br><strong>{{#link-to 'catalog'}}Take me back to the Catalog{{/link-to}}</strong>
 </script>
 <!--Component for reused template for the general reference-->
@@ -605,11 +607,17 @@
   <a href='http://velobase.com/'  target='_blank'><p><strong>Velo Base</strong></a> is a vintage bicycle database</p>
   <a href='http://www.ebicycles.com/' target='_blank'><p><strong>ebicycles</strong></a> is a great site full of tools and other valuable resources.</p>
   <a href='http://bicycles.stackexchange.com/' target='_blank'><p><strong> Stack Exchange</strong></a> is typically a website people turn to for help with computer coding problems, but the site has a bicycles section and it is a great place to find unique questions, problems, and feedback. The best way to use the site is rather click on this link, write a problem directly into google and add the bicycles.stackexchange.com url in the query.</p>
+  <p class="small"><strong>Missing a site you commonly use? </strong>If so, please send it to me @ 
+  <a href="mailto:html@christopher.salam@gmail.com">christopher.salam@gmail.com</a>
+   and I will update the site!</p>
 </script>
   <!--script for  credits-->
 <script type='text/x-handlebars' data-template-name='credits'>
   <h1>Thank you for supporting us!</h1>
-  <p>My name is Christopher Salam, and I&#39;m new to web development. This is one of my portfolio sites. I would like to thank craigslist, the ember team, my bike selling associates, the late-great Sheldon Brown and all the web dev. tutorials I have used recently. I would also like to thank my patient partner Amy for her time and web design input.</p><img src="img/dune.jpg" alt='fields' class='hover-color img-thumbnail img-responsive'/>
+  <p>My name is Christopher Salam, and I&#39;m new to web development. This is one of my portfolio sites. I would like to thank craigslist, the ember team, my bike selling associates, the late-great Sheldon Brown and all the web dev. tutorials I have used recently. I would also like to thank my patient partner Amy for her time and web design input.</p>
+  >p>This site will eventually have a database built in rails, and allow users to upload content within their own profiles. If you are interested in this project and can provide development, please contact me via 
+  <a href="mailto:html@christopher.salam@gmail.com">email</a>.
+  <img src="img/dune.jpg" alt='fields' class='hover-color img-thumbnail img-responsive'/>
   <p> Unrelated, this is an image from Dune redone in gummy worms. Credits to Candy Warehouse </p>
 </script>
 
