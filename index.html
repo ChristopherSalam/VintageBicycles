@@ -16,15 +16,16 @@
         <button type='button' class="navbar-toggle pull-right" data-toggle='collapse' data-target='.navbar-collapse'>
           <span class="sr-only">site navigation</span>
               <img src='img/chain.jpg'/>
-        </button>
+        </button>    
       </div>
-        <ul class='nav navbar-nav pull-right navbar-toggle collapse navbar-collapse big-text'>
-          {{#link-to 'index' tagName='li'}} &nbsp; Main Page &nbsp; {{/link-to}}
-          {{#link-to 'about' tagName='li'}} &nbsp; Be an Archeologist &nbsp; {{/link-to}}
-          {{#link-to 'catalog' tagName='li'}} &nbsp; View our Catalog &nbsp; {{/link-to}}
-          {{#link-to 'references' tagName='li'}} &nbsp; References &nbsp;{{/link-to}}
-          {{#link-to 'vendors' tagName='li'}} &nbsp; Vendors &nbsp;{{/link-to}}
-        </ul>
+            <ul class='nav navbar-nav pull-right collapse navbar-collapse big-text'> <!--navbar-toggle-->
+              {{#link-to 'index' tagName='li' className='active'}} &nbsp; Main Page &nbsp; {{/link-to}}
+              {{#link-to 'about' tagName='li'}} &nbsp; Be an Archeologist &nbsp; {{/link-to}}
+              {{#link-to 'catalog' tagName='li'}} &nbsp; View our Catalog &nbsp; {{/link-to}}
+              {{#link-to 'references' tagName='li'}} &nbsp; References &nbsp;{{/link-to}}
+              {{#link-to 'vendors' tagName='li'}} &nbsp; Vendors &nbsp;{{/link-to}}
+            </ul>
+
       </div>
     </div>
   <div class='container'>
