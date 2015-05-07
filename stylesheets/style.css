@@ -1,7 +1,22 @@
+@font-face {
+    font-family: OstSans;
+    src: url(ostrich-sans/ostrich-regular.ttf);
+}
+
+@font-face {
+    font-family: Typ;
+    src: url(ufonts.com_american-typewriter.ttf);
+}
+
+* {
+  font-family: Typ;
+}
+
 .bigbackground {
 	/*background-image: url(img/church2.jpg);*/
   background-color: transparent;
   border:none;
+  padding-right:0;
 }
 
 .bigbackground::after {
@@ -49,9 +64,9 @@ background-color: #369;
   filter: none;
 }
 
-.navbar-inverse .navbar-nav>li>a.active {
-  background-color: #080808;
-}
+/*.navbar-inverse .navbar-nav>li>a.active {
+  background-color: red;
+}*/
 
 .gap{
   padding:0;
@@ -63,7 +78,91 @@ background-color: #369;
   margin:8px;
 }
 
-.big-text { 
-  font-size: 130%;
-  margin: 15px;
+.big-text {
+  font-size: 150%;
+  list-style:none;
+  top:5px;
+}
+
+.options {
+  font-family: OstSans;
+}
+
+#fit{
+  text-transform:uppercase;
+  height:100%;
+  font-size: 510%;
+  font-family: OstSans;
+  padding-bottom:auto;
+}
+
+
+.fl-right{
+  float:right;
+}
+
+@media (max-width: 1100px) {
+  #fit {
+    margin-left:20px;
+    font-size:510%;
+  }
+}
+@media (max-width: 770px) {
+.fl-right{
+  float:none;
+}
+#fit{
+  text-align:center;
+}
+
+.big-text {
+  text-align:center;
+}
+
+  #fit {
+    margin-left:20px;
+    font-size:510%;
+  }
+}
+
+@media (max-width: 500px) {
+  #fit{
+    font-size:420%;
+      text-align:center;
+  }
+}
+
+@media (max-width: 400px) {
+  #fit{
+    font-size:340%;
+      text-align:center;
+      padding-right:20px;
+  }
+  ul {
+  }
+}
+
+.navbar {
+  margin-bottom:0px;
+}
+
+.ember-view {
+    color: white;
+}
+
+.ember-view .hover {
+    text-decoration:none;
+}
+
+.ember-view .active {
+    color: #76EE00;
+    text-decoration:none;
+}
+
+body {
+  background-color: black;
+}
+
+a p {
+  font-family:Typ;
 }

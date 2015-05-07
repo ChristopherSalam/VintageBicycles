@@ -6,29 +6,28 @@
   <title>vintagebicycles.info</title>
   <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
   <link rel="stylesheet" href="stylesheets/style.css">
-</head>
-<body>
-<script type="text/x-handlebars" data-template-name='application'>
-  <div class='navbar navbar-default bigbackground'>
-    <!--<div class='container'>-->
-      <div class='navbar-header'>
-        {{#link-to 'index'}}
-        <h1  id="responsive_headline" class="col-xs-4">VINTAGEBICYCLES.INFO</h1> 
-        {{/link-to}}
-        <button type='button' class="navbar-toggle" data-toggle='collapse' data-target='.navbar-collapse'>
-          <span class="sr-only">site navigation</span>
-              <img src='img/chain.jpg' height="40px" width="40px"/>
-        </button>    
-        </div>
-        <ul class='col-xs-4 nav navbar-nav collapse navbar-collapse big-text'>
-  {{#link-to 'catalog' tagName='li'}} &nbsp; CATALOG &nbsp; {{/link-to}}
-  {{#link-to 'references' tagName='li'}} &nbsp; REFERENCES &nbsp;{{/link-to}}
-  <br data-toggle='collapse' data-target='.navbar-collapse'>
-  {{#link-to 'vendors' tagName='li'}} &nbsp; VENDORS &nbsp;{{/link-to}}
-  {{#link-to 'about' tagName='li'}} &nbsp; ARCHEOLOGISTS &nbsp; {{/link-to}}
-        </ul>
-      </div>
-    <!--</div>-->
+  <script type="text/x-handlebars" data-template-name='application'>
+  <div class='container'>
+    <div class='navbar bigbackground col-xs-12 col-sm-7'>
+      {{#link-to 'index'}}
+        <h1 id="fit" class="fl-right">
+          vintagebicycles.info   
+        </h1>
+      {{/link-to}}
+    </div>
+    <nav class='col-xs-12 col-sm-5 nav navbar-nav big-text'>
+      <ul>
+        <li class="big-text ost-text">
+          {{#link-to 'catalog' classNames="options"}}catalog  &nbsp;{{/link-to}}
+          {{#link-to 'references' classNames="options"}}references{{/link-to}}
+        </li>
+        <li class="big-text ost-text">
+          {{#link-to 'vendors' classNames="options"}}vendors  &nbsp; {{/link-to}}
+          {{#link-to 'about' classNames="options"}}archeologists{{/link-to}}
+        </li>
+      </ul>
+    </nav>
+  </div>
   <div class='container'>
     {{outlet}}
   </div>
@@ -37,9 +36,11 @@
     <p class="pull-right"><strong class="small">Vintage Bicycles &copy; 2015</strong></p>
   </footer>
 </script>
+</head>
+<body>
   <!--script for index-->
 <script type="text/x-handlebars" data-template-name='index'>
-  <p>Vintage Bicycles, their restoration and their ornamentation has been a focal point for many cyclists and websites. Cycling has a short life in archeological terms, albeit with a rich material culture and record. This page hopes to link you to as many resources as possible, showcasing examples of and twists on vintage bicycles. Thanks for visiting, and please consider donating to the site! Thanks.</p>
+  <h4>Vintage Bicycles, their restoration and their ornamentation has been a focal point for many cyclists and websites. Cycling has a short life in archeological terms, albeit with a rich material culture and record. This page hopes to link you to as many resources as possible, showcasing examples of and twists on vintage bicycles. Thanks for visiting, and please consider donating to the site! Thanks.</h4>
   <img src="img/church2.jpg" alt='fields' class='img-thumbnail img-responsive'/><p>Today&#39;s date is {{time}}</p>
 </script>
   <!--script for about-->
@@ -49,7 +50,7 @@
 <h4>If you are able to contribute a significant amount to our site, we will list you here and allow other interested cyclists to contact you. Thanks in advance!</h4>
 </script>
 <script type="text/x-handlebars" data-template-name='about'>
-  <h2>Be an archeologist for Vintage Bicycles<img src="img/crank.jpg" height="15px" width="15px">Info!</h2>
+  <h2>Be an archeologist for vintagebicycles.info!</h2>
   <h4>Our Major Contributers:</h4>
     <div class='col-md-2 col-sm-12'>
       <div class='list-group'>
@@ -621,9 +622,6 @@
   <a href="mailto:html@christopher.salam@gmail.com">email</a>.
   <img src="img/dune.jpg" alt='fields' class='hover-color img-thumbnail img-responsive'/>
   <p> Unrelated, this is an image from Dune redone in gummy worms. Credits to Candy Warehouse </p>
-</script>
-<script>
-  jQuery("#responsive_headline").fitText();
 </script>
 <script src="js/libs/jquery.fittext.js"></script>
 <script src="js/libs/jquery-1.10.2.js"></script>

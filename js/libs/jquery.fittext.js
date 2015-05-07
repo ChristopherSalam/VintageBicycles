@@ -41,3 +41,6 @@
   };
 
 })( jQuery );
+
+$("h1#fit").fitText(1);
+
