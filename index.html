@@ -2,32 +2,33 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>vintagebicycles.info</title>
   <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
   <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <body>
 <script type="text/x-handlebars" data-template-name='application'>
-  <div class='navbar navbar-default bigbackground navbar-static-top'>
-    <div class='container'>
+  <div class='navbar navbar-default bigbackground'>
+    <!--<div class='container'>-->
       <div class='navbar-header'>
-        <h2 class="pull-left">Vintage Bicycles<img src="img/crank.jpg" height="10px" width="10px">
-        </h2><br><h2 class="pull-left">Info</h2>
-        <button type='button' class="navbar-toggle pull-right" data-toggle='collapse' data-target='.navbar-collapse'>
+        {{#link-to 'index'}}
+        <h1  id="responsive_headline" class="col-xs-4">VINTAGEBICYCLES.INFO</h1> 
+        {{/link-to}}
+        <button type='button' class="navbar-toggle" data-toggle='collapse' data-target='.navbar-collapse'>
           <span class="sr-only">site navigation</span>
-              <img src='img/chain.jpg'/>
+              <img src='img/chain.jpg' height="40px" width="40px"/>
         </button>    
-      </div>
-        <ul class='nav navbar-nav pull-right collapse navbar-collapse big-text'>
-          {{#link-to 'index' tagName='li'}} &nbsp; Main Page &nbsp; {{/link-to}}
-          {{#link-to 'about' tagName='li'}} &nbsp; Be an Archeologist &nbsp; {{/link-to}}
-          {{#link-to 'catalog' tagName='li'}} &nbsp; View our Catalog &nbsp; {{/link-to}}
-          {{#link-to 'references' tagName='li'}} &nbsp; References &nbsp;{{/link-to}}
-          {{#link-to 'vendors' tagName='li'}} &nbsp; Vendors &nbsp;{{/link-to}}
+        </div>
+        <ul class='col-xs-4 nav navbar-nav collapse navbar-collapse big-text'>
+  {{#link-to 'catalog' tagName='li'}} &nbsp; CATALOG &nbsp; {{/link-to}}
+  {{#link-to 'references' tagName='li'}} &nbsp; REFERENCES &nbsp;{{/link-to}}
+  <br data-toggle='collapse' data-target='.navbar-collapse'>
+  {{#link-to 'vendors' tagName='li'}} &nbsp; VENDORS &nbsp;{{/link-to}}
+  {{#link-to 'about' tagName='li'}} &nbsp; ARCHEOLOGISTS &nbsp; {{/link-to}}
         </ul>
-origin/master
       </div>
-    </div>
+    <!--</div>-->
   <div class='container'>
     {{outlet}}
   </div>
@@ -621,7 +622,10 @@ origin/master
   <img src="img/dune.jpg" alt='fields' class='hover-color img-thumbnail img-responsive'/>
   <p> Unrelated, this is an image from Dune redone in gummy worms. Credits to Candy Warehouse </p>
 </script>
-
+<script>
+  jQuery("#responsive_headline").fitText();
+</script>
+<script src="js/libs/jquery.fittext.js"></script>
 <script src="js/libs/jquery-1.10.2.js"></script>
 <script src="js/libs/bootstrap.min.js"></script>
 <script src="js/libs/handlebars-v2.0.0.js"></script>

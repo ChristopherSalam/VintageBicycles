@@ -1,9 +1,11 @@
 .bigbackground {
 	/*background-image: url(img/church2.jpg);*/
+  background-color: transparent;
+  border:none;
 }
 
 .bigbackground::after {
-	opacity: .2;
+	opacity: 0;
 }
 
 #dashboard ul
@@ -63,4 +65,5 @@ background-color: #369;
 
 .big-text { 
   font-size: 130%;
+  margin: 15px;
 }
