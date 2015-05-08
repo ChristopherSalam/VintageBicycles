@@ -101,47 +101,6 @@ background-color: #369;
   float:right;
 }
 
-@media (max-width: 1100px) {
-  #fit {
-    margin-left:20px;
-    font-size:510%;
-  }
-}
-@media (max-width: 770px) {
-.fl-right{
-  float:none;
-}
-#fit{
-  text-align:center;
-}
-
-.big-text {
-  text-align:center;
-}
-
-  #fit {
-    margin-left:20px;
-    font-size:510%;
-  }
-}
-
-@media (max-width: 500px) {
-  #fit{
-    font-size:420%;
-      text-align:center;
-  }
-}
-
-@media (max-width: 400px) {
-  #fit{
-    font-size:340%;
-      text-align:center;
-      padding-right:20px;
-  }
-  ul {
-  }
-}
-
 .navbar {
   margin-bottom:0px;
 }
@@ -157,6 +116,7 @@ background-color: #369;
 .ember-view.active {
     color: #76EE00;
     text-decoration:none;
+    border-color: #76EE00;
 }
 
 img.ember-view {
@@ -213,14 +173,81 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 
 a.ember-view.list-group-item.active {
   background-color: black;
+  border-color: #76EE00;
+  color: #76EE00;
 }
 
 a{
   color: #FF6700
 }
 
-
-
 a:hover  {
   color: #DD0048
+}
+
+.list-group-item {
+  background-color:#929292;
+  color:#fff;
+}
+
+@media (max-width: 1100px) {
+  #fit {
+    margin-left:20px;
+    font-size:510%;
+  }
+  .pad-bottom{
+    padding-left:20px;
+  }
+  .flag-padding{
+    padding-left:10px;
+  }
+}
+
+@media (min-width: 770px) && (max-width: 1100px) {
+  .pad-bottom{
+    padding-bottom: 0px ;
+  }
+}
+
+@media (max-width: 769px) {
+.fl-right{
+  float:none;
+}
+#fit{
+  text-align:center;
+}
+.nav>li {
+    display:inline-block;
+}
+.big-text {
+  text-align:center;
+}
+
+#fit {
+    margin-left:20px;
+    font-size:510%;
+}
+  .listpadding {
+    margin-left: 35px;
+}
+  .pad-top {
+    display:block;
+  }
+}
+
+@media (max-width: 500px) {
+  #fit{
+    font-size:420%;
+      text-align:center;
+  }
+}
+
+@media (max-width: 400px) {
+  #fit{
+    font-size:340%;
+      text-align:center;
+      padding-right:20px;
+  }
+  ul {
+  }
 }
