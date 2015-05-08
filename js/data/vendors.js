@@ -42,7 +42,7 @@ text: 'sells vintage bicycles and parts, and has an incredible log of sold and o
 url: 'http://www.hilarystone.com/index.html'
 },
 {
-make: "German Vintage",
+make: "German",
 id: 5,
 origin: "Germany",
 originimg: 'img/countries/Germany.png',

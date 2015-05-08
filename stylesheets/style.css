@@ -84,7 +84,7 @@ background-color: #369;
   top:5px;
 }
 
-.options {
+.ost-text {
   font-family: OstSans;
 }
 
@@ -150,19 +150,77 @@ background-color: #369;
     color: white;
 }
 
-.ember-view .hover {
+.ember-view:hover {
     text-decoration:none;
 }
 
-.ember-view .active {
+.ember-view.active {
     color: #76EE00;
     text-decoration:none;
 }
 
+img.ember-view {
+    border-color: #76EE00;
+    border:2px;
+    margin: 2px; 
+}
+
+img.ember-view:hover {
+    border-color: #76EE00;
+    border:2px;
+    margin: 2px;
+}
+
+img.ember-view.active {
+    border-color: #76EE00;
+    border:2px;
+    margin: 2px;
+}
+
 body {
-  background-color: black;
+  background-color: #2f4f4f;
 }
 
 a p {
   font-family:Typ;
+}
+
+.rotate {
+/* Safari */
+-webkit-transform: rotate(-90deg);
+/* Firefox */
+-moz-transform: rotate(-90deg);
+/* IE */
+-ms-transform: rotate(-90deg);
+/* Opera */
+-o-transform: rotate(-90deg);
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.pad-bottom {
+  padding-bottom: 10px;
+}
+
+.pad-top {
+  padding-top: 2px;
+  padding-right:10px;
+}
+
+.flag-padding li {
+  margin: 0 10px;
+}
+
+a.ember-view.list-group-item.active {
+  background-color: black;
+}
+
+a{
+  color: #FF6700
+}
+
+
+
+a:hover  {
+  color: #DD0048
 }
