@@ -10,14 +10,15 @@
   <script type="text/x-handlebars" data-template-name='application'>
   <div class='container'>
     <div class='navbar bigbackground col-xs-12 col-sm-7'>
+      <div class="img-responsive">
       {{#link-to 'index'}}
-        <h1 id="fit" class="fl-right">
-          vintagebicycles.info   
-        </h1>
+        <img src="img/vintage-bicycles-logo-white-1.png" alt="vintagebicycles.com"/>
+        <!--id="fit" class="fl-right"-->
       {{/link-to}}
+      </div>
     </div>
     <nav class='col-xs-12 col-sm-5 nav navbar-nav big-text'>
-      <ul>
+      <ul class="nav-container">
         <li class="big-text ost-text">
           {{#link-to 'catalog' classNames="ost-text"}}catalog  &nbsp;{{/link-to}}
           {{#link-to 'references' classNames="ost-text"}}references{{/link-to}}
