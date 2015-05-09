@@ -12,17 +12,6 @@
   font-family: Typ;
 }
 
-.bigbackground {
-	/*background-image: url(img/church2.jpg);*/
-  background-color: transparent;
-  border:none;
-  padding-right:0;
-}
-
-.bigbackground::after {
-	opacity: 0;
-}
-
 #dashboard ul
 {
 margin: 0;
@@ -79,13 +68,12 @@ background-color: #369;
 }
 
 ul.nav-container{
-  margin-left: 125px;
-  margin-top: 55px;
+  /*margin-left: 125px;*/
+  margin: auto;
 }
 .big-text {
   font-size: 150%;
   list-style:none;
-  /*top:5px;*/
 }
 
 h4{
@@ -225,6 +213,7 @@ a:hover  {
 @media (min-width: 770px) && (max-width: 1100px) {
   .pad-bottom{
     padding-bottom: 0px ;
+    vertical-align:middle;
   }
 }
 
@@ -240,6 +229,7 @@ a:hover  {
   }
   .big-text {
     text-align:center;
+    height: 100%;
   }
 
   #fit {
@@ -275,5 +265,42 @@ a:hover  {
   }
   ul.nav {
     margin-right: 20px;
+  }
+}
+
+
+/*
+header img, header nav {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header img {
+    height: auto;
+    width: 25%;
+}
+
+header nav {
+    width: 70%;
+}
+
+header nav ul {
+    padding: 0;
+    margin: 0;
+} */
+
+.logo {
+  padding-top: 40px;
+}
+
+@media (min-width: 1000px) {
+  .logo {
+  padding-top: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+  padding-top: 0px;
   }
 }
