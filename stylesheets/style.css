@@ -11,7 +11,7 @@
 * {
   font-family: Typ;
 }
-
+/*
 #dashboard ul
 {
 margin: 0;
@@ -35,23 +35,23 @@ background-color: #036;
 color: #fff;
 background-color: #369;
 }
-
+ */
+/*
 .hover-color {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
-  filter: gray; /* IE 6-9 */
-}
-
+  filter: gray;
+} 
 .hover-color:hover {
   -webkit-filter: none;
   -moz-filter: none;
   -ms-filter: none;
   -o-filter: none;
   filter: none;
-}
+}  */
 
 /*.navbar-inverse .navbar-nav>li>a.active {
   background-color: red;
@@ -287,4 +287,57 @@ a:hover  {
   #navigation ul{
   padding-top: 40px;
   }
+}
+
+.hoverWrapper {
+  position: relative;
+}
+
+.imgDescription {
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 120%;
+  color: #fff;
+  text-align: center;
+  visibility: hidden;
+  /*remove comment if you want a gradual transition between states
+  -webkit-transition: visibility opacity 0.2s;
+  */
+}
+
+.hoverWrapper:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}
+
+.bikepage{ 
+  list-style-type: none;
+}
+
+.bikebinder {
+  padding: 0;
+}
+
+.bikebinder>.ember-view {
+  display:inline-block;
+  width: 24%;
+}
+
+.modelHeading {
+  text-align: center;
+}
+
+.descPadding {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.img-thumbnail {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 0;
+  border-radius: 0;
 }
