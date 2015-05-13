@@ -2,6 +2,10 @@
     font-family: OstSans;
     src: url(ostrich-sans/ostrich-regular.ttf);
 }
+@font-face {
+    font-family: OstSans;
+    src: url(ostrich-sans/ostrich-black.ttf);
+}
 
 @font-face {
     font-family: Typ;
@@ -83,8 +87,9 @@ h4{
   margin: 2% auto;
 }
 .ost-text {
-  font-family: OstSans;
+  font-family: ostrich-black, OstSans, sans-serif;
   margin-bottom:-10px;
+  letter-spacing: 1px;
 }
 
 #fit{
@@ -301,8 +306,8 @@ a:hover  {
   bottom: 0;
   left: 0;
   right: 0;
-  font-size: 120%;
-  color: #fff;
+  font-size: 160%;
+  color: rgba(225, 225, 225, .7);
   text-align: center;
   visibility: hidden;
   /*remove comment if you want a gradual transition between states
