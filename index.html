@@ -7,7 +7,9 @@
   <title>vintagebicycles.info</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="stylesheets/style.css">
+</head>
   <script type="text/x-handlebars" data-template-name='application'>
+
   <div class='container'>
     <header role="banner">
       {{#link-to 'index'}}
@@ -37,7 +39,7 @@
     <p class="pull-right"><strong class="small">Vintage Bicycles &copy; 2015</strong></p>
   </footer>
 </script>
-</head>
+
 <body>
   <!--script for index-->
 <script type="text/x-handlebars" data-template-name='index'>
@@ -519,7 +521,7 @@
   <li class="bikepage">
         {{#link-to 'bike' bike}}
     <div class="hoverWrapper">
-        <img {{bind-attr src='bike.image'}} class='img-thumbnail img-responsive grid-fix'/>
+        <img {{bind-attr src='bike.image'}} class='img-responsive img-thumbnail'/>
         <p class="imgDescription">{{bike.make}} {{bike.model}}</p>
     </div>
           {{/link-to}}
@@ -636,17 +638,16 @@
   <a href="mailto:html@christopher.salam@gmail.com">email</a>.</p>
   <img src="img/last.jpg" alt='fields' class='hover-color img-thumbnail img-responsive'/>
 </script>
-<!--<script src="js/libs/jquery.fittext.js"></script>-->
 <script src="js/libs/jquery-1.10.2.js"></script>
 <script src="js/libs/isotope.pkgd.min.js"></script>
+<script src="js/libs/fitColumns.min.js"></script>
 <script>
-  var $container = $('#bikecatalog');
+  var $container = $('.bikebinder');
   // init
   $container.isotope({
     // options
-    itemSelector: '.bikepage',
-    layoutMode: 'fitRows'
-  });
+    layoutMode: 'fitColumns'
+    });
 </script>
 <script src="js/libs/bootstrap.min.js"></script>
 <script src="js/libs/handlebars-v2.0.0.js"></script>
