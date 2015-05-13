@@ -269,9 +269,6 @@ a:hover  {
   }
 }
 
-.logo {
-}
-
 @media (min-width: 768px) and (max-width: 992px) {
   #navigation ul{
   padding-top: 12px;
@@ -292,6 +289,9 @@ a:hover  {
 
 .hoverWrapper {
   position: relative;
+  display:inline-block;
+  width: 99%;
+  height: 30vh;
 }
 
 .imgDescription {
@@ -324,7 +324,24 @@ a:hover  {
 
 .bikebinder>.ember-view {
   display:inline-block;
-  width: 24%;
+}
+
+@media (max-width: 600px) {
+  .bikebinder>.ember-view {
+    width: 49%;
+  }
+}
+
+@media (min-width: 981px) {
+  .bikebinder>.ember-view {
+    width: 24.5%;
+  }
+}
+
+@media (max-width: 980px) and (min-width: 600px) {
+  .bikebinder>.ember-view {
+    width: 32%;
+  }
 }
 
 .modelHeading {
@@ -338,7 +355,29 @@ a:hover  {
 
 .img-thumbnail {
   background-color: transparent;
-  border: 1px solid white;
+  border: 0 solid white;
   padding: 0;
   border-radius: 0;
+  max-width: auto;
+}
+
+.img-responsive .grid-fix {
+  max-width: none;
+}
+
+.grid-fix {
+  height: 100%;
+}
+
+.centered {
+  margin: 0 auto;
+  display: block;
+}
+
+.hoverWrapper>img {
+  /*overflow:hidden;*/
+  -o-object-fit: cover;
+  -o-object-position: center;
+  object-fit: cover;
+  object-position: center;
 }
