@@ -7,6 +7,8 @@
   <title>vintagebicycles.info</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/backgrounds.css">
+</head>
   <script type="text/x-handlebars" data-template-name='application'>
   <div class='container'>
     <header role="banner">
@@ -32,19 +34,19 @@
   <div class='container'>
     {{outlet}}
   </div>
-  <footer class='container bigbackground'> <hr/>
-    <p> This site is under development. If you are interested in the project and would like to contribute, {{#link-to 'credits'}} click here for more info.{{/link-to}}  
+  <footer class='container bigbackground'> 
+    <p class="centered-text"> This site is under development. If you are interested in the project and would like to contribute, {{#link-to 'credits'}} click here for more info.{{/link-to}}  
     <p class="pull-right"><strong class="small">Vintage Bicycles &copy; 2015</strong></p>
   </footer>
 </script>
-</head>
+
 <body>
   <!--script for index-->
-  <!-- removed <img src="img/church2.jpg" alt='fields' class='img-thumbnail img-responsive'/>-->
+  <!-- removed <img src="img/church2.jpg" alt='fields' class='img-thumbnail img-responsive'/>
+  removed by h4 
+  removed <p>Today&#39;s date is {{time}}</p> -->
 <script type="text/x-handlebars" data-template-name='index'>
-  <img src="home-page-note.png" alt='Vintage Bicycles' class='img-responsive'/>
-  <h4>Vintage Bicycles, their restoration and their ornamentation has been a focal point for many cyclists and websites. Cycling has a short life in archeological terms, albeit with a rich material culture and record. This page hopes to link you to as many resources as possible, showcasing examples of and twists on vintage bicycles. Thanks for visiting, and please consider donating to the site! Thanks.</h4>
-  <p>Today&#39;s date is {{time}}</p>
+  <img src="img/home-page-note-alt.png" alt='Home Page' class='img-thumbnail img-responsive home-img'/>
 </script>
   <!--script for about-->
 <script type="text/x-handlebars" data-template-name='about/index'>
@@ -518,10 +520,10 @@
 </script>
 <!--Component for reused template for individual bikes-->
 <script type="text/x-handlebars" data-template-name='components/bike-spec'>
-  <li class="bikepage">
+  <li>
         {{#link-to 'bike' bike}}
     <div class="hoverWrapper">
-        <img {{bind-attr src='bike.image'}} class='img-thumbnail img-responsive grid-fix'/>
+        <img {{bind-attr src='bike.image'}} class='img-responsive img-thumbnail'/>
         <p class="imgDescription">{{bike.make}} {{bike.model}}</p>
     </div>
           {{/link-to}}
@@ -638,17 +640,16 @@
   <a href="mailto:html@christopher.salam@gmail.com">email</a>.</p>
   <img src="img/last.jpg" alt='fields' class='hover-color img-thumbnail img-responsive'/>
 </script>
-<!--<script src="js/libs/jquery.fittext.js"></script>-->
 <script src="js/libs/jquery-1.10.2.js"></script>
 <script src="js/libs/isotope.pkgd.min.js"></script>
+<script src="js/libs/fitColumns.min.js"></script>
 <script>
-  var $container = $('#bikecatalog');
+  var $container = $('.bikebinder');
   // init
   $container.isotope({
     // options
-    itemSelector: '.bikepage',
-    layoutMode: 'fitRows'
-  });
+    layoutMode: 'fitColumns'
+    });
 </script>
 <script src="js/libs/bootstrap.min.js"></script>
 <script src="js/libs/handlebars-v2.0.0.js"></script>
@@ -656,6 +657,7 @@
 <script src="js/ember/app.js"></script>
 <script src="js/ember/router.js"></script>
 <script src="js/ember/routes.js"></script>
+<script src="js/ember/views.js"></script>
 <script src="js/ember/controllers.js"></script>
 <script src="js/data/about.js"></script>
 <script src="js/data/catalog.js"></script>
