@@ -179,6 +179,7 @@ a p {
 -o-transform: rotate(-90deg);
 /* Internet Explorer */
 filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+letter-spacing: 2px;
 }
 
 a.ember-view.list-group-item.active {
