@@ -1,0 +1,80 @@
+/*backgrounds.css*/
+
+/*These ***View tags are added only to the body html element*/
+
+.indexView {
+	background-image: url('../img/home-bikes-transparent.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.referencesView {
+
+}
+
+.catalogView {
+	background: #ccc;
+
+}
+
+.bianchiView {
+
+} 
+
+.cannondaleView {
+
+}
+
+.centurionView {
+
+}
+
+.nishikiView {
+
+}
+
+.specializedView {
+
+}
+
+.peugeotView {
+
+}
+
+.raleighView {
+
+}
+
+.trekView {
+
+}
+
+.japaneseView {
+
+}
+
+.frenchView {
+
+}
+
+.englishView {
+
+}
+
+.italianView {
+
+} 
+
+.usaView {
+
+} 
+
+.vendorsView {
+
+}
+
+.aboutView {
+
+}
