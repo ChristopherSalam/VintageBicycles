@@ -3,6 +3,11 @@
 /*These ***View tags are added only to the body html element*/
 
 .indexView {
+	background-image: url('../img/home-bikes-transparent.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 
 }
 
@@ -11,7 +16,8 @@
 }
 
 .catalogView {
-
+	background-color: #757474;
+	
 }
 
 .bianchiView {
