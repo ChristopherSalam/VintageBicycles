@@ -45,6 +45,12 @@
 ul.nav-container{
   margin: auto;
 }
+
+.centered-text{
+  text-align: center;
+  margin: 0 auto;
+}
+
 .big-text {
   font-size: 150%;
   list-style:none;
@@ -110,6 +116,10 @@ img.ember-view.active {
     border-color: #baf67f;
     border:2px;
     margin: 2px;
+}
+
+.home-img{
+  float:right;
 }
 
 body {
