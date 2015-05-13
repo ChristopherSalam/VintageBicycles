@@ -640,11 +640,11 @@
 <script src="js/libs/isotope.pkgd.min.js"></script>
 <script src="js/libs/fitColumns.min.js"></script>
 <script>
-  var $container = $('.bikebinder>.ember-view');
+  var $container = $('.bikebinder');
   // init
   $container.isotope({
     // options
-    itemSelector: '.hoverWrapper',
+    itemSelector: '.bikebinder>.ember-view',
     layoutMode: 'fitColumns'
     });
 </script>
