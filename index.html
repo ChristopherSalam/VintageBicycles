@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -18,10 +18,10 @@
       <ul>
         <li class="big-text ost-text">
           {{#link-to 'catalog' classNames="ost-text"}}catalog  &nbsp;{{/link-to}}
-          {{#link-to 'vendors' classNames="ost-text"}}vendors  &nbsp; {{/link-to}}
+          {{#link-to 'references' classNames="ost-text"}}references{{/link-to}}
         </li>
         <li class="big-text ost-text">
-          {{#link-to 'references' classNames="ost-text"}}references{{/link-to}}
+          {{#link-to 'vendors' classNames="ost-text"}}vendors  &nbsp; {{/link-to}} 
           {{#link-to 'about' classNames="ost-text"}}archeologists{{/link-to}}
         </li>
       </ul><br>
@@ -72,7 +72,6 @@
 </script>
   <!--script for catalog-->
 <script type="text/x-handlebars" data-template-name='catalog'>
-  <img src="img/return_arrow.png" class="pull-left pad-top"/>
   <ul class='nav navbar-nav navbar-left pad-bottom'>
         <li class="rotate ost-text big-text">Make</li>
         {{#link-to 'bianchi' this tagName='li'}} &nbsp; bianchi &nbsp; {{/link-to}}
@@ -93,7 +92,7 @@
         {{#link-to 'italian' this tagName='li'}} <img src="img/countries/Italy.png" /> {{/link-to}}
         {{#link-to 'usa' this tagName='li'}} <img src="img/countries/USA.png" /> {{/link-to}}
   </ul><br><br><br>
-  <ul class='list-unstyled'>
+  <ul class="bikebinder">
     {{#each}}
     {{bike-spec bike=this}}
     {{/each}}
@@ -125,7 +124,7 @@
         {{#link-to 'usa' this tagName='li'}} <img src="img/countries/USA.png" /> {{/link-to}}
   </ul><br><br><br>
     <h2 class="pad-bottom">Currently {{bianchiCount}} Bianchis</h2>
-  <ul class='list-unstyled dashboard'>
+  <ul class="bikebinder">
     {{#each sortBianchi}}
     {{bike-spec bike=this}}
     {{/each}}
@@ -157,7 +156,7 @@
         {{#link-to 'usa' this tagName='li'}} <img src="img/countries/USA.png" /> {{/link-to}}
   </ul><br><br><br>
   <h2 class="pad-bottom">Currently {{cannondaleCount}} Cannondale Bicycles</h2>
-  <ul class='list-unstyled dashboard'>
+  <ul class="bikebinder">
     {{#each sortCannondale}}
     {{bike-spec bike=this}}
     {{/each}}
@@ -189,7 +188,7 @@
         {{#link-to 'usa' this tagName='li'}} <img src="img/countries/USA.png" /> {{/link-to}}
   </ul><br><br><br>
   <h2>Currently {{centurionCount}} Centurion Bicycles</h2>
-  <ul class='list-unstyled dashboard'>
+  <ul class="bikebinder">
     {{#each sortCenturion}}
     {{bike-spec bike=this}}
     {{/each}}
@@ -221,7 +220,7 @@
         {{#link-to 'usa' this tagName='li'}} <img src="img/countries/USA.png" /> {{/link-to}}
   </ul><br><br><br>
   <h2 class="pad-bottom">Currently {{nishikiCount}} Nishiki Bicycles</h2>
-  <ul class='list-unstyled dashboard'>
+  <ul class="bikebinder">
     {{#each sortNishiki}}
     {{bike-spec bike=this}}
     {{/each}}
@@ -253,7 +252,7 @@
         {{#link-to 'usa' this tagName='li'}} <img src="img/countries/USA.png" /> {{/link-to}}
   </ul><br><br><br>
   <h2 class="pad-bottom">Currently {{peugeotCount}} Peugeots</h2>
-  <ul class='list-unstyled dashboard'>
+  <ul class="bikebinder">
     {{#each sortPeugeot}}
     {{bike-spec bike=this}}
     {{/each}}
@@ -285,7 +284,7 @@
         {{#link-to 'usa' this tagName='li'}} <img src="img/countries/USA.png" /> {{/link-to}}
   </ul><br><br><br>
   <h2 class="pad-bottom">Currently {{specializedCount}} Specialized</h2>
-  <ul class='list-unstyled dashboard'>
+  <ul class="bikebinder">
     {{#each sortSpecialized}}
     {{bike-spec bike=this}}
     {{/each}}
@@ -317,7 +316,7 @@
         {{#link-to 'usa' this tagName='li'}} <img src="img/countries/USA.png" /> {{/link-to}}
   </ul><br><br><br>
   <h2 class="pad-bottom">Currently {{trekCount}} Treks</h2>
-  <ul class='list-unstyled dashboard'>
+  <ul class="bikebinder">
     {{#each sortTrek}}
     {{bike-spec bike=this}}
     {{/each}}
@@ -349,7 +348,7 @@
         {{#link-to 'usa' this tagName='li'}} <img src="img/countries/USA.png" /> {{/link-to}}
   </ul><br><br><br>
   <h2 class="pad-bottom">Currently {{japaneseCount}} Bicycles of Japanese Origin</h2>
-  <ul class='list-unstyled dashboard'>
+  <ul class="bikebinder">
     {{#each sortJapanese}}
     {{bike-spec bike=this}}
     {{/each}}
@@ -381,7 +380,7 @@
         {{#link-to 'usa' this tagName='li'}} <img src="img/countries/USA.png" /> {{/link-to}}
   </ul><br><br><br>
   <h2 class="pad-bottom">Currently {{ukCount}} Bicycles from the United Kingdom</h2>
-  <ul class='list-unstyled dashboard'>
+  <ul class="bikebinder">
     {{#each sortUk}}
     {{bike-spec bike=this}}
     {{/each}}
@@ -413,7 +412,7 @@
         {{#link-to 'usa' this tagName='li'}} <img src="img/countries/USA.png" /> {{/link-to}}
   </ul><br><br><br>
   <h2 class="pad-bottom">Currently {{frenchCount}} Bicycles from France</h2>
-  <ul class='list-unstyled dashboard'>
+  <ul class="bikebinder">
     {{#each sortFrench}}
     {{bike-spec bike=this}}
     {{/each}}
@@ -445,7 +444,7 @@
         {{#link-to 'usa' this tagName='li'}} <img src="img/countries/USA.png" /> {{/link-to}}
   </ul><br><br><br>
   <h2 class="pad-bottom">Currently {{italianCount}} Bicycles of Italian Origin</h2>
-  <ul class='list-unstyled dashboard'>
+  <ul class="bikebinder">
     {{#each sortItalian}}
     {{bike-spec bike=this}}
     {{/each}}
@@ -477,7 +476,7 @@
         {{#link-to 'usa' this tagName='li'}} <img src="img/countries/USA.png" /> {{/link-to}}
   </ul><br><br><br>
   <h2 class="pad-bottom">Currently {{raleighCount}} Raleigh Bicycles</h2>
-  <ul class='list-unstyled dashboard'>
+  <ul class="bikebinder">
     {{#each sortRaleigh}}
     {{bike-spec bike=this}}
     {{/each}}
@@ -509,7 +508,7 @@
         {{#link-to 'usa' this tagName='li'}} <img src="img/countries/USA.png" /> {{/link-to}}
   </ul><br><br><br>
   <h2 class="pad-bottom">Currently {{usaCount}} Bicycles of American Origin</h2>
-  <ul class='list-unstyled dashboard'>
+  <ul class="bikebinder">
     {{#each sortUsa}}
     {{bike-spec bike=this}}
     {{/each}}
@@ -517,24 +516,27 @@
 </script>
 <!--Component for reused template for individual bikes-->
 <script type="text/x-handlebars" data-template-name='components/bike-spec'>
-  <li class='row'>
-  {{#link-to 'bike' bike}}
-    <img {{bind-attr src='bike.image'}} class='hover-color img-thumbnail col-md-5 col-sm-12'/>
-       <div class='col-md-7 col-sm-12'>
-        <h3>{{bike.make}} {{bike.model}}</h3>
-        <p class='product-description'>{{bike.desc}}</p>
-         <p class='product-description'>{{bike.persons}}</p>
-       </div>
-       {{/link-to}}
+  <li class="bikepage">
+        {{#link-to 'bike' bike}}
+    <div class="hoverWrapper">
+        <img {{bind-attr src='bike.image'}} class='img-thumbnail img-responsive'/>
+        <p class="imgDescription">{{bike.make}} {{bike.model}}</p>
+    </div>
+          {{/link-to}}
    </li>
 </script>
 <!--Blowup for each bike page-->
 <script type="text/x-handlebars" data-template-name='bike'>
-  <img {{bind-attr src='image'}} class='hover-color img-thumbnail img-responsive'/>
-  <h1>{{make}} {{model.model}}</h1>
-  <p>{{desc}}</p>
-    {{#if image2}}<img {{bind-attr src='image2'}} class='hover-color img-thumbnail img-responsive'/>{{/if}}
-    {{#if image3}}<img {{bind-attr src='image3'}} class='hover-color img-thumbnail img-responsive'/>{{/if}}
+
+  <h1 class="modelHeading">   
+    {{#link-to 'catalog'}}
+      <img src="img/return_arrow.png" class="pull-left pad-top"/>
+    {{/link-to}}{{make}} {{model.model}}
+  </h1>
+  <img {{bind-attr src='image'}} class='hover-color img-responsive img-thumbnail'/>
+  <p  class="descPadding">{{desc}}</p>
+    {{#if image2}}<img {{bind-attr src='image2'}} class='hover-color img-responsive img-thumbnail'/>{{/if}}
+    {{#if image3}}<img {{bind-attr src='image3'}} class='hover-color img-responsive img-thumbnail'/>{{/if}}
 </script>
   <!--script for references-->
 <script type="text/x-handlebars" data-template-name='references'>
@@ -636,6 +638,16 @@
   <img src="img/last.jpg" alt='fields' class='hover-color img-thumbnail img-responsive'/>
 </script>
 <!--<script src="js/libs/jquery.fittext.js"></script>-->
+<script>
+  var $container = $('#bikecatalog');
+  // init
+  $container.isotope({
+    // options
+    itemSelector: '.bikepage',
+    layoutMode: 'fitRows'
+  });
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.0/isotope.pkgd.min.js"></script>
 <script src="js/libs/jquery-1.10.2.js"></script>
 <script src="js/libs/bootstrap.min.js"></script>
 <script src="js/libs/handlebars-v2.0.0.js"></script>
