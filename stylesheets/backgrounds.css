@@ -15,7 +15,11 @@
 }
 
 .catalogView {
-	background-color: #757474;
+	background-color: #bebdbd;
+	background-image: url('../img/bike-lane.png');
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: 50%;
 	
 }
 
