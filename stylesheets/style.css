@@ -56,7 +56,7 @@ h4{
   font-family: OstSans;
   margin-bottom:-10px;
 }
-
+/*
 #fit{
   text-transform:uppercase;
   height:100%;
@@ -65,10 +65,9 @@ h4{
   padding-bottom:auto;
 }
 
-
 .fl-right{
   float:right;
-}
+} */
 
 .navbar {
   margin-bottom:0px;
@@ -153,15 +152,15 @@ letter-spacing: 2px;
 a.ember-view.list-group-item.active {
   background-color: black;
   border-color: #baf67f;
-  color: #baf67f; /*#76ee00*/
+  color: #baf67f; 
 }
 
 a{
-  color: #ffc14d; /*#FF6700*/
+  color: #ffc14d; 
 }
 
 a:hover  {
-  color: #ffff00; /*#DD0048*/
+  color: #ffff00; 
 }
 
 .list-group-item {
@@ -182,7 +181,7 @@ a:hover  {
   }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 769px) {
   .nav>li {
       display:inline-block;
   }
@@ -229,11 +228,9 @@ a:hover  {
 
 .hoverWrapper {
   position: relative;
-  width:40vh;
-  height:40vh;
+  width:auto;
+  height:auto;
   display: inline-block;
-/*  display:inline-block;
-  overflow:hidden;*/
 }
 
 .imgDescription {
@@ -256,9 +253,9 @@ a:hover  {
   opacity: 1;
 }
 
-.bikepage{ 
+/*.bikepage{ 
   list-style-type: none;
-}
+} */
 
 .bikebinder {
   padding: 0;
@@ -267,20 +264,20 @@ a:hover  {
 .bikebinder>.ember-view {
   display:inline-block;
 }
-
+/*
 .bikebinder {
   display: inline-block;
   list-style-type: none;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   -webkit-padding-start: 0;
- /*  padding-right:15px;*/
-}
+ /*  padding-right:15px;
+} */
 
 @media (max-width: 768px) {
   .bikebinder>.ember-view   {
     width: 49%;
-    height: 30vh;
+    overflow:hidden;
   }
 }
 
@@ -294,7 +291,7 @@ a:hover  {
 @media (min-width: 769px) and (max-width: 980px){
   .bikebinder>.ember-view {
     width: 32%;
-    height: 30vh;
+    overflow:hidden;
   }
 }
 
@@ -321,12 +318,12 @@ a:hover  {
 }
 
 .grid-fix {
-/*  height: auto;*/
+ height: auto
 }
 
 @media (max-height: 500px) {
   .grid-fix {
-/*  height: auto;*/
+ height: auto
   }
 }
 
@@ -336,12 +333,12 @@ a:hover  {
 }
 
 .hoverWrapper>img {
-  height: auto;
-  width: auto;
+  height:150%;
+  width:150%;
   overflow:hidden;
   -o-object-fit: cover;
   -o-object-position: center center;
   object-fit: cover;
   object-position: center center;
-  display:inline;
+/*  display:inline;*/
 }

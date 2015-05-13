@@ -518,14 +518,12 @@
 </script>
 <!--Component for reused template for individual bikes-->
 <script type="text/x-handlebars" data-template-name='components/bike-spec'>
-  <li>
-        {{#link-to 'bike' bike}}
-    <div class="hoverWrapper">
-        <img {{bind-attr src='bike.image'}} class='img-responsive img-thumbnail'/>
-        <p class="imgDescription">{{bike.make}} {{bike.model}}</p>
-    </div>
-          {{/link-to}}
-   </li>
+  <li class="hoverWrapper">
+    {{#link-to 'bike' bike}}
+      <img {{bind-attr src='bike.image'}} class='img-responsive img-thumbnail'/>
+      <p class="imgDescription">{{bike.make}} {{bike.model}}</p>
+    {{/link-to}}
+  </li>
 </script>
 <!--Blowup for each bike page-->
 <script type="text/x-handlebars" data-template-name='bike'>
@@ -642,10 +640,11 @@
 <script src="js/libs/isotope.pkgd.min.js"></script>
 <script src="js/libs/fitColumns.min.js"></script>
 <script>
-  var $container = $('.bikebinder');
+  var $container = $('.bikebinder>.ember-view');
   // init
   $container.isotope({
     // options
+    itemSelector: '.hoverWrapper',
     layoutMode: 'fitColumns'
     });
 </script>
