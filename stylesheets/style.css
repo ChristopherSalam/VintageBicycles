@@ -229,6 +229,9 @@ a:hover  {
 
 .hoverWrapper {
   position: relative;
+  width:40vh;
+  height:40vh;
+  display: inline-block;
 /*  display:inline-block;
   overflow:hidden;*/
 }
@@ -283,8 +286,8 @@ a:hover  {
 
 @media (min-width: 981px) {
   .bikebinder>.ember-view   {
-    width: 24.5%;
-    height: 30vh;
+    max-width: 24.5%;
+    overflow:hidden;
   }
 }
 

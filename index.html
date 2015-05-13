@@ -7,9 +7,9 @@
   <title>vintagebicycles.info</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/backgrounds.css">
 </head>
   <script type="text/x-handlebars" data-template-name='application'>
-
   <div class='container'>
     <header role="banner">
       {{#link-to 'index'}}
@@ -518,7 +518,7 @@
 </script>
 <!--Component for reused template for individual bikes-->
 <script type="text/x-handlebars" data-template-name='components/bike-spec'>
-  <li class="bikepage">
+  <li>
         {{#link-to 'bike' bike}}
     <div class="hoverWrapper">
         <img {{bind-attr src='bike.image'}} class='img-responsive img-thumbnail'/>
@@ -655,6 +655,7 @@
 <script src="js/ember/app.js"></script>
 <script src="js/ember/router.js"></script>
 <script src="js/ember/routes.js"></script>
+<script src="js/ember/views.js"></script>
 <script src="js/ember/controllers.js"></script>
 <script src="js/data/about.js"></script>
 <script src="js/data/catalog.js"></script>
