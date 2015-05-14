@@ -1,10 +1,12 @@
 App.IndexView = Em.View.extend({
     templateName: 'index',
     didInsertElement: function() {
-        $('body').addClass('indexView')
+        $('body').addClass('indexView'),
+        $('header>a>img').addClass('outline')
     },
     willClearRender: function() {
-        $('body').removeClass('indexView')
+        $('body').removeClass('indexView'),
+        $('header>a>img').removeClass('outline')
     }
 })
 

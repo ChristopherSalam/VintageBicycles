@@ -1,6 +1,6 @@
 App.IndexController = Em.Controller.extend({
-	time: function() {
-		return (new Date()).toDateString();
+	year: function() {
+		return (new Date()).getFullYear();
 	}.property()
 })
 

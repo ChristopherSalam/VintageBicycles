@@ -9,42 +9,36 @@
   <link rel="stylesheet" href="stylesheets/style.css">
   <link rel="stylesheet" href="stylesheets/backgrounds.css">
 </head>
-  <script type="text/x-handlebars" data-template-name='application'>
+<!--Main Page-->
+<script type="text/x-handlebars" data-template-name='application'>
   <div class='container'>
     <header role="banner">
-      {{#link-to 'index'}}
-        <img src="img/vintage-bicycles-logo-white-1.png" alt="vintagebicycles.com" class='img-responsive logo col-xs-12 col-sm-7'/>
-      {{/link-to}}
-        <div class='container'>
-    <nav class='col-xs-12 col-sm-5 nav navbar-nav big-text' id="navigation" role="navigation">
-      <ul>
-        <li class="big-text ost-text">
-          {{#link-to 'catalog' classNames="ost-text"}}catalog  &nbsp;{{/link-to}}
-          {{#link-to 'references' classNames="ost-text"}}references{{/link-to}}
-        </li>
-        <li class="big-text ost-text">
-          {{#link-to 'vendors' classNames="ost-text"}}vendors  &nbsp; {{/link-to}} 
-          {{#link-to 'about' classNames="ost-text"}}archeologists{{/link-to}}
-        </li>
-      </ul><br>
-    </nav>
-        </div>
+        {{#link-to 'index'}}<img src="img/vintage-bicycles-logo-white-1.png" alt="vintagebicycles.com" class='img-responsive logo col-xs-12 col-sm-7'/>{{/link-to}}
+      <div class='container'>
+        <nav class='col-xs-12 col-sm-5 nav navbar-nav big-text' id="navigation" role="navigation">
+          <ul>
+            <li class="big-text ost-text">
+              {{#link-to 'catalog' classNames="ost-text"}}catalog  &nbsp;{{/link-to}}
+              {{#link-to 'references' classNames="ost-text"}}references{{/link-to}}
+            </li>
+            <li class="big-text ost-text">
+              {{#link-to 'vendors' classNames="ost-text"}}vendors  &nbsp; {{/link-to}} 
+              {{#link-to 'about' classNames="ost-text"}}archeologists{{/link-to}}
+            </li>
+          </ul>
+          <br>
+        </nav>
+      </div>
     </header>
   </div>
-  <div class='container'>
-    {{outlet}}
-  </div>
+  <div class='container'>{{outlet}}</div>
   <footer class='container bigbackground'> 
-    <p class="centered-text"> This site is under development. If you are interested in the project and would like to contribute, {{#link-to 'credits'}} click here for more info.{{/link-to}}  
-    <p class="pull-right"><strong class="small">Vintage Bicycles &copy; 2015</strong></p>
+    <p class="centered-text"> {{#link-to 'credits'}} This site is under development. If you are interested in the project and would like to contribute, click here for more info.{{/link-to}}  
+    <p class="pull-right"><strong class="small">Vintage Bicycles &copy; {{year}}</strong></p>
   </footer>
 </script>
-
 <body>
   <!--script for index-->
-  <!-- removed <img src="img/church2.jpg" alt='fields' class='img-thumbnail img-responsive'/>
-  removed by h4 
-  removed <p>Today&#39;s date is {{time}}</p> -->
 <script type="text/x-handlebars" data-template-name='index'>
   <img src="img/home-page-note-alt.png" alt='Home Page' class='img-thumbnail img-responsive home-img'/>
 </script>
