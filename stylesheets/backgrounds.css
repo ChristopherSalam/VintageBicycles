@@ -10,7 +10,19 @@
 	background-size: cover;
 }
 
-.outline {
+.outlineLogo {
+	display:none;
+}
+
+.blackLogo {
+	display:none;
+}
+
+.showLogo {
+	display:inline;
+}
+
+.hideLogo {
 	display:none;
 }
 

@@ -13,16 +13,18 @@
 <script type="text/x-handlebars" data-template-name='application'>
   <div class='container'>
     <header role="banner">
-        {{#link-to 'index'}}<img src="img/vintage-bicycles-logo-white-1.png" alt="vintagebicycles.com" class='img-responsive logo col-xs-12 col-sm-7'/>{{/link-to}}
+        {{#link-to 'index'}}<img src="img/vintage-bicycles-logo-white-1.png" alt="vintagebicycles.com" class='img-responsive logo col-xs-12 col-sm-7 normalLogo'/>{{/link-to}}
+        {{#link-to 'index'}}<img src="img/vintage-bicycles-logo-1.png" alt="vintagebicycles.com" class='img-responsive logo col-xs-12 col-sm-7 blackLogo'/>{{/link-to}}
+        {{#link-to 'index'}}<img src="img/vintage-bicycles-white-black-outline.png" alt="vintagebicycles.com" class='img-responsive logo col-xs-12 col-sm-7 outlineLogo'/>{{/link-to}}
       <div class='container'>
         <nav class='col-xs-12 col-sm-5 nav navbar-nav big-text' id="navigation" role="navigation">
           <ul>
             <li class="big-text ost-text">
-              {{#link-to 'catalog' classNames="ost-text"}}catalog  &nbsp;{{/link-to}}
+              {{#link-to 'catalog' classNames="ost-text"}}catalog{{/link-to}}
               {{#link-to 'references' classNames="ost-text"}}references{{/link-to}}
             </li>
             <li class="big-text ost-text">
-              {{#link-to 'vendors' classNames="ost-text"}}vendors  &nbsp; {{/link-to}} 
+              {{#link-to 'vendors' classNames="ost-text"}}vendors{{/link-to}} 
               {{#link-to 'about' classNames="ost-text"}}archeologists{{/link-to}}
             </li>
           </ul>
@@ -70,6 +72,7 @@
 </script>
   <!--script for catalog-->
 <script type="text/x-handlebars" data-template-name='catalog'>
+
   <ul class='nav navbar-nav navbar-left pad-bottom'>
         <li class="rotate ost-text big-text">Make</li>
         {{#link-to 'bianchi' this tagName='li'}} &nbsp; bianchi &nbsp; {{/link-to}}
