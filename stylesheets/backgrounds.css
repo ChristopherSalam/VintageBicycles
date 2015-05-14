@@ -8,7 +8,22 @@
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
+}
 
+.outlineLogo {
+	display:none;
+}
+
+.blackLogo {
+	display:none;
+}
+
+.showLogo {
+	display:inline;
+}
+
+.hideLogo {
+	display:none;
 }
 
 .referencesView {

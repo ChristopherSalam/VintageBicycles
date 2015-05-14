@@ -2,9 +2,13 @@ App.IndexView = Em.View.extend({
     templateName: 'index',
     didInsertElement: function() {
         $('body').addClass('indexView')
+        $('header>a>img.outlineLogo').addClass('showLogo')
+        $('header>a>img.normalLogo').addClass('hideLogo')
     },
     willClearRender: function() {
         $('body').removeClass('indexView')
+        $('header>a>img.outlineLogo').removeClass('showLogo')
+        $('header>a>img.normalLogo').removeClass('hideLogo')
     }
 })
 
@@ -32,9 +36,13 @@ App.CatalogView = Em.View.extend({
     templateName: 'catalog',
     didInsertElement: function() {
         $('body').addClass('catalogView')
+        $('header>a>img.blackLogo').addClass('showLogo')
+        $('header>a>img.normalLogo').addClass('hideLogo')
     },
     willClearRender: function() {
         $('body').removeClass('catalogView')
+        $('header>a>img.blackLogo').removeClass('showLogo')
+        $('header>a>img.normalLogo').removeClass('hideLogo')
     }
 });
 
