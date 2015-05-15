@@ -10,6 +10,12 @@
 	background-size: cover;
 }
 
+.ost-stroke {
+  color: white;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: #777;
+}
+
 .outlineLogo {
 	display:none;
 }
@@ -31,8 +37,7 @@
 }
 
 .referencesView {
-	background-color: #aaa;
-	/*background-position: right top;*/
+	background-color: #CDAF95;
 	background-image: none;
 	background-repeat: repeat;
 	background-size: 100%;
@@ -104,7 +109,6 @@
 
 .aboutView {
 	background-color: #424242;
-/*	background-position: right top;*/
 	background-image: none;
 	background-repeat: repeat;
 	background-size: 100%;
