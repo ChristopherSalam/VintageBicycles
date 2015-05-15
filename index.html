@@ -35,7 +35,7 @@
   </div>
   <div class='container'>{{outlet}}</div>
   <footer class='container bigbackground'> 
-    <p class="centered-text"> {{#link-to 'credits'}} This site is under development. If you are interested in the project and would like to contribute, click here for more info.{{/link-to}}  
+    <p class="centered-text creditsTab"> {{#link-to 'credits'}} This site is under development. If you are interested in the project and would like to contribute, click here for more info.{{/link-to}}  
     <p class="pull-right"><strong class="small">Vintage Bicycles &copy; {{year}}</strong></p>
   </footer>
 </script>
@@ -632,10 +632,12 @@
   <!--script for  credits-->
 <script type='text/x-handlebars' data-template-name='credits'>
   <h1>Thank you for supporting us!</h1>
+  <div class="col-xs-12 col-sm-6 col-md-5 col-ls-4">
   <p>My name is Christopher Salam, and I&#39;m new to web development. This is one of my portfolio sites. I would like to thank craigslist, the ember team, my bike selling associates, the late-great Sheldon Brown and all the web dev. tutorials I have used recently. I would also like to thank my patient partner Amy for her time and web design input.</p>
-  >p>This site will eventually have a database built in rails, and allow users to upload content within their own profiles. If you are interested in this project and can provide development, please contact me via 
+  <p>This site will eventually have a database built in rails, and allow users to upload content within their own profiles. If you are interested in this project and can provide development, please contact me via 
   <a href="mailto:html@christopher.salam@gmail.com">email</a>.</p>
-  <img src="img/last.jpg" alt='fields' class='hover-color img-thumbnail img-responsive'/>
+  </div>
+  <!--<img src="img/last.jpg" alt='fields' class='hover-color img-thumbnail img-responsive'/>-->
 </script>
 <script src="js/libs/jquery-1.10.2.js"></script>
 <script src="js/libs/isotope.pkgd.min.js"></script>

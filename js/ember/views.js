@@ -185,3 +185,15 @@ App.VendorsView = Em.View.extend({
         $('body').removeClass('vendorsView')
     }
 });
+
+App.CreditsView = Em.View.extend({
+    templateName: 'credits',
+    didInsertElement: function() {
+        $('body').addClass('creditsView')
+        $('.creditsTab').addClass('hideFeature')
+    },
+    willClearRender: function() {
+        $('body').removeClass('creditsView')
+        $('.creditsTab').removeClass('hideFeature')
+    }
+});
