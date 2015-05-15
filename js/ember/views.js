@@ -41,13 +41,15 @@ App.CatalogView = Em.View.extend({
         $('body').addClass('catalogView')
         $('header>a>img.blackLogo').addClass('showLogo')
         $('header>a>img.normalLogo').addClass('hideLogo')
-        $('.ember-view.ost-text').addClass('ost-stroke')   
+        $('.ember-view.ost-text').addClass('ost-stroke')
+        $('.pad-bottom').addClass('typ-stroke')    
     },
     willClearRender: function() {
         $('body').removeClass('catalogView')
         $('header>a>img.blackLogo').removeClass('showLogo')
         $('header>a>img.normalLogo').removeClass('hideLogo')
-        $('.ember-view.ost-text').removeClass('ost-stroke')  
+        $('.ember-view.ost-text').removeClass('ost-stroke')
+        $('.pad-bottom').removeClass('typ-stroke')  
     }
 });
 

@@ -16,6 +16,10 @@
   -webkit-text-stroke-color: #777;
 }
 
+.typ-stroke li {
+  color: black
+}
+
 .outlineLogo {
 	display:none;
 }
