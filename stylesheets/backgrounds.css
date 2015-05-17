@@ -13,7 +13,13 @@
 .ost-stroke {
   color: white;
   -webkit-text-stroke-width: .5px;
-  -webkit-text-stroke-color: #777;
+  -webkit-text-stroke-color: #444;
+}
+
+.ost-stroke-black {
+	color: black;
+	-webkit-text-stroke-width: .5px;
+  	-webkit-text-stroke-color: #444;
 }
 
 .typ-stroke li {
