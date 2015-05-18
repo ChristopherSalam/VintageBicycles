@@ -1,7 +1,6 @@
 App.REFERENCES = [
 {
 make:"Bridgestone",
-japanese: "yes",
 id:1,
 origin: "Japan",
 originimg: 'img/countries/Japan.png',
