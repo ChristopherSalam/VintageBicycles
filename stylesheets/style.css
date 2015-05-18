@@ -106,6 +106,10 @@ img.ember-view.active {
     margin: 2px;
 }
 
+.flag-padding{
+    margin-right: 20px;
+} 
+
 .home-img{
   float:right;
 }
@@ -119,18 +123,15 @@ a p {
   font-family:Typ;
 }
 
-.pad-bottom {
-  padding-bottom: 10px;
-  padding-top: 0;
-  margin-top: 0;
+.make-padding {
+  margin: 0 auto;
+  max-width: 660px;
+  float:none;
+  padding-bottom: 20px;
 }
 
 .pad-top {
   padding-top: 2px;
-  padding-right:10px;
-}
-
-.flag-padding li {
   padding-right:10px;
 }
 
@@ -174,8 +175,6 @@ a:hover  {
 .hoverWrapper {
   position: relative;
   display: inline-block;
-/*  display:inline-block;
-  overflow:hidden;*/
 }
 
 .imgDescription {
@@ -269,16 +268,6 @@ a:hover  {
   .pad-top {
    display:none;
   }
-  .pad-bottom{
-   margin: 0 10px 0 0;
-   padding-bottom: 10px;
-  } 
-  .make-padding {
-   margin-left: 10px;
-  }
-  .nav {
-    padding-left: 10px;
-  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -288,18 +277,8 @@ a:hover  {
   #navigation ul{
   padding-top: 12px;
   }
-  .listpadding {
-  padding-left: 0;
-  }
   .ost-pad {
   margin-right: 10px;
-  }
-}
-
-@media (min-width: 770px) and (max-width: 1100px) {
-  .pad-bottom{
-   padding-bottom: 0px ;
-   vertical-align:middle;
   }
 }
 
@@ -326,5 +305,17 @@ a:hover  {
 @media (min-width: 1200px) {
   #navigation ul{
    padding-top: 40px;
+  }
+}
+
+@media (min-width: 516px) and (max-width: 680px) {
+  .make-padding{
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 516px) {
+  .make-padding{
+    max-width: 330px;
   }
 }

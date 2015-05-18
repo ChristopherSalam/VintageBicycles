@@ -70,29 +70,24 @@
   <p> &ldquo; {{story}} &rdquo; - <strong>{{person}}</strong>.</p>
   <img {{bind-attr src='image'}} class='hover-color img-thumbnail img-responsive'/>
 </script>
-  <!--script for catalog-->
-<script type="text/x-handlebars" data-template-name='catalog'>
 
-  <ul class='nav navbar-nav make-padding pad-bottom make-padding'>
-        <li class="rotate ost-text big-text">Make</li>
-        {{#link-to 'bianchi' this tagName='li'}} &nbsp; bianchi &nbsp; {{/link-to}}
-        {{#link-to 'cannondale' this tagName='li'}} &nbsp; cannondale &nbsp; {{/link-to}}
-        {{#link-to 'centurion' this tagName='li'}} &nbsp; centurion &nbsp; {{/link-to}}
-        {{#link-to 'trek' this tagName='li'}} &nbsp; trek &nbsp;{{/link-to}}
+<script type="text/x-handlebars" data-template-name='catalog'>
+  <div class='nav navbar-nav make-padding'>
+        {{#link-to 'bianchi' this}}<img src="img/brands/bianchi-logo.png"/>{{/link-to}}
+        {{#link-to 'cannondale' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'centurion' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'nishiki' this}}<img src="img/brands/nishiki-logo.png"/>{{/link-to}}
+        {{#link-to 'peugeot' this}}<img src="img/brands/peugeot-logo.png"/>{{/link-to}}
+        {{#link-to 'raleigh' this}}<img src="img/brands/raleigh-logo.png"/>{{/link-to}}
+        {{#link-to 'specialized' this}}<img src="img/brands/specialized-logo.png"/>{{/link-to}}
+        {{#link-to 'trek' this}}<img src="img/brands/trek-logo.png"/>{{/link-to}}
         <br>
-        {{#link-to 'peugeot' this tagName='li' classNames="listpadding"}} &nbsp; peugeot &nbsp; {{/link-to}}
-        {{#link-to 'raleigh' this tagName='li'}} &nbsp; raleigh &nbsp;{{/link-to}}
-        {{#link-to 'nishiki' this tagName='li'}} &nbsp; nishiki &nbsp; {{/link-to}}
-        {{#link-to 'specialized' this tagName='li'}} &nbsp; specialized &nbsp;{{/link-to}}
-   </ul>
-   <ul class='nav navbar-nav pad-bottom flag-padding'> 
-        <li class="rotate ost-text big-text">Origin</li>   
-        {{#link-to 'japanese' this tagName='li'}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
-        {{#link-to 'english' this tagName='li'}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
-        {{#link-to 'french' this tagName='li'}} <img src="img/countries/france-desat.png" /> {{/link-to}}
-        {{#link-to 'italian' this tagName='li'}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
-        {{#link-to 'usa' this tagName='li'}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
-  </ul><br><br><br>
+        {{#link-to 'japanese' this classNames="flag-padding"}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
+        {{#link-to 'english' this classNames="flag-padding"}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
+        {{#link-to 'french' this classNames="flag-padding"}} <img src="img/countries/france-desat.png" /> {{/link-to}}
+        {{#link-to 'italian' this classNames="flag-padding"}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
+        {{#link-to 'usa' this classNames="flag-padding"}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
+  </div>
   <ul class="bikebinder">
     {{#each}}
     {{bike-spec bike=this}}
@@ -101,29 +96,23 @@
   </script>
 <!--script for bianchi-->
 <script type="text/x-handlebars" data-template-name='bianchi'>
-  {{#link-to 'catalog'}}
-  <img src="img/return_arrow.png" class="pull-left pad-top"/>
-  {{/link-to}}
-  <ul class='nav navbar-nav pad-bottom make-padding'>
-        <li class="rotate ost-text big-text">Make</li>
-        {{#link-to 'bianchi' this tagName='li'}} &nbsp; bianchi &nbsp; {{/link-to}}
-        {{#link-to 'cannondale' this tagName='li'}} &nbsp; cannondale &nbsp; {{/link-to}}
-        {{#link-to 'centurion' this tagName='li'}} &nbsp; centurion &nbsp; {{/link-to}}
-        {{#link-to 'trek' this tagName='li'}} &nbsp; trek &nbsp;{{/link-to}}
+  <div class='nav navbar-nav make-padding'>
+        {{#link-to 'bianchi' this}}<img src="img/brands/bianchi-logo.png"/>{{/link-to}}
+        {{#link-to 'cannondale' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'centurion' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'nishiki' this}}<img src="img/brands/nishiki-logo.png"/>{{/link-to}}
+        {{#link-to 'peugeot' this}}<img src="img/brands/peugeot-logo.png"/>{{/link-to}}
+        {{#link-to 'raleigh' this}}<img src="img/brands/raleigh-logo.png"/>{{/link-to}}
+        {{#link-to 'specialized' this}}<img src="img/brands/specialized-logo.png"/>{{/link-to}}
+        {{#link-to 'trek' this}}<img src="img/brands/trek-logo.png"/>{{/link-to}}
         <br>
-        {{#link-to 'peugeot' this tagName='li' classNames="listpadding"}} &nbsp; peugeot &nbsp; {{/link-to}}
-        {{#link-to 'raleigh' this tagName='li'}} &nbsp; raleigh &nbsp;{{/link-to}}
-        {{#link-to 'nishiki' this tagName='li'}} &nbsp; nishiki &nbsp; {{/link-to}}
-        {{#link-to 'specialized' this tagName='li'}} &nbsp; specialized &nbsp;{{/link-to}}
-   </ul>
-   <ul class='nav navbar-nav pad-bottom flag-padding'> 
-        <li class="rotate ost-text big-text">Origin</li>   
-        {{#link-to 'japanese' this tagName='li'}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
-        {{#link-to 'english' this tagName='li'}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
-        {{#link-to 'french' this tagName='li'}} <img src="img/countries/france-desat.png" /> {{/link-to}}
-        {{#link-to 'italian' this tagName='li'}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
-        {{#link-to 'usa' this tagName='li'}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
-  </ul><br><br><br>
+        {{#link-to 'catalog' classNames="flag-padding"}}<img src="img/return_arrow.png"/>{{/link-to}}
+        {{#link-to 'japanese' this classNames="flag-padding"}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
+        {{#link-to 'english' this classNames="flag-padding"}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
+        {{#link-to 'french' this classNames="flag-padding"}} <img src="img/countries/france-desat.png" /> {{/link-to}}
+        {{#link-to 'italian' this classNames="flag-padding"}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
+        {{#link-to 'usa' this classNames="flag-padding"}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
+  </div>
     <h2 class="pad-bottom">Currently {{bianchiCount}} Bianchis</h2>
   <ul class="bikebinder">
     {{#each sortBianchi}}
@@ -133,29 +122,23 @@
 </script>
 <!--script for cannondale-->
 <script type="text/x-handlebars" data-template-name='cannondale'>
-  {{#link-to 'catalog'}}
-  <img src="img/return_arrow.png" class="pull-left pad-top"/>
-  {{/link-to}}
-  <ul class='nav navbar-nav make-padding pad-bottom'>
-        <li class="rotate ost-text big-text">Make</li>
-        {{#link-to 'bianchi' this tagName='li'}} &nbsp; bianchi &nbsp; {{/link-to}}
-        {{#link-to 'cannondale' this tagName='li'}} &nbsp; cannondale &nbsp; {{/link-to}}
-        {{#link-to 'centurion' this tagName='li'}} &nbsp; centurion &nbsp; {{/link-to}}
-        {{#link-to 'trek' this tagName='li'}} &nbsp; trek &nbsp;{{/link-to}}
+  <div class='nav navbar-nav make-padding'>
+        {{#link-to 'bianchi' this}}<img src="img/brands/bianchi-logo.png"/>{{/link-to}}
+        {{#link-to 'cannondale' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'centurion' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'nishiki' this}}<img src="img/brands/nishiki-logo.png"/>{{/link-to}}
+        {{#link-to 'peugeot' this}}<img src="img/brands/peugeot-logo.png"/>{{/link-to}}
+        {{#link-to 'raleigh' this}}<img src="img/brands/raleigh-logo.png"/>{{/link-to}}
+        {{#link-to 'specialized' this}}<img src="img/brands/specialized-logo.png"/>{{/link-to}}
+        {{#link-to 'trek' this}}<img src="img/brands/trek-logo.png"/>{{/link-to}}
         <br>
-        {{#link-to 'peugeot' this tagName='li' classNames="listpadding"}} &nbsp; peugeot &nbsp; {{/link-to}}
-        {{#link-to 'raleigh' this tagName='li'}} &nbsp; raleigh &nbsp;{{/link-to}}
-        {{#link-to 'nishiki' this tagName='li'}} &nbsp; nishiki &nbsp; {{/link-to}}
-        {{#link-to 'specialized' this tagName='li'}} &nbsp; specialized &nbsp;{{/link-to}}
-   </ul>
-   <ul class='nav navbar-nav pad-bottom flag-padding'> 
-        <li class="rotate ost-text big-text">Origin</li>   
-        {{#link-to 'japanese' this tagName='li'}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
-        {{#link-to 'english' this tagName='li'}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
-        {{#link-to 'french' this tagName='li'}} <img src="img/countries/france-desat.png" /> {{/link-to}}
-        {{#link-to 'italian' this tagName='li'}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
-        {{#link-to 'usa' this tagName='li'}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
-  </ul><br><br><br>
+        {{#link-to 'catalog' classNames="flag-padding"}}<img src="img/return_arrow.png"/>{{/link-to}}
+        {{#link-to 'japanese' this classNames="flag-padding"}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
+        {{#link-to 'english' this classNames="flag-padding"}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
+        {{#link-to 'french' this classNames="flag-padding"}} <img src="img/countries/france-desat.png" /> {{/link-to}}
+        {{#link-to 'italian' this classNames="flag-padding"}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
+        {{#link-to 'usa' this classNames="flag-padding"}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
+  </div>
   <h2 class="pad-bottom">Currently {{cannondaleCount}} Cannondale Bicycles</h2>
   <ul class="bikebinder">
     {{#each sortCannondale}}
@@ -165,29 +148,23 @@
 </script>
 <!--script for centurion-->
 <script type="text/x-handlebars" data-template-name='centurion'>
-  {{#link-to 'catalog'}}
-  <img src="img/return_arrow.png" class="pull-left pad-top"/>
-  {{/link-to}}
-  <ul class='nav navbar-nav make-padding pad-bottom'>
-        <li class="rotate ost-text big-text">Make</li>
-        {{#link-to 'bianchi' this tagName='li'}} &nbsp; bianchi &nbsp; {{/link-to}}
-        {{#link-to 'cannondale' this tagName='li'}} &nbsp; cannondale &nbsp; {{/link-to}}
-        {{#link-to 'centurion' this tagName='li'}} &nbsp; centurion &nbsp; {{/link-to}}
-        {{#link-to 'trek' this tagName='li'}} &nbsp; trek &nbsp;{{/link-to}}
+  <div class='nav navbar-nav make-padding'>
+        {{#link-to 'bianchi' this}}<img src="img/brands/bianchi-logo.png"/>{{/link-to}}
+        {{#link-to 'cannondale' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'centurion' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'nishiki' this}}<img src="img/brands/nishiki-logo.png"/>{{/link-to}}
+        {{#link-to 'peugeot' this}}<img src="img/brands/peugeot-logo.png"/>{{/link-to}}
+        {{#link-to 'raleigh' this}}<img src="img/brands/raleigh-logo.png"/>{{/link-to}}
+        {{#link-to 'specialized' this}}<img src="img/brands/specialized-logo.png"/>{{/link-to}}
+        {{#link-to 'trek' this}}<img src="img/brands/trek-logo.png"/>{{/link-to}}
         <br>
-        {{#link-to 'peugeot' this tagName='li' classNames="listpadding"}} &nbsp; peugeot &nbsp; {{/link-to}}
-        {{#link-to 'raleigh' this tagName='li'}} &nbsp; raleigh &nbsp;{{/link-to}}
-        {{#link-to 'nishiki' this tagName='li'}} &nbsp; nishiki &nbsp; {{/link-to}}
-        {{#link-to 'specialized' this tagName='li'}} &nbsp; specialized &nbsp;{{/link-to}}
-   </ul>
-   <ul class='nav navbar-nav pad-bottom flag-padding'> 
-        <li class="rotate ost-text big-text">Origin</li>   
-        {{#link-to 'japanese' this tagName='li'}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
-        {{#link-to 'english' this tagName='li'}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
-        {{#link-to 'french' this tagName='li'}} <img src="img/countries/france-desat.png" /> {{/link-to}}
-        {{#link-to 'italian' this tagName='li'}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
-        {{#link-to 'usa' this tagName='li'}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
-  </ul><br><br><br>
+        {{#link-to 'catalog' classNames="flag-padding"}}<img src="img/return_arrow.png"/>{{/link-to}}
+        {{#link-to 'japanese' this classNames="flag-padding"}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
+        {{#link-to 'english' this classNames="flag-padding"}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
+        {{#link-to 'french' this classNames="flag-padding"}} <img src="img/countries/france-desat.png" /> {{/link-to}}
+        {{#link-to 'italian' this classNames="flag-padding"}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
+        {{#link-to 'usa' this classNames="flag-padding"}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
+  </div>
   <h2>Currently {{centurionCount}} Centurion Bicycles</h2>
   <ul class="bikebinder">
     {{#each sortCenturion}}
@@ -197,29 +174,23 @@
 </script>
 <!--script for nishiki-->
 <script type="text/x-handlebars" data-template-name='nishiki'>
-  {{#link-to 'catalog'}}
-  <img src="img/return_arrow.png" class="pull-left pad-top"/>
-  {{/link-to}}
-  <ul class='nav navbar-nav make-padding pad-bottom'>
-        <li class="rotate ost-text big-text">Make</li>
-        {{#link-to 'bianchi' this tagName='li'}} &nbsp; bianchi &nbsp; {{/link-to}}
-        {{#link-to 'cannondale' this tagName='li'}} &nbsp; cannondale &nbsp; {{/link-to}}
-        {{#link-to 'centurion' this tagName='li'}} &nbsp; centurion &nbsp; {{/link-to}}
-        {{#link-to 'trek' this tagName='li'}} &nbsp; trek &nbsp;{{/link-to}}
+  <div class='nav navbar-nav make-padding'>
+        {{#link-to 'bianchi' this}}<img src="img/brands/bianchi-logo.png"/>{{/link-to}}
+        {{#link-to 'cannondale' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'centurion' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'nishiki' this}}<img src="img/brands/nishiki-logo.png"/>{{/link-to}}
+        {{#link-to 'peugeot' this}}<img src="img/brands/peugeot-logo.png"/>{{/link-to}}
+        {{#link-to 'raleigh' this}}<img src="img/brands/raleigh-logo.png"/>{{/link-to}}
+        {{#link-to 'specialized' this}}<img src="img/brands/specialized-logo.png"/>{{/link-to}}
+        {{#link-to 'trek' this}}<img src="img/brands/trek-logo.png"/>{{/link-to}}
         <br>
-        {{#link-to 'peugeot' this tagName='li' classNames="listpadding"}} &nbsp; peugeot &nbsp; {{/link-to}}
-        {{#link-to 'raleigh' this tagName='li'}} &nbsp; raleigh &nbsp;{{/link-to}}
-        {{#link-to 'nishiki' this tagName='li'}} &nbsp; nishiki &nbsp; {{/link-to}}
-        {{#link-to 'specialized' this tagName='li'}} &nbsp; specialized &nbsp;{{/link-to}}
-   </ul>
-   <ul class='nav navbar-nav pad-bottom flag-padding'> 
-        <li class="rotate ost-text big-text">Origin</li>   
-        {{#link-to 'japanese' this tagName='li'}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
-        {{#link-to 'english' this tagName='li'}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
-        {{#link-to 'french' this tagName='li'}} <img src="img/countries/france-desat.png" /> {{/link-to}}
-        {{#link-to 'italian' this tagName='li'}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
-        {{#link-to 'usa' this tagName='li'}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
-  </ul><br><br><br>
+        {{#link-to 'catalog' classNames="flag-padding"}}<img src="img/return_arrow.png"/>{{/link-to}}
+        {{#link-to 'japanese' this classNames="flag-padding"}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
+        {{#link-to 'english' this classNames="flag-padding"}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
+        {{#link-to 'french' this classNames="flag-padding"}} <img src="img/countries/france-desat.png" /> {{/link-to}}
+        {{#link-to 'italian' this classNames="flag-padding"}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
+        {{#link-to 'usa' this classNames="flag-padding"}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
+  </div>
   <h2 class="pad-bottom">Currently {{nishikiCount}} Nishiki Bicycles</h2>
   <ul class="bikebinder">
     {{#each sortNishiki}}
@@ -229,29 +200,23 @@
 </script>
 <!--script for peugeot-->
 <script type="text/x-handlebars" data-template-name='peugeot'>
-  {{#link-to 'catalog'}}
-  <img src="img/return_arrow.png" class="pull-left pad-top"/>
-  {{/link-to}}
-  <ul class='nav navbar-nav make-padding pad-bottom'>
-        <li class="rotate ost-text big-text">Make</li>
-        {{#link-to 'bianchi' this tagName='li'}} &nbsp; bianchi &nbsp; {{/link-to}}
-        {{#link-to 'cannondale' this tagName='li'}} &nbsp; cannondale &nbsp; {{/link-to}}
-        {{#link-to 'centurion' this tagName='li'}} &nbsp; centurion &nbsp; {{/link-to}}
-        {{#link-to 'trek' this tagName='li'}} &nbsp; trek &nbsp;{{/link-to}}
+  <div class='nav navbar-nav make-padding'>
+        {{#link-to 'bianchi' this}}<img src="img/brands/bianchi-logo.png"/>{{/link-to}}
+        {{#link-to 'cannondale' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'centurion' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'nishiki' this}}<img src="img/brands/nishiki-logo.png"/>{{/link-to}}
+        {{#link-to 'peugeot' this}}<img src="img/brands/peugeot-logo.png"/>{{/link-to}}
+        {{#link-to 'raleigh' this}}<img src="img/brands/raleigh-logo.png"/>{{/link-to}}
+        {{#link-to 'specialized' this}}<img src="img/brands/specialized-logo.png"/>{{/link-to}}
+        {{#link-to 'trek' this}}<img src="img/brands/trek-logo.png"/>{{/link-to}}
         <br>
-        {{#link-to 'peugeot' this tagName='li' classNames="listpadding"}} &nbsp; peugeot &nbsp; {{/link-to}}
-        {{#link-to 'raleigh' this tagName='li'}} &nbsp; raleigh &nbsp;{{/link-to}}
-        {{#link-to 'nishiki' this tagName='li'}} &nbsp; nishiki &nbsp; {{/link-to}}
-        {{#link-to 'specialized' this tagName='li'}} &nbsp; specialized &nbsp;{{/link-to}}
-   </ul>
-   <ul class='nav navbar-nav pad-bottom flag-padding'> 
-        <li class="rotate ost-text big-text">Origin</li>   
-        {{#link-to 'japanese' this tagName='li'}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
-        {{#link-to 'english' this tagName='li'}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
-        {{#link-to 'french' this tagName='li'}} <img src="img/countries/france-desat.png" /> {{/link-to}}
-        {{#link-to 'italian' this tagName='li'}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
-        {{#link-to 'usa' this tagName='li'}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
-  </ul><br><br><br>
+        {{#link-to 'catalog' classNames="flag-padding"}}<img src="img/return_arrow.png"/>{{/link-to}}
+        {{#link-to 'japanese' this classNames="flag-padding"}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
+        {{#link-to 'english' this classNames="flag-padding"}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
+        {{#link-to 'french' this classNames="flag-padding"}} <img src="img/countries/france-desat.png" /> {{/link-to}}
+        {{#link-to 'italian' this classNames="flag-padding"}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
+        {{#link-to 'usa' this classNames="flag-padding"}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
+  </div>
   <h2 class="pad-bottom">Currently {{peugeotCount}} Peugeots</h2>
   <ul class="bikebinder">
     {{#each sortPeugeot}}
@@ -261,29 +226,23 @@
 </script>
 <!--script for specialized-->
 <script type="text/x-handlebars" data-template-name='specialized'>
-  {{#link-to 'catalog'}}
-  <img src="img/return_arrow.png" class="pull-left pad-top"/>
-  {{/link-to}}
-  <ul class='nav navbar-nav make-padding pad-bottom'>
-        <li class="rotate ost-text big-text">Make</li>
-        {{#link-to 'bianchi' this tagName='li'}} &nbsp; bianchi &nbsp; {{/link-to}}
-        {{#link-to 'cannondale' this tagName='li'}} &nbsp; cannondale &nbsp; {{/link-to}}
-        {{#link-to 'centurion' this tagName='li'}} &nbsp; centurion &nbsp; {{/link-to}}
-        {{#link-to 'trek' this tagName='li'}} &nbsp; trek &nbsp;{{/link-to}}
+  <div class='nav navbar-nav make-padding'>
+        {{#link-to 'bianchi' this}}<img src="img/brands/bianchi-logo.png"/>{{/link-to}}
+        {{#link-to 'cannondale' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'centurion' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'nishiki' this}}<img src="img/brands/nishiki-logo.png"/>{{/link-to}}
+        {{#link-to 'peugeot' this}}<img src="img/brands/peugeot-logo.png"/>{{/link-to}}
+        {{#link-to 'raleigh' this}}<img src="img/brands/raleigh-logo.png"/>{{/link-to}}
+        {{#link-to 'specialized' this}}<img src="img/brands/specialized-logo.png"/>{{/link-to}}
+        {{#link-to 'trek' this}}<img src="img/brands/trek-logo.png"/>{{/link-to}}
         <br>
-        {{#link-to 'peugeot' this tagName='li' classNames="listpadding"}} &nbsp; peugeot &nbsp; {{/link-to}}
-        {{#link-to 'raleigh' this tagName='li'}} &nbsp; raleigh &nbsp;{{/link-to}}
-        {{#link-to 'nishiki' this tagName='li'}} &nbsp; nishiki &nbsp; {{/link-to}}
-        {{#link-to 'specialized' this tagName='li'}} &nbsp; specialized &nbsp;{{/link-to}}
-   </ul>
-   <ul class='nav navbar-nav pad-bottom flag-padding'> 
-        <li class="rotate ost-text big-text">Origin</li>   
-        {{#link-to 'japanese' this tagName='li'}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
-        {{#link-to 'english' this tagName='li'}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
-        {{#link-to 'french' this tagName='li'}} <img src="img/countries/france-desat.png" /> {{/link-to}}
-        {{#link-to 'italian' this tagName='li'}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
-        {{#link-to 'usa' this tagName='li'}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
-  </ul><br><br><br>
+        {{#link-to 'catalog' classNames="flag-padding"}}<img src="img/return_arrow.png"/>{{/link-to}}
+        {{#link-to 'japanese' this classNames="flag-padding"}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
+        {{#link-to 'english' this classNames="flag-padding"}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
+        {{#link-to 'french' this classNames="flag-padding"}} <img src="img/countries/france-desat.png" /> {{/link-to}}
+        {{#link-to 'italian' this classNames="flag-padding"}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
+        {{#link-to 'usa' this classNames="flag-padding"}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
+  </div>
   <h2 class="pad-bottom">Currently {{specializedCount}} Specialized</h2>
   <ul class="bikebinder">
     {{#each sortSpecialized}}
@@ -293,29 +252,23 @@
 </script>
 <!--script for trek-->
 <script type="text/x-handlebars" data-template-name='trek'>
-  {{#link-to 'catalog'}}
-  <img src="img/return_arrow.png" class="pull-left pad-top"/>
-  {{/link-to}}
-  <ul class='nav navbar-nav make-padding pad-bottom'>
-        <li class="rotate ost-text big-text">Make</li>
-        {{#link-to 'bianchi' this tagName='li'}} &nbsp; bianchi &nbsp; {{/link-to}}
-        {{#link-to 'cannondale' this tagName='li'}} &nbsp; cannondale &nbsp; {{/link-to}}
-        {{#link-to 'centurion' this tagName='li'}} &nbsp; centurion &nbsp; {{/link-to}}
-        {{#link-to 'trek' this tagName='li'}} &nbsp; trek &nbsp;{{/link-to}}
+  <div class='nav navbar-nav make-padding'>
+        {{#link-to 'bianchi' this}}<img src="img/brands/bianchi-logo.png"/>{{/link-to}}
+        {{#link-to 'cannondale' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'centurion' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'nishiki' this}}<img src="img/brands/nishiki-logo.png"/>{{/link-to}}
+        {{#link-to 'peugeot' this}}<img src="img/brands/peugeot-logo.png"/>{{/link-to}}
+        {{#link-to 'raleigh' this}}<img src="img/brands/raleigh-logo.png"/>{{/link-to}}
+        {{#link-to 'specialized' this}}<img src="img/brands/specialized-logo.png"/>{{/link-to}}
+        {{#link-to 'trek' this}}<img src="img/brands/trek-logo.png"/>{{/link-to}}
         <br>
-        {{#link-to 'peugeot' this tagName='li' classNames="listpadding"}} &nbsp; peugeot &nbsp; {{/link-to}}
-        {{#link-to 'raleigh' this tagName='li'}} &nbsp; raleigh &nbsp;{{/link-to}}
-        {{#link-to 'nishiki' this tagName='li'}} &nbsp; nishiki &nbsp; {{/link-to}}
-        {{#link-to 'specialized' this tagName='li'}} &nbsp; specialized &nbsp;{{/link-to}}
-   </ul>
-   <ul class='nav navbar-nav pad-bottom flag-padding'> 
-        <li class="rotate ost-text big-text">Origin</li>   
-        {{#link-to 'japanese' this tagName='li'}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
-        {{#link-to 'english' this tagName='li'}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
-        {{#link-to 'french' this tagName='li'}} <img src="img/countries/france-desat.png" /> {{/link-to}}
-        {{#link-to 'italian' this tagName='li'}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
-        {{#link-to 'usa' this tagName='li'}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
-  </ul><br><br><br>
+        {{#link-to 'catalog' classNames="flag-padding"}}<img src="img/return_arrow.png"/>{{/link-to}}
+        {{#link-to 'japanese' this classNames="flag-padding"}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
+        {{#link-to 'english' this classNames="flag-padding"}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
+        {{#link-to 'french' this classNames="flag-padding"}} <img src="img/countries/france-desat.png" /> {{/link-to}}
+        {{#link-to 'italian' this classNames="flag-padding"}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
+        {{#link-to 'usa' this classNames="flag-padding"}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
+  </div>
   <h2 class="pad-bottom">Currently {{trekCount}} Treks</h2>
   <ul class="bikebinder">
     {{#each sortTrek}}
@@ -325,29 +278,23 @@
 </script>
 <!--script for japanese-->
 <script type="text/x-handlebars" data-template-name='japanese'>
-  {{#link-to 'catalog'}}
-  <img src="img/return_arrow.png" class="pull-left pad-top"/>
-  {{/link-to}}
-  <ul class='nav navbar-nav make-padding pad-bottom'>
-        <li class="rotate ost-text big-text">Make</li>
-        {{#link-to 'bianchi' this tagName='li'}} &nbsp; bianchi &nbsp; {{/link-to}}
-        {{#link-to 'cannondale' this tagName='li'}} &nbsp; cannondale &nbsp; {{/link-to}}
-        {{#link-to 'centurion' this tagName='li'}} &nbsp; centurion &nbsp; {{/link-to}}
-        {{#link-to 'trek' this tagName='li'}} &nbsp; trek &nbsp;{{/link-to}}
+  <div class='nav navbar-nav make-padding'>
+        {{#link-to 'bianchi' this}}<img src="img/brands/bianchi-logo.png"/>{{/link-to}}
+        {{#link-to 'cannondale' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'centurion' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'nishiki' this}}<img src="img/brands/nishiki-logo.png"/>{{/link-to}}
+        {{#link-to 'peugeot' this}}<img src="img/brands/peugeot-logo.png"/>{{/link-to}}
+        {{#link-to 'raleigh' this}}<img src="img/brands/raleigh-logo.png"/>{{/link-to}}
+        {{#link-to 'specialized' this}}<img src="img/brands/specialized-logo.png"/>{{/link-to}}
+        {{#link-to 'trek' this}}<img src="img/brands/trek-logo.png"/>{{/link-to}}
         <br>
-        {{#link-to 'peugeot' this tagName='li' classNames="listpadding"}} &nbsp; peugeot &nbsp; {{/link-to}}
-        {{#link-to 'raleigh' this tagName='li'}} &nbsp; raleigh &nbsp;{{/link-to}}
-        {{#link-to 'nishiki' this tagName='li'}} &nbsp; nishiki &nbsp; {{/link-to}}
-        {{#link-to 'specialized' this tagName='li'}} &nbsp; specialized &nbsp;{{/link-to}}
-   </ul>
-   <ul class='nav navbar-nav pad-bottom flag-padding'> 
-        <li class="rotate ost-text big-text">Origin</li>   
-        {{#link-to 'japanese' this tagName='li'}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
-        {{#link-to 'english' this tagName='li'}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
-        {{#link-to 'french' this tagName='li'}} <img src="img/countries/france-desat.png" /> {{/link-to}}
-        {{#link-to 'italian' this tagName='li'}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
-        {{#link-to 'usa' this tagName='li'}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
-  </ul><br><br><br>
+        {{#link-to 'catalog' classNames="flag-padding"}}<img src="img/return_arrow.png"/>{{/link-to}}
+        {{#link-to 'japanese' this classNames="flag-padding"}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
+        {{#link-to 'english' this classNames="flag-padding"}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
+        {{#link-to 'french' this classNames="flag-padding"}} <img src="img/countries/france-desat.png" /> {{/link-to}}
+        {{#link-to 'italian' this classNames="flag-padding"}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
+        {{#link-to 'usa' this classNames="flag-padding"}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
+  </div>
   <h2 class="pad-bottom">Currently {{japaneseCount}} Bicycles of Japanese Origin</h2>
   <ul class="bikebinder">
     {{#each sortJapanese}}
@@ -357,29 +304,23 @@
 </script>
 <!--script for english-->
 <script type="text/x-handlebars" data-template-name='english'>
-  {{#link-to 'catalog'}}
-  <img src="img/return_arrow.png" class="pull-left pad-top"/>
-  {{/link-to}}
-  <ul class='nav navbar-nav make-padding pad-bottom'>
-        <li class="rotate ost-text big-text">Make</li>
-        {{#link-to 'bianchi' this tagName='li'}} &nbsp; bianchi &nbsp; {{/link-to}}
-        {{#link-to 'cannondale' this tagName='li'}} &nbsp; cannondale &nbsp; {{/link-to}}
-        {{#link-to 'centurion' this tagName='li'}} &nbsp; centurion &nbsp; {{/link-to}}
-        {{#link-to 'trek' this tagName='li'}} &nbsp; trek &nbsp;{{/link-to}}
+  <div class='nav navbar-nav make-padding'>
+        {{#link-to 'bianchi' this}}<img src="img/brands/bianchi-logo.png"/>{{/link-to}}
+        {{#link-to 'cannondale' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'centurion' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'nishiki' this}}<img src="img/brands/nishiki-logo.png"/>{{/link-to}}
+        {{#link-to 'peugeot' this}}<img src="img/brands/peugeot-logo.png"/>{{/link-to}}
+        {{#link-to 'raleigh' this}}<img src="img/brands/raleigh-logo.png"/>{{/link-to}}
+        {{#link-to 'specialized' this}}<img src="img/brands/specialized-logo.png"/>{{/link-to}}
+        {{#link-to 'trek' this}}<img src="img/brands/trek-logo.png"/>{{/link-to}}
         <br>
-        {{#link-to 'peugeot' this tagName='li' classNames="listpadding"}} &nbsp; peugeot &nbsp; {{/link-to}}
-        {{#link-to 'raleigh' this tagName='li'}} &nbsp; raleigh &nbsp;{{/link-to}}
-        {{#link-to 'nishiki' this tagName='li'}} &nbsp; nishiki &nbsp; {{/link-to}}
-        {{#link-to 'specialized' this tagName='li'}} &nbsp; specialized &nbsp;{{/link-to}}
-   </ul>
-   <ul class='nav navbar-nav pad-bottom flag-padding'> 
-        <li class="rotate ost-text big-text">Origin</li>   
-        {{#link-to 'japanese' this tagName='li'}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
-        {{#link-to 'english' this tagName='li'}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
-        {{#link-to 'french' this tagName='li'}} <img src="img/countries/france-desat.png" /> {{/link-to}}
-        {{#link-to 'italian' this tagName='li'}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
-        {{#link-to 'usa' this tagName='li'}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
-  </ul><br><br><br>
+        {{#link-to 'catalog' classNames="flag-padding"}}<img src="img/return_arrow.png"/>{{/link-to}}
+        {{#link-to 'japanese' this classNames="flag-padding"}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
+        {{#link-to 'english' this classNames="flag-padding"}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
+        {{#link-to 'french' this classNames="flag-padding"}} <img src="img/countries/france-desat.png" /> {{/link-to}}
+        {{#link-to 'italian' this classNames="flag-padding"}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
+        {{#link-to 'usa' this classNames="flag-padding"}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
+  </div>
   <h2 class="pad-bottom">Currently {{ukCount}} Bicycles from the United Kingdom</h2>
   <ul class="bikebinder">
     {{#each sortUk}}
@@ -389,29 +330,23 @@
 </script>
 <!--script for french-->
 <script type="text/x-handlebars" data-template-name='french'>
-  {{#link-to 'catalog'}}
-  <img src="img/return_arrow.png" class="pull-left pad-top"/>
-  {{/link-to}}
-  <ul class='nav navbar-nav make-padding pad-bottom'>
-        <li class="rotate ost-text big-text">Make</li>
-        {{#link-to 'bianchi' this tagName='li'}} &nbsp; bianchi &nbsp; {{/link-to}}
-        {{#link-to 'cannondale' this tagName='li'}} &nbsp; cannondale &nbsp; {{/link-to}}
-        {{#link-to 'centurion' this tagName='li'}} &nbsp; centurion &nbsp; {{/link-to}}
-        {{#link-to 'trek' this tagName='li'}} &nbsp; trek &nbsp;{{/link-to}}
+  <div class='nav navbar-nav make-padding'>
+        {{#link-to 'bianchi' this}}<img src="img/brands/bianchi-logo.png"/>{{/link-to}}
+        {{#link-to 'cannondale' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'centurion' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'nishiki' this}}<img src="img/brands/nishiki-logo.png"/>{{/link-to}}
+        {{#link-to 'peugeot' this}}<img src="img/brands/peugeot-logo.png"/>{{/link-to}}
+        {{#link-to 'raleigh' this}}<img src="img/brands/raleigh-logo.png"/>{{/link-to}}
+        {{#link-to 'specialized' this}}<img src="img/brands/specialized-logo.png"/>{{/link-to}}
+        {{#link-to 'trek' this}}<img src="img/brands/trek-logo.png"/>{{/link-to}}
         <br>
-        {{#link-to 'peugeot' this tagName='li' classNames="listpadding"}} &nbsp; peugeot &nbsp; {{/link-to}}
-        {{#link-to 'raleigh' this tagName='li'}} &nbsp; Raleigh &nbsp;{{/link-to}}
-        {{#link-to 'nishiki' this tagName='li'}} &nbsp; Nishiki &nbsp; {{/link-to}}
-        {{#link-to 'specialized' this tagName='li'}} &nbsp; Specialized &nbsp;{{/link-to}}
-   </ul>
-   <ul class='nav navbar-nav pad-bottom flag-padding'> 
-        <li class="rotate ost-text big-text">Origin</li>   
-        {{#link-to 'japanese' this tagName='li'}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
-        {{#link-to 'english' this tagName='li'}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
-        {{#link-to 'french' this tagName='li'}} <img src="img/countries/france-desat.png" /> {{/link-to}}
-        {{#link-to 'italian' this tagName='li'}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
-        {{#link-to 'usa' this tagName='li'}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
-  </ul><br><br><br>
+        {{#link-to 'catalog' classNames="flag-padding"}}<img src="img/return_arrow.png"/>{{/link-to}}
+        {{#link-to 'japanese' this classNames="flag-padding"}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
+        {{#link-to 'english' this classNames="flag-padding"}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
+        {{#link-to 'french' this classNames="flag-padding"}} <img src="img/countries/france-desat.png" /> {{/link-to}}
+        {{#link-to 'italian' this classNames="flag-padding"}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
+        {{#link-to 'usa' this classNames="flag-padding"}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
+  </div>
   <h2 class="pad-bottom">Currently {{frenchCount}} Bicycles from France</h2>
   <ul class="bikebinder">
     {{#each sortFrench}}
@@ -421,29 +356,23 @@
 </script>
 <!--script for italian-->
 <script type="text/x-handlebars" data-template-name='italian'>
-  {{#link-to 'catalog'}}
-  <img src="img/return_arrow.png" class="pull-left pad-top"/>
-  {{/link-to}}
-  <ul class='nav navbar-nav make-padding pad-bottom'>
-        <li class="rotate ost-text big-text">Make</li>
-        {{#link-to 'bianchi' this tagName='li'}} &nbsp; Bianchi &nbsp; {{/link-to}}
-        {{#link-to 'cannondale' this tagName='li'}} &nbsp; cannondale &nbsp; {{/link-to}}
-        {{#link-to 'centurion' this tagName='li'}} &nbsp; centurion &nbsp; {{/link-to}}
-        {{#link-to 'trek' this tagName='li'}} &nbsp; trek &nbsp;{{/link-to}}
+  <div class='nav navbar-nav make-padding'>
+        {{#link-to 'bianchi' this}}<img src="img/brands/bianchi-logo.png"/>{{/link-to}}
+        {{#link-to 'cannondale' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'centurion' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'nishiki' this}}<img src="img/brands/nishiki-logo.png"/>{{/link-to}}
+        {{#link-to 'peugeot' this}}<img src="img/brands/peugeot-logo.png"/>{{/link-to}}
+        {{#link-to 'raleigh' this}}<img src="img/brands/raleigh-logo.png"/>{{/link-to}}
+        {{#link-to 'specialized' this}}<img src="img/brands/specialized-logo.png"/>{{/link-to}}
+        {{#link-to 'trek' this}}<img src="img/brands/trek-logo.png"/>{{/link-to}}
         <br>
-        {{#link-to 'peugeot' this tagName='li' classNames="listpadding"}} &nbsp; peugeot &nbsp; {{/link-to}}
-        {{#link-to 'raleigh' this tagName='li'}} &nbsp; raleigh &nbsp;{{/link-to}}
-        {{#link-to 'nishiki' this tagName='li'}} &nbsp; nishiki &nbsp; {{/link-to}}
-        {{#link-to 'specialized' this tagName='li'}} &nbsp; specialized &nbsp;{{/link-to}}
-   </ul>
-   <ul class='nav navbar-nav pad-bottom flag-padding'> 
-        <li class="rotate ost-text big-text">Origin</li>   
-        {{#link-to 'japanese' this tagName='li'}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
-        {{#link-to 'english' this tagName='li'}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
-        {{#link-to 'french' this tagName='li'}} <img src="img/countries/france-desat.png" /> {{/link-to}}
-        {{#link-to 'italian' this tagName='li'}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
-        {{#link-to 'usa' this tagName='li'}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
-  </ul><br><br><br>
+        {{#link-to 'catalog' classNames="flag-padding"}}<img src="img/return_arrow.png"/>{{/link-to}}
+        {{#link-to 'japanese' this classNames="flag-padding"}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
+        {{#link-to 'english' this classNames="flag-padding"}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
+        {{#link-to 'french' this classNames="flag-padding"}} <img src="img/countries/france-desat.png" /> {{/link-to}}
+        {{#link-to 'italian' this classNames="flag-padding"}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
+        {{#link-to 'usa' this classNames="flag-padding"}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
+  </div>
   <h2 class="pad-bottom">Currently {{italianCount}} Bicycles of Italian Origin</h2>
   <ul class="bikebinder">
     {{#each sortItalian}}
@@ -453,29 +382,23 @@
 </script>
 <!--script for usa-->
 <script type="text/x-handlebars" data-template-name='raleigh'>
-  {{#link-to 'catalog'}}
-  <img src="img/return_arrow.png" class="pull-left pad-top"/>
-  {{/link-to}}
-  <ul class='nav navbar-nav make-padding pad-bottom'>
-        <li class="rotate ost-text big-text">Make</li>
-        {{#link-to 'bianchi' this tagName='li'}} &nbsp; bianchi &nbsp; {{/link-to}}
-        {{#link-to 'cannondale' this tagName='li'}} &nbsp; cannondale &nbsp; {{/link-to}}
-        {{#link-to 'centurion' this tagName='li'}} &nbsp; centurion &nbsp; {{/link-to}}
-        {{#link-to 'trek' this tagName='li'}} &nbsp; trek &nbsp;{{/link-to}}
+  <div class='nav navbar-nav make-padding'>
+        {{#link-to 'bianchi' this}}<img src="img/brands/bianchi-logo.png"/>{{/link-to}}
+        {{#link-to 'cannondale' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'centurion' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'nishiki' this}}<img src="img/brands/nishiki-logo.png"/>{{/link-to}}
+        {{#link-to 'peugeot' this}}<img src="img/brands/peugeot-logo.png"/>{{/link-to}}
+        {{#link-to 'raleigh' this}}<img src="img/brands/raleigh-logo.png"/>{{/link-to}}
+        {{#link-to 'specialized' this}}<img src="img/brands/specialized-logo.png"/>{{/link-to}}
+        {{#link-to 'trek' this}}<img src="img/brands/trek-logo.png"/>{{/link-to}}
         <br>
-        {{#link-to 'peugeot' this tagName='li' classNames="listpadding"}} &nbsp; peugeot &nbsp; {{/link-to}}
-        {{#link-to 'raleigh' this tagName='li'}} &nbsp; raleigh &nbsp;{{/link-to}}
-        {{#link-to 'nishiki' this tagName='li'}} &nbsp; nishiki &nbsp; {{/link-to}}
-        {{#link-to 'specialized' this tagName='li'}} &nbsp; specialized &nbsp;{{/link-to}}
-   </ul>
-   <ul class='nav navbar-nav pad-bottom flag-padding'> 
-        <li class="rotate ost-text big-text">Origin</li>   
-        {{#link-to 'japanese' this tagName='li'}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
-        {{#link-to 'english' this tagName='li'}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
-        {{#link-to 'french' this tagName='li'}} <img src="img/countries/france-desat.png" /> {{/link-to}}
-        {{#link-to 'italian' this tagName='li'}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
-        {{#link-to 'usa' this tagName='li'}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
-  </ul><br><br><br>
+        {{#link-to 'catalog' classNames="flag-padding"}}<img src="img/return_arrow.png"/>{{/link-to}}
+        {{#link-to 'japanese' this classNames="flag-padding"}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
+        {{#link-to 'english' this classNames="flag-padding"}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
+        {{#link-to 'french' this classNames="flag-padding"}} <img src="img/countries/france-desat.png" /> {{/link-to}}
+        {{#link-to 'italian' this classNames="flag-padding"}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
+        {{#link-to 'usa' this classNames="flag-padding"}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
+  </div>
   <h2 class="pad-bottom">Currently {{raleighCount}} Raleigh Bicycles</h2>
   <ul class="bikebinder">
     {{#each sortRaleigh}}
@@ -485,29 +408,23 @@
 </script>
 <!--script for japanese-->
 <script type="text/x-handlebars" data-template-name='usa'>
-  {{#link-to 'catalog'}}
-  <img src="img/return_arrow.png" class="pull-left pad-top"/>
-  {{/link-to}}
-  <ul class='nav navbar-nav make-padding pad-bottom'>
-        <li class="rotate ost-text big-text">Make</li>
-        {{#link-to 'bianchi' this tagName='li'}} &nbsp; bianchi &nbsp; {{/link-to}}
-        {{#link-to 'cannondale' this tagName='li'}} &nbsp; cannondale &nbsp; {{/link-to}}
-        {{#link-to 'centurion' this tagName='li'}} &nbsp; centurion &nbsp; {{/link-to}}
-        {{#link-to 'trek' this tagName='li'}} &nbsp; trek &nbsp;{{/link-to}}
+  <div class='nav navbar-nav make-padding'>
+        {{#link-to 'bianchi' this}}<img src="img/brands/bianchi-logo.png"/>{{/link-to}}
+        {{#link-to 'cannondale' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'centurion' this}}<img src="img/brands/cannondale-logo.png"/>{{/link-to}}
+        {{#link-to 'nishiki' this}}<img src="img/brands/nishiki-logo.png"/>{{/link-to}}
+        {{#link-to 'peugeot' this}}<img src="img/brands/peugeot-logo.png"/>{{/link-to}}
+        {{#link-to 'raleigh' this}}<img src="img/brands/raleigh-logo.png"/>{{/link-to}}
+        {{#link-to 'specialized' this}}<img src="img/brands/specialized-logo.png"/>{{/link-to}}
+        {{#link-to 'trek' this}}<img src="img/brands/trek-logo.png"/>{{/link-to}}
         <br>
-        {{#link-to 'peugeot' this tagName='li' classNames="listpadding"}} &nbsp; peugeot &nbsp; {{/link-to}}
-        {{#link-to 'raleigh' this tagName='li'}} &nbsp; raleigh &nbsp;{{/link-to}}
-        {{#link-to 'nishiki' this tagName='li'}} &nbsp; nishiki &nbsp; {{/link-to}}
-        {{#link-to 'specialized' this tagName='li'}} &nbsp; specialized &nbsp;{{/link-to}}
-   </ul>
-   <ul class='nav navbar-nav pad-bottom flag-padding'> 
-        <li class="rotate ost-text big-text">Origin</li>   
-        {{#link-to 'japanese' this tagName='li'}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
-        {{#link-to 'english' this tagName='li'}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
-        {{#link-to 'french' this tagName='li'}} <img src="img/countries/france-desat.png" /> {{/link-to}}
-        {{#link-to 'italian' this tagName='li'}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
-        {{#link-to 'usa' this tagName='li'}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
-  </ul><br><br><br>
+        {{#link-to 'catalog' classNames="flag-padding"}}<img src="img/return_arrow.png"/>{{/link-to}}
+        {{#link-to 'japanese' this classNames="flag-padding"}} <img src="img/countries/japan-desat.png" /> {{/link-to}}
+        {{#link-to 'english' this classNames="flag-padding"}} <img src="img/countries/uk-desat.png" /> {{/link-to}}
+        {{#link-to 'french' this classNames="flag-padding"}} <img src="img/countries/france-desat.png" /> {{/link-to}}
+        {{#link-to 'italian' this classNames="flag-padding"}} <img src="img/countries/italy-desat.png" /> {{/link-to}}
+        {{#link-to 'usa' this classNames="flag-padding"}} <img src="img/countries/usa-desat.png" /> {{/link-to}}
+  </div>
   <h2 class="pad-bottom">Currently {{usaCount}} Bicycles of American Origin</h2>
   <ul class="bikebinder">
     {{#each sortUsa}}
@@ -528,10 +445,10 @@
 </script>
 <!--Blowup for each bike page-->
 <script type="text/x-handlebars" data-template-name='bike'>
-  <h1 class="modelHeading">   
-    {{#link-to 'catalog'}}
-      <img src="img/return_arrow.png" class="pull-left pad-top"/>
-    {{/link-to}}{{make}} {{model.model}}
+  <h1 class="modelHeading">      
+     {{#link-to 'catalog'}}
+       <img src="img/return_arrow.png" class="pull-left pad-top"/>
+     {{/link-to}}{{make}} {{model.model}}
   </h1>
   <img {{bind-attr src='image'}} class='hover-color img-responsive img-thumbnail centered'/>
   <p  class="descPadding">{{desc}}</p>
