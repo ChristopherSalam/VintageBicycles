@@ -3,7 +3,7 @@
 /*These ***View tags are added only to the body html element*/
 
 .indexView {
-	background-image: url('../img/home-bikes.jpg');
+	background-image: url('../img/backgrounds/home-bikes.jpg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -47,15 +47,15 @@
 }
 
 .referencesView {
+	background-image: url('../img/backgrounds/asphalt-05.jpg');
 	background-color: #CDAF95;
-	background-image: none;
 	background-repeat: repeat;
-	background-size: 100%;
+	background-size: 200%;
 }
 
 .catalogView {
 	background-color: #bebdbd;
-	background-image: url('../img/bike-lane.png');
+	background-image: url('../img/backgrounds/bike-lane.png');
 	background-position: right top;
 	background-repeat: no-repeat;
 	background-size: 50%;	
@@ -125,7 +125,7 @@
 }
 
 .creditsView {
-	background-image: url('../img/last.jpg');
+	background-image: url('../img/backgrounds/last.jpg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
