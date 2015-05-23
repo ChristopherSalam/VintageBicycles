@@ -115,7 +115,7 @@ img.ember-view.active {
 }
 
 body {
-  background: url(../img/backgrounds/asphalt-1.jpg) repeat ;
+  background-color: #424242;
   background-size: cover;
 }
 

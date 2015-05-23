@@ -48,7 +48,7 @@
 
 .referencesView {
 	background-image: url('../img/backgrounds/asphalt-05.jpg');
-	background-color: #CDAF95;
+	background-color: #424242;
 	background-repeat: repeat;
 	background-size: 200%;
 }
@@ -62,59 +62,114 @@
 }
 
 .bianchiView {
-
+	background-color: #545454;
+	background-image: url('../img/backgrounds/bike-lane.png');
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: 50%;	
 } 
 
 .cannondaleView {
-
+	background-color: #bebdbd;
+	background-image: url('../img/backgrounds/bike-lane.png');
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: 50%;	
 }
 
 .centurionView {
-
+	background-color: #bebdbd;
+	background-image: url('../img/backgrounds/bike-lane.png');
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: 50%;	
 }
 
 .nishikiView {
-
+	background-color: #bebdbd;
+	background-image: url('../img/backgrounds/bike-lane.png');
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: 50%;	
 }
 
 .specializedView {
-
+	background-color: #bebdbd;
+	background-image: url('../img/backgrounds/bike-lane.png');
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: 50%;	
 }
 
 .peugeotView {
-
+	background-color: #bebdbd;
+	background-image: url('../img/backgrounds/bike-lane.png');
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: 50%;	
 }
 
 .raleighView {
-
+	background-color: #bebdbd;
+	background-image: url('../img/backgrounds/bike-lane.png');
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: 50%;	
 }
 
 .trekView {
-
+	background-color: #bebdbd;
+	background-image: url('../img/backgrounds/bike-lane.png');
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: 50%;	
 }
 
 .japaneseView {
-
+	background-color: #bebdbd;
+	background-image: url('../img/backgrounds/bike-lane.png');
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: 50%;	
 }
 
 .frenchView {
-
+	background-color: #bebdbd;
+	background-image: url('../img/backgrounds/bike-lane.png');
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: 50%;	
 }
 
 .englishView {
-
+	background-color: #bebdbd;
+	background-image: url('../img/backgrounds/bike-lane.png');
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: 50%;	
 }
 
 .italianView {
-
+	background-color: #bebdbd;
+	background-image: url('../img/backgrounds/bike-lane.png');
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: 50%;	
 } 
 
 .usaView {
-
+	background-color: #bebdbd;
+	background-image: url('../img/backgrounds/bike-lane.png');
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: 50%;	
 } 
 
 .vendorsView {
-
+	background-color: #626262;
+	background-image: none;
+	background-repeat: repeat;
+	background-size: 100%;
 }
 
 .aboutView {
