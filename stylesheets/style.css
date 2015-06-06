@@ -177,14 +177,29 @@ a:hover  {
   display: inline-block;
 }
 
+/*.hoverWrapper:nth-child(3n) {
+  margin-left: auto;
+  border: red 15px;
+}
+
+.hoverWrapper:nth-child(3n+2) {
+  margin-right: auto;
+  border: green 15px;
+}*/
+
 .imgDescription {
+  object-fit:cover;
+  font-family: OstSans;
   position: absolute;
   top: 10px;
   bottom: 0;
   left: 0;
   right: 0;
-  font-size: 160%;
-  color: rgba(225, 225, 225, .7);
+  font-size: 200%;
+  color: #deff26;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #444;
+/*  color: rgba(150, 150, 150, 1);*/
   text-align: center;
   visibility: hidden;
   /*remove comment if you want a gradual transition between states
@@ -202,7 +217,19 @@ a:hover  {
 }
 
 .bikebinder {
-  padding: 0;
+  margin-left: 50px;
+}
+
+@media (max-width: 1200px) {
+  .bikebinder {
+/*    margin-left: 40px;*/
+  }
+}
+
+@media (max-width: 900px) {
+  .bikebinder {
+    margin-left: 30px;
+  }
 }
 
 .bikebinder>.ember-view {
@@ -228,15 +255,15 @@ a:hover  {
 }
 
 .img-thumbnail {
-  background-color: transparent;
+/*  background-color: transparent;
   border: 0 solid white;
   padding: 0;
   border-radius: 0;
-  max-width: auto;
+  max-width: auto;*/
 }
 
 .img-responsive .grid-fix {
-  max-width: none;
+/*  max-width: none;*/
 }
 
 .centered {
@@ -245,19 +272,25 @@ a:hover  {
 }
 
 .hoverWrapper>img {
-  height: auto;
-  width: auto;
+/*  min-height: 250px;
+  min-width: 325px;*/
+  height: 275px;
+  width: 375px;
+  /*padding: 2px;*/
+  border-radius: 8% 8% 8% 0%;
   overflow:hidden;
   -o-object-fit: cover;
   -o-object-position: center center;
   object-fit: cover;
   object-position: center center;
-  display:inline;
+  display:inline-block;
 }
+
+
 
 @media (max-width: 767px) {
   .bikebinder>.ember-view   {
-   width: 49%;
+/*   width: 49%;*/
   }
   .nav>li {
    display:inline-block;
@@ -272,7 +305,7 @@ a:hover  {
 
 @media (min-width: 768px) and (max-width: 992px) {
   .bikebinder>.ember-view {
-   width: 32%;
+/*   width: 32%;*/
   }
   #navigation ul{
   padding-top: 12px;
@@ -284,7 +317,7 @@ a:hover  {
 
 @media (min-width: 981px) {
   .bikebinder>.ember-view {
-   max-width: 24.5%;
+/*   max-width: 24.5%;*/
    overflow:hidden;
   }
 }
