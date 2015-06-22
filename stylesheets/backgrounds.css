@@ -2,6 +2,8 @@
 
 /*These ***View tags are added only to the body html element*/
 
+
+
 .indexView {
 	background-image: url('../img/backgrounds/home-bikes.jpg');
 	background-position: center center;
@@ -54,7 +56,8 @@
 }
 
 .catalogView {
-	background-color: #bebdbd;
+	background-color: #AF977F;
+	background-color: rgba(175, 151, 127 .65);
 	background-image: url('../img/backgrounds/bike-lane.png');
 	background-position: right top;
 	background-repeat: no-repeat;
@@ -62,7 +65,8 @@
 }
 
 .bianchiView {
-	background-color: teal;
+	background-color: #71B09F; 
+	background-color: rgba(113, 176, 159, 0.85);
 	background-image: url('../img/backgrounds/bike-lane.png');
 	background-position: right top;
 	background-repeat: no-repeat;
@@ -70,7 +74,8 @@
 } 
 
 .cannondaleView {
-	background-color: green;
+	background-color: #064606;
+	background-color: rgba(6, 46, 6, 0.65);
 	background-image: url('../img/backgrounds/bike-lane.png');
 	background-position: right top;
 	background-repeat: no-repeat;
@@ -78,7 +83,8 @@
 }
 
 .centurionView {
-	background-color: purple;
+	background-color: #d5c191; 
+	background-color: rgba(213, 193, 145, 0.85);
 	background-image: url('../img/backgrounds/bike-lane.png');
 	background-position: right top;
 	background-repeat: no-repeat;
@@ -86,7 +92,7 @@
 }
 
 .nishikiView {
-	background-color: gray;
+	background-color: #36454f;
 	background-image: url('../img/backgrounds/bike-lane.png');
 	background-position: right top;
 	background-repeat: no-repeat;
@@ -94,15 +100,18 @@
 }
 
 .specializedView {
-	background-color: char;
+	background-color: #9887A8;
+	background-color: rgba(152, 135, 168, .85);
 	background-image: url('../img/backgrounds/bike-lane.png');
 	background-position: right top;
 	background-repeat: no-repeat;
 	background-size: 50%;	
-}
+} /*
+(50,15,82)*/
 
 .peugeotView {
-	background-color: blue;
+	background-color: #003366;
+	background-color: rgba(0, 51, 102, .55);
 	background-image: url('../img/backgrounds/bike-lane.png');
 	background-position: right top;
 	background-repeat: no-repeat;
@@ -110,7 +119,8 @@
 }
 
 .raleighView {
-	background-color: maroon;
+	background-color: #B8A025;
+	background-color: rgba(184, 160, 37, .85);
 	background-image: url('../img/backgrounds/bike-lane.png');
 	background-position: right top;
 	background-repeat: no-repeat;
@@ -118,7 +128,8 @@
 }
 
 .trekView {
-	background-color: silver;
+	background-color: #cc0000;
+	background-color: rgba(153, 0, 0, .65);
 	background-image: url('../img/backgrounds/bike-lane.png');
 	background-position: right top;
 	background-repeat: no-repeat;
