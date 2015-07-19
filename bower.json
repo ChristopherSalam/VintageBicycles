@@ -1,0 +1,22 @@
+{
+  "name": "VintageBicycles",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ChristopherSalam/VintageBicycles",
+  "authors": [
+    "ChristopherSalam <christopher.salam@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "handlebars": "2.0.0",
+    "ember": "1.9.1",
+    "jquery": "~2.1.4",
+    "isotope": "~2.2.1"
+  }
+}

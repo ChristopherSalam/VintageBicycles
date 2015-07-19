@@ -112,6 +112,8 @@ img.ember-view.active {
 
 .home-img{
   float:right;
+  background-color: transparent;
+  border: none;
 }
 
 body {
